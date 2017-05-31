@@ -34,7 +34,9 @@
 		for (var i = 0; i < addressPoints.length; i++) {
 			var a = addressPoints[i];
 			var title = a[2];
-			var marker = L.marker(L.latLng(a[0], a[1]), { title: title });
+                        var icon = a[3];
+                        //m_cluster.addLayer(L.marker([-16.83142, 145.69413], {icon: AP_Logo}).addTo(map).bindPopup("<a href='http://kenfrosthomes.com.au/ainslie-place-north-point/' target='_blank'><button class='btn'>Visit Website</button></a>"));
+			var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
 			marker.bindPopup(title);
 			markers.addLayer(marker);
 		}
