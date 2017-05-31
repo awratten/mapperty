@@ -308,11 +308,12 @@ L.GeoSearch.Provider.Google = L.Class.extend({
         if (!window.google || !window.google.maps)
           this.loadMapsApi();
     },
+//    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
 
     loadMapsApi: function () {
-        var url = "https://maps.googleapis.com/maps/api/js?v=3&callback=onLoadGoogleApiCallback&sensor=false";
+        var url = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAUIuvtLOMOfGv6GqIe5bvX0H_WS1xhJic&v=3&callback=onLoadGoogleApiCallback&sensor=false";
         var script = document.createElement('script');
-        script.id = 'load_google_api';
+        script.id = 'load_google_api'; //AIzaSyAUIuvtLOMOfGv6GqIe5bvX0H_WS1xhJic
         script.type = "text/javascript";
         script.src = url;
         document.body.appendChild(script);
