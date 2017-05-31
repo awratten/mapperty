@@ -89,8 +89,9 @@
 //});
 
             var m_cluster = L.markerClusterGroup();
-                m_cluster.addLayer(L.marker([-16.9186,145.7781], {icon: AP_Logo}).addTo(map));
-                m_cluster.addLayer(L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
+                m_cluster.addLayer(L.marker([-16.83142, 145.69413], {icon: AP_Logo}).addTo(map)); //Ainslie Place
+                m_cluster.addLayer(L.marker([-17.04103, 145.73976], {icon: AP_Logo}).addTo(map)); //Mount Peter
+                //m_cluster.addLayer(L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
             map.addLayer(m_cluster);
 
 
