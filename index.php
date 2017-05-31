@@ -131,7 +131,9 @@
             });
 
             var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
+            var kml_MP = new L.KML("/kml/MountPeterEstate.kml", {async: true});
             map.addLayer(kml_SA);
+            map.addLayer(kml_MP);
 
 
 /*
