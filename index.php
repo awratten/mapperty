@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.0.5/dist/MarkerCluster.Default.css"/>
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.0.5/dist/MarkerCluster.css"/>
         <script src="https://unpkg.com/leaflet.markercluster@1.0.5/dist/leaflet.markercluster.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet-plugins/3.0.0/layer/vector/KML.js'></script>
         
         <style>
             html, body {
@@ -128,6 +129,9 @@
             m_cluster.on('click', function(e){
                 map.setView(e.latlng, 17);
             });
+
+            var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
+            map.addLayer(kml_SA);
 
 
 /*
