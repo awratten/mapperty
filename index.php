@@ -47,10 +47,10 @@
         </style>
     </head>
     <body>
-        <div class="wrapper">
+
             <div id='map' class="container-fluid"></div>
             <img id="logo" scr="/img/mapperty_grey.png">
-        </div>
+
         
         <script src="js/geoSearch_include.js" type="text/javascript"></script>
         
