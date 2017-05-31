@@ -23,6 +23,7 @@
         <script src="https://unpkg.com/leaflet.markercluster@1.0.5/dist/leaflet.markercluster.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.0.5/dist/MarkerCluster.css"/>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet-plugins/3.0.0/layer/vector/KML.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier-Leaflet/0.2.6/oms.min.js"></script>
         
         <style>
             html, body {
@@ -61,7 +62,12 @@
 
 //SRC CODE ABOVE HERE
 //16.9186° S, 145.7781° E
+    window.onload = function() {
+
             var map = L.map('map').setView([-16.98720, 145.74003] , 8);
+            
+
+
 
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -145,7 +151,30 @@
             map.addLayer(kml_AP);
             map.addLayer(kml_HMB);
 
+/*
+            var oms = new OverlappingMarkerSpiderfier(map);
 
+            var popup = new L.Popup();
+            oms.addListener('click', function(m_cluster) {
+              popup.setContent(marker.desc);
+              popup.setLatLng(marker.getLatLng());
+              map.openPopup(popup);
+            });
+            
+            oms.addListener('spiderfy', function(m_cluster) {
+              map.closePopup();
+            });
+
+            for (var i = 0; i < window.mapData.length; i ++) {
+              var datum = window.mapData[i];
+              var loc = new L.LatLng(datum.lat, datum.lon);
+              var marker = new L.Marker(loc);
+              marker.desc = datum.d;
+              map.addLayer(marker);
+              oms.addMarker(marker);  // <-- here
+            }
+*/  
+            
 /*
             var m_cluster = L.markerClusterGroup();
                 m_cluster.addLayer(L.marker([-16.83142, 145.69413], {icon: AP_Logo}).addTo(map)); //Ainslie Place
@@ -166,6 +195,7 @@
             map.zoomIn(0);
             map.zoomOut(0);
 */
+};
         </script>
 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
