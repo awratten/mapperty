@@ -46,7 +46,7 @@
         <script>
 
 //SRC CODE ABOVE HERE
-function(){geoSearchController.geosearch('New York');}
+
             var map = L.map('map').setView(function(){geoSearchController.geosearch('Cairns');}, 13);
 
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
