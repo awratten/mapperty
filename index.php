@@ -122,7 +122,7 @@
                 m_cluster.addLayer(L.marker([-17.04103, 145.73976], {icon: MP_Logo}).addTo(map).bindPopup("<a href='http://mtpeterestate.com.au' target='_blank'><button class='btn'>Visit Website</button></a>")); //Mount Peter
                 m_cluster.addLayer(L.marker([-16.7963, 145.7083], {icon: HMB_Logo}).addTo(map).bindPopup("<a href='http://kenfrosthomes.com.au/half-moon-bay/' target='_blank'><button class='btn'>Visit Website</button></a>")); //Half Moon Bay
                 m_cluster.addLayer(L.marker([-16.98674, 145.73359], {icon: RE_Logo}).addTo(map).bindPopup("<a href='http://rainforest-edge.com.au' target='_blank'><button class='btn'>Visit Website</button></a>")); //Rainforest Edge
-                m_cluster.addLayer(L.marker([-16.98912, 145.74466], {icon: SA_Logo}).addTo(map).bindPopup("<a href='http://sheldonavenue.com.au' target='_blank'><button class='btn'>Visit Website</button></a>")); //Sheldon Avenue
+                m_cluster.addLayer(L.marker([-16.98904, 145.74460], {icon: SA_Logo}).addTo(map).bindPopup("<a href='http://sheldonavenue.com.au' target='_blank'><button class='btn'>Visit Website</button></a>")); //Sheldon Avenue
                 //m_cluster.addLayer(L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
             map.addLayer(m_cluster);
             
