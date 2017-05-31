@@ -32,7 +32,6 @@
 
 
         <div class="container-fluid">
-            <button id="myButton">Button</button>
 
         </div>
 
@@ -43,18 +42,23 @@
 
 
         <script>
-            
-            L.GeoSearch = {};
-            L.GeoSearch.Provider = {};
 
-            L.GeoSearch.Result = function (x, y, label, bounds) {
-                this.X = x;
-                this.Y = y;
-                this.Label = label;
-                this.bounds = bounds;
-            };
-            
-            
+
+/*
+ * L.Control.GeoSearch - search for an address and zoom to its location
+ * https://github.com/smeijer/L.GeoSearch
+ */
+
+L.GeoSearch = {};
+L.GeoSearch.Provider = {};
+
+L.GeoSearch.Result = function (x, y, label, bounds) {
+    this.X = x;
+    this.Y = y;
+    this.Label = label;
+    this.bounds = bounds;
+};
+
 L.Control.GeoSearch = L.Control.extend({
     options: {
         position: 'topcenter',
@@ -132,7 +136,7 @@ L.Control.GeoSearch = L.Control.extend({
         try {
             var provider = this._config.provider;
 
-            if(typeof provider.GetLocations === 'function') {
+            if(typeof provider.GetLocations == 'function') {
                 var results = provider.GetLocations(qry, function(results) {
                     that._processResults(results);
                 });
@@ -174,13 +178,13 @@ L.Control.GeoSearch = L.Control.extend({
                 var xhr = new XMLHttpRequest();
 
                 xhr.onreadystatechange = function () {
-                    if (xhr.readyState === 4) {
-                        if (xhr.status === 200) {
+                    if (xhr.readyState == 4) {
+                        if (xhr.status == 200) {
                             var response = JSON.parse(xhr.responseText),
                                 results = provider.ParseJSON(response);
 
                             that._processResults(results);
-                        } else if (xhr.status === 0 || xhr.status === 400) {
+                        } else if (xhr.status == 0 || xhr.status == 400) {
                             getJsonP(url);
                         } else {
                             that._printError(xhr.responseText);
@@ -222,7 +226,7 @@ L.Control.GeoSearch = L.Control.extend({
     },
 
     _showLocation: function (location) {
-        if (this.options.showMarker === true) {
+        if (this.options.showMarker == true) {
             if (typeof this._positionMarker === 'undefined') {
                 this._positionMarker = L.marker(
                     [location.Y, location.X],
@@ -349,13 +353,15 @@ L.GeoSearch.Provider.Google = L.Class.extend({
                 ));
             }
 
-            if(typeof callback === 'function')
+            if(typeof callback == 'function')
                 callback(results);
         });
-    }
+    },
 });
 
-            
+
+//SRC CODE ABOVE HERE
+
             var map = L.map('map').setView([51.505, -0.09], 13);
 
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -366,14 +372,27 @@ L.GeoSearch.Provider.Google = L.Class.extend({
             }).addTo(map);
 
 
+// Create the map
+//var map = L.map('map').setView([39.5, -0.5], 5);
 
-            var geoSearchController = new L.Control.GeoSearch({
-                provider: new L.GeoSearch.Provider.Google()
-            }).addTo(map);
+// Set up the OSM layer
+//L.tileLayer(
+//    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
+//    {maxZoom: 18}).addTo(map);
 
-            document.getElementById("myButton").addEventListener("click", function(){
-                geoSearchController.geosearch('New York');
-            });
+var geoSearchController = new L.Control.GeoSearch({
+    provider: new L.GeoSearch.Provider.Google()
+}).addTo(map);
+
+//document.getElementById("myButton").addEventListener("click", function(){
+//    geoSearchController.geosearch('New York');
+//});
+
+
+
+
+
+
 
         </script>
 
