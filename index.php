@@ -78,7 +78,7 @@
                 iconUrl: 'http://kenfrosthomes.com.au/app/uploads/AP_Logo2.png',
                 iconSize: [128, 44],
                 iconAnchor: [128, 44],
-                popupAnchor: [-3, 0]
+                popupAnchor: [128, 44]
             });    
     
     
