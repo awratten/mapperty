@@ -64,18 +64,23 @@
                 provider: new L.GeoSearch.Provider.Google()
             }).addTo(map);
             
-
               // Creates a red marker with the coffee icon
             var redMarker = L.AwesomeMarkers.icon({
                 icon: 'coffee',
                 markerColor: 'red'
             });
       
+            //L.marker([51.941196,4.512291], {icon: redMarker}).addTo(map);
             L.marker([-16.9186,145.7781], {icon: redMarker}).addTo(map).bindPopup("I am a green leaf.");
 
 //document.getElementById("myButton").addEventListener("click", function(){
 //    geoSearchController.geosearch('New York');
 //});
+
+
+
+
+
 
 
         </script>
