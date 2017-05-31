@@ -72,9 +72,6 @@
     window.onload = function() {
 
             var map = L.map('map').setView([-16.98720, 145.74003] , 8);
-            
-
-
 
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -83,9 +80,9 @@
                 accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
             }).addTo(map);
 
-            var geoSearchController = new L.Control.GeoSearch({
-                provider: new L.GeoSearch.Provider.Google()
-            }).addTo(map);
+//            var geoSearchController = new L.Control.GeoSearch({
+//                provider: new L.GeoSearch.Provider.Google()
+//           }).addTo(map);
             
               // Creates a red marker with the coffee icon
             var defaultMarker = L.AwesomeMarkers.icon({
