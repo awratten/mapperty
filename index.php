@@ -38,7 +38,7 @@
             }
             #logo{
                 position:fixed;
-                top:5px;
+                left:5px;
                 bottom:5px;
                 z-index:2000;
                 height:85px;
