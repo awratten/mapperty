@@ -116,9 +116,8 @@
                 }
 
                 map.addLayer(kmls);
-/
-* 
-        *
+
+/* 
             var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
             var kml_MP = new L.KML("/kml/MountPeterEstate.kml", {async: true});
             var kml_AP = new L.KML("/kml/AP.kml", {async: true});
