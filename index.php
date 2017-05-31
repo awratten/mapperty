@@ -107,7 +107,7 @@
                 
 
 
-                var kmls = L.layerGroup();
+
 
                 for (var i = 0; i < kmlList.length; i++) {
                     var a = kmlList[i];
@@ -115,7 +115,7 @@
                     kmls.addLayer(kml);
                 }
 
-                map.addLayer(kmls);
+                //map.addLayer(kmls);
 
 /* 
             var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
