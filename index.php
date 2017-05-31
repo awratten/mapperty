@@ -83,7 +83,7 @@
 
             var m_cluster = L.markerClusterGroup();
                 m_cluster.addLayer(L.marker([-16.9186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
-
+                m_cluster.addLayer(L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
             map.addLayer(m_cluster);
 
 
