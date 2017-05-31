@@ -38,12 +38,16 @@
             }
             #logo{
                 position:fixed;
-                top:50px;
+                top:5px;
                 left:100px;
                 z-index:2000;
                 height:72px;
-                width:257px;
-                background-image: url("http://www.mapperty.co/img/mapperty_black.png");
+                width:256px;
+                background-image: url("http://www.mapperty.co/img/mapperty_grey.png");
+                background-repeat: no-repeat;
+                background-position: left top;
+                box-shadow: 10px 10px 5px #888888;
+
             }
             
         </style>
