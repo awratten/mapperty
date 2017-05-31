@@ -352,7 +352,7 @@ L.GeoSearch.Provider.Google = L.Class.extend({
             if(typeof callback === 'function')
                 callback(results);
         });
-    },''
+    }
 });
 
             
