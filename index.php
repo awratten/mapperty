@@ -64,19 +64,10 @@
                 provider: new L.GeoSearch.Provider.Google()
             }).addTo(map);
             
-            var main_icon = L.icon({
-                iconUrl: '/img/leaf-green.png',
-
-                iconSize:     [32, 32], // size of the icon
-                iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
-                popupAnchor:  [32, 32] // point from which the popup should open relative to the iconAnchor
-});
-            
-            
 
               // Creates a red marker with the coffee icon
             var redMarker = L.AwesomeMarkers.icon({
-                icon: 'ion-ios-location',
+                icon: 'coffee',
                 markerColor: 'red'
             });
       
@@ -85,11 +76,6 @@
 //document.getElementById("myButton").addEventListener("click", function(){
 //    geoSearchController.geosearch('New York');
 //});
-
-
-
-
-
 
 
         </script>
