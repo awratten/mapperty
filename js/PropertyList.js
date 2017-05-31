@@ -39,9 +39,9 @@ var SA_Logo = L.icon({
 
 var KF_Logo = L.icon({
     iconUrl: '/img/KF_Logo.png',
-    iconSize: [128, 145],
-    iconAnchor: [64, 73],
-    popupAnchor: [0, -73]
+    iconSize: [16, 19],
+    iconAnchor: [8, 9],
+    popupAnchor: [0, -9]
 });
 
 
