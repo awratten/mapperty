@@ -28,6 +28,8 @@
         
         <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet-plugins/3.0.0/layer/vector/KML.js'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier-Leaflet/0.2.6/oms.min.js"></script>
+        
+        <script src="js/PropertyList.js" type="text/javascript"></script>
 
 
         <style>
@@ -125,13 +127,30 @@
                 popupAnchor:  Def_PopupAnchor
             });
 
+
+		var markers = L.markerClusterGroup({ chunkedLoading: true });
+		
+		for (var i = 0; i < addressPoints.length; i++) {
+			var a = addressPoints[i];
+			var title = a[2];
+                        var icon = a[3];
+                        //m_cluster.addLayer(L.marker([-16.83142, 145.69413], {icon: AP_Logo}).addTo(map).bindPopup("<a href='http://kenfrosthomes.com.au/ainslie-place-north-point/' target='_blank'><button class='btn'>Visit Website</button></a>"));
+			var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
+			marker.bindPopup(title);
+			markers.addLayer(marker);
+		}
+
+		map.addLayer(markers);
+
+
+
 //L.marker([51.941196,4.512291], {icon: redMarker}).addTo(map);
 //L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf.")  
 
 //document.getElementById("myButton").addEventListener("click", function(){
 //    geoSearchController.geosearch('New York');
 //});
-
+/*
             var m_cluster = L.markerClusterGroup({ chunkedLoading: true });
                 m_cluster.addLayer(L.marker([-16.83142, 145.69413], {icon: AP_Logo}).addTo(map).bindPopup("<a href='http://kenfrosthomes.com.au/ainslie-place-north-point/' target='_blank'><button class='btn'>Visit Website</button></a>")); //Ainslie Place
                 m_cluster.addLayer(L.marker([-17.04103, 145.73976], {icon: MP_Logo}).addTo(map).bindPopup("<a href='http://mtpeterestate.com.au' target='_blank'><button class='btn'>Visit Website</button></a>")); //Mount Peter
@@ -146,7 +165,7 @@
             });
             
             m_cluster.refreshClusters();
-
+*/
             var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
             var kml_MP = new L.KML("/kml/MountPeterEstate.kml", {async: true});
             var kml_AP = new L.KML("/kml/AP.kml", {async: true});
