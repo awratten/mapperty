@@ -32,7 +32,7 @@
 
 
         <div class="container-fluid">
-
+            <button id="myButton">Button</button>
 
         </div>
 
@@ -53,17 +53,13 @@
                 accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
             }).addTo(map);
 
-            var GeoSearch = L.Control.GeoSearch( {
-                searchLabel: 'The search string',
-                notFoundMessage: 'Not found',
-                position: 'topcenter',
-                showMarker: true,
-                selected: 0,
-                providers: [{name:'GISFile', provider: new L.GeoSearch.Provider.GISFile( {type:'layer', name:'world'})},
-                {name:'Google', provider: new L.GeoSearch.Provider.Google()},
-                {name:'OpenStreetMap', provider: new L.GeoSearch.Provider.OpenStreetMap()}]
+            var geoSearchController = new L.Control.GeoSearch({
+                provider: new L.GeoSearch.Provider.Google()
             }).addTo(map);
 
+            document.getElementById("myButton").addEventListener("click", function(){
+                geoSearchController.geosearch('New York');
+            });
 
         </script>
 
