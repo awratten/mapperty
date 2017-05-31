@@ -23,7 +23,7 @@ L.GeoSearch.Result = function (x, y, label, bounds) {
 L.Control.GeoSearch = L.Control.extend({
     options: {
         position: 'topcenter',
-        showMarker: true,
+        showMarker: false,
         retainZoomLevel: false,
         draggable: false
     },
