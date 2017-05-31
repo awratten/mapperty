@@ -10,6 +10,10 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet.geosearch/0.1/css/l.geosearch.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+        <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+
+        <script src="js/leaflet.awesome-markers.js"></script>
         <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
         <script src="https://cdn.jsdelivr.net/leaflet.geosearch/0.1/js/l.geosearch.provider.google.js"></script>
 
@@ -59,6 +63,24 @@
             var geoSearchController = new L.Control.GeoSearch({
                 provider: new L.GeoSearch.Provider.Google()
             }).addTo(map);
+            
+            var main_icon = L.icon({
+                iconUrl: '/img/leaf-green.png',
+
+                iconSize:     [32, 32], // size of the icon
+                iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+                popupAnchor:  [32, 32] // point from which the popup should open relative to the iconAnchor
+});
+            
+            
+
+              // Creates a red marker with the coffee icon
+            var redMarker = L.AwesomeMarkers.icon({
+                icon: 'ion-ios-location',
+                markerColor: 'red'
+            });
+      
+            L.marker([-16.9186,145.7781], {icon: redMarker}).addTo(map).bindPopup("I am a green leaf.");
 
 //document.getElementById("myButton").addEventListener("click", function(){
 //    geoSearchController.geosearch('New York');
