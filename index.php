@@ -75,7 +75,7 @@
             });
             var Def_IconSize = [128,64];
             var Def_IconAnchor = [64,32];
-            var Def_PopupAnchor = [64,64];
+            var Def_PopupAnchor = [0,-64];
 
             var AP_Logo = L.icon({
                 iconUrl: '/img/estate_AinsliePlace_icon.png',
