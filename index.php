@@ -124,6 +124,10 @@
                 map.setView(e.latlng, 17);
             });
 
+            // Dirty hack; otherwise the cluster won't appear on the map.
+            map.zoomIn(0);
+            map.zoomOut(0);
+
         </script>
 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
