@@ -75,7 +75,7 @@
                 markerColor: 'blue'
             });
             var Def_IconSize = [128,64];
-            var Def_IconAnchor = [64,0];
+            var Def_IconAnchor = [64,64];
             var Def_PopupAnchor = [0,-32];
 
             var AP_Logo = L.icon({
