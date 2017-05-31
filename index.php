@@ -76,30 +76,30 @@
 
             var AP_Logo = L.icon({
                 iconUrl: '/img/estate_AinsliePlace_icon.png',
-                iconSize: [128, 64],
-                iconAnchor: [0, 0]
+                iconSize: [64, 32],
+                iconAnchor: [32, 16]
             });
             var HMB_Logo = L.icon({
                 iconUrl: '/img/estate_HalfMoonBay_icon.png',
-                iconSize: [128, 64],
-                iconAnchor: [0, 0]
+                iconSize: [64, 32],
+                iconAnchor: [32, 16]
             });
             var MP_Logo = L.icon({
                 iconUrl: '/img/estate_MountPeter_icon.png',
-                iconSize: [128, 64],
-                iconAnchor: [0, 0]
+                iconSize: [64, 32],
+                iconAnchor: [32, 16]
             });
             var RE_Logo = L.icon({
                 iconUrl: '/img/estate_RainforestEdge_icon.png',
-                iconSize: [128, 64],
-                iconAnchor: [0, 0]
+                iconSize: [64, 32],
+                iconAnchor: [32, 16]
             });
             var SA_Logo = L.icon({
-                iconUrl: '/img/estate_SheldonAvenue_icon.png',
-                iconSize: [128, 64],
-                iconAnchor: [0, 0]
+                iconUrl: '/img/estate_SheldonAve_icon.png',
+                iconSize: [64, 32],
+                iconAnchor: [32, 16]
             });
-    
+
 //L.marker([51.941196,4.512291], {icon: redMarker}).addTo(map);
 //L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf.")  
 
