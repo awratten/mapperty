@@ -96,7 +96,7 @@
 
 
             m_cluster.on('click', function(e){
-                map.setView(e.latlng, 13);
+                map.setView(e.latlng, 18);
             });
 
         </script>
