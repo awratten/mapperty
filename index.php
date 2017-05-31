@@ -91,42 +91,6 @@
             var defaultMarker = L.AwesomeMarkers.icon({
                 markerColor: 'blue'
             });
-            var Def_IconSize = [128,64];
-            var Def_IconAnchor = [64,64];
-            var Def_PopupAnchor = [0,-64];
-
-            var AP_Logo = L.icon({
-                iconUrl: '/img/estate_AinsliePlace_icon.png',
-                iconSize: Def_IconSize,
-                iconAnchor: Def_IconAnchor,
-                popupAnchor:  Def_PopupAnchor
-
-            });
-            var HMB_Logo = L.icon({
-                iconUrl: '/img/estate_HalfMoonBay_icon.png',
-                iconSize: Def_IconSize,
-                iconAnchor: Def_IconAnchor,
-                popupAnchor:  Def_PopupAnchor
-            });
-            var MP_Logo = L.icon({
-                iconUrl: '/img/estate_MountPeter_icon.png',
-                iconSize: Def_IconSize,
-                iconAnchor: Def_IconAnchor,
-                popupAnchor:  Def_PopupAnchor
-            });
-            var RE_Logo = L.icon({
-                iconUrl: '/img/estate_RainforestEdge_icon.png',
-                iconSize: Def_IconSize,
-                iconAnchor: Def_IconAnchor,
-                popupAnchor:  Def_PopupAnchor
-            });
-            var SA_Logo = L.icon({
-                iconUrl: '/img/estate_SheldonAve_icon.png',
-                iconSize: Def_IconSize,
-                iconAnchor: Def_IconAnchor,
-                popupAnchor:  Def_PopupAnchor
-            });
-
 
 		var markers = L.markerClusterGroup({ chunkedLoading: true });
 		
@@ -134,7 +98,6 @@
 			var a = addressPoints[i];
 			var title = a[2];
                         var icon = a[3];
-                        //m_cluster.addLayer(L.marker([-16.83142, 145.69413], {icon: AP_Logo}).addTo(map).bindPopup("<a href='http://kenfrosthomes.com.au/ainslie-place-north-point/' target='_blank'><button class='btn'>Visit Website</button></a>"));
 			var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
 			marker.bindPopup(title);
 			markers.addLayer(marker);
@@ -142,30 +105,6 @@
 
 		map.addLayer(markers);
 
-
-
-//L.marker([51.941196,4.512291], {icon: redMarker}).addTo(map);
-//L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf.")  
-
-//document.getElementById("myButton").addEventListener("click", function(){
-//    geoSearchController.geosearch('New York');
-//});
-/*
-            var m_cluster = L.markerClusterGroup({ chunkedLoading: true });
-                m_cluster.addLayer(L.marker([-16.83142, 145.69413], {icon: AP_Logo}).addTo(map).bindPopup("<a href='http://kenfrosthomes.com.au/ainslie-place-north-point/' target='_blank'><button class='btn'>Visit Website</button></a>")); //Ainslie Place
-                m_cluster.addLayer(L.marker([-17.04103, 145.73976], {icon: MP_Logo}).addTo(map).bindPopup("<a href='http://mtpeterestate.com.au' target='_blank'><button class='btn'>Visit Website</button></a>")); //Mount Peter
-                m_cluster.addLayer(L.marker([-16.7963, 145.7083], {icon: HMB_Logo}).addTo(map).bindPopup("<a href='http://kenfrosthomes.com.au/half-moon-bay/' target='_blank'><button class='btn'>Visit Website</button></a>")); //Half Moon Bay
-                m_cluster.addLayer(L.marker([-16.98674, 145.73359], {icon: RE_Logo}).addTo(map).bindPopup("<a href='http://rainforest-edge.com.au' target='_blank'><button class='btn'>Visit Website</button></a>")); //Rainforest Edge
-                m_cluster.addLayer(L.marker([-16.98908, 145.74497], {icon: SA_Logo}).addTo(map).bindPopup("<a href='http://sheldonavenue.com.au' target='_blank'><button class='btn'>Visit Website</button></a>")); //Sheldon Avenue
-                //m_cluster.addLayer(L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
-            map.addLayer(m_cluster);
-            
-            m_cluster.on('click', function(e){
-                map.setView(e.latlng, 17);
-            });
-            
-            m_cluster.refreshClusters();
-*/
             var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
             var kml_MP = new L.KML("/kml/MountPeterEstate.kml", {async: true});
             var kml_AP = new L.KML("/kml/AP.kml", {async: true});
@@ -175,51 +114,7 @@
             map.addLayer(kml_AP);
             map.addLayer(kml_HMB);
 
-/*
-            var oms = new OverlappingMarkerSpiderfier(map);
-
-            var popup = new L.Popup();
-            oms.addListener('click', function(m_cluster) {
-              popup.setContent(marker.desc);
-              popup.setLatLng(marker.getLatLng());
-              map.openPopup(popup);
-            });
-            
-            oms.addListener('spiderfy', function(m_cluster) {
-              map.closePopup();
-            });
-
-            for (var i = 0; i < window.mapData.length; i ++) {
-              var datum = window.mapData[i];
-              var loc = new L.LatLng(datum.lat, datum.lon);
-              var marker = new L.Marker(loc);
-              marker.desc = datum.d;
-              map.addLayer(marker);
-              oms.addMarker(marker);  // <-- here
-            }
-*/  
-            
-/*
-            var m_cluster = L.markerClusterGroup();
-                m_cluster.addLayer(L.marker([-16.83142, 145.69413], {icon: AP_Logo}).addTo(map)); //Ainslie Place
-                m_cluster.addLayer(L.marker([-17.04103, 145.73976], {icon: MP_Logo}).addTo(map)); //Mount Peter
-                m_cluster.addLayer(L.marker([-16.7963, 145.7083], {icon: HMB_Logo}).addTo(map)); //Half Moon Bay
-                m_cluster.addLayer(L.marker([-16.98674, 145.73359], {icon: RE_Logo}).addTo(map)); //Rainforest Edge
-                m_cluster.addLayer(L.marker([-16.98912, 145.74466], {icon: SA_Logo}).addTo(map)); //Sheldon Avenue
-                //m_cluster.addLayer(L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
-            map.addLayer(m_cluster);
-
-            m_cluster.on("loaded", function(e) { 
-            	map.fitBounds(e.target.getBounds());
-            });
-
-
-
-            // Dirty hack; otherwise the cluster won't appear on the map.
-            map.zoomIn(0);
-            map.zoomOut(0);
-*/
-};
+    };
         </script>
 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
