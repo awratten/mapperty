@@ -36,11 +36,19 @@
                 position: relative;
                 top: 0;
             }
+            #logo{
+                position:fixed;
+                top:50px;
+                left:100px;
+                z-index:2000;
+                height:40px;
+            }
+            
         </style>
     </head>
     <body>
 
-
+        <img id="logo" scr="/img/mapperty_grey.png">
         <div class="container-fluid">
 
         </div>
