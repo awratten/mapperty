@@ -77,7 +77,7 @@
             var AP_Logo = L.icon({
                 iconUrl: 'http://kenfrosthomes.com.au/app/uploads/AP_Logo2.png',
                 iconSize: [128, 44],
-                iconAnchor: [64, 22]
+                iconAnchor: [64, 0]
             });    
     
     
