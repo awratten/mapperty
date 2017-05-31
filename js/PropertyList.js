@@ -47,7 +47,7 @@ var KF_Logo = L.icon({
 
 
 var addressPoints = [
-    [-16.92412, 145.73986, "<a href='http://kenfrosthomes.com.au' target='_blank'><button class='btn'>Visit Website</button></a>", KF_Logo],
+    [-16.92412, 145.73986, "Kenfrost Homes Office", KF_Logo],
     [-16.83142, 145.69413, "<a href='http://kenfrosthomes.com.au/ainslie-place-north-point/' target='_blank'><button class='btn'>Visit Website</button></a>", AP_Logo],
     [-17.04103, 145.73976, "<a href='http://mtpeterestate.com.au' target='_blank'><button class='btn'>Visit Website</button></a>", MP_Logo],
     [-16.7963, 145.7083, "<a href='http://kenfrosthomes.com.au/half-moon-bay/' target='_blank'><button class='btn'>Visit Website</button></a>", HMB_Logo],
