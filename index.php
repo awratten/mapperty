@@ -75,11 +75,30 @@
             });
 
             var AP_Logo = L.icon({
-                iconUrl: 'http://kenfrosthomes.com.au/app/uploads/AP_Logo2.png',
+                iconUrl: '/img/kf_ap_icon.png',
                 iconSize: [128, 44],
                 iconAnchor: [64, 44]
             });    
-    
+            var HMB_Logo = L.icon({
+                iconUrl: '/img/kf_hmb_icon.png',
+                iconSize: [128, 79],
+                iconAnchor: [64, 79]
+            });    
+            var MP_Logo = L.icon({
+                iconUrl: '/img/kf_mp_icon.png',
+                iconSize: [128, 79],
+                iconAnchor: [64, 79]
+            });
+            var RE_Logo = L.icon({
+                iconUrl: '/img/kf_re_icon.png',
+                iconSize: [128, 79],
+                iconAnchor: [64, 79]
+            });
+            var SA_Logo = L.icon({
+                iconUrl: '/img/kf_sa_icon.png',
+                iconSize: [128, 79],
+                iconAnchor: [64, 79]
+            });     
     
 //L.marker([51.941196,4.512291], {icon: redMarker}).addTo(map);
 //L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf.")  
@@ -90,7 +109,10 @@
 
             var m_cluster = L.markerClusterGroup();
                 m_cluster.addLayer(L.marker([-16.83142, 145.69413], {icon: AP_Logo}).addTo(map)); //Ainslie Place
-                m_cluster.addLayer(L.marker([-17.04103, 145.73976], {icon: AP_Logo}).addTo(map)); //Mount Peter
+                m_cluster.addLayer(L.marker([-17.04103, 145.73976], {icon: MP_Logo}).addTo(map)); //Mount Peter
+                m_cluster.addLayer(L.marker([-16.7963, 145.7083], {icon: HMB_Logo}).addTo(map)); //Half Moon Bay
+                m_cluster.addLayer(L.marker([-16.98674, 145.73359], {icon: RE_Logo}).addTo(map)); //Rainforest Edge
+                m_cluster.addLayer(L.marker([-16.98912, 145.74466], {icon: SA_Logo}).addTo(map)); //Sheldon Avenue
                 //m_cluster.addLayer(L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
             map.addLayer(m_cluster);
 
