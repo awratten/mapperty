@@ -28,6 +28,9 @@
                 height: 100%;
                 width: 100%;
             }
+            .wrapper {
+                   #wrapper { position: relative; }
+            }
 
             #map {
                 height: 100%;
@@ -49,14 +52,14 @@
     <body>
 
         
-        <div class="container-fluid">
-
-        </div>
+        <div class="wrapper">
 
         <div id='map' class="container-fluid"></div>
         
         <img id="logo" scr="/img/mapperty_grey.png">
-
+        
+        </div>
+        
         <script src="js/geoSearch_include.js" type="text/javascript"></script>
         
         <script>
