@@ -95,7 +95,9 @@
             map.addLayer(m_cluster);
 
 
-
+            m_cluster.on('click', function(e){
+                map.setView(e.latlng, 13);
+            });
 
         </script>
 
