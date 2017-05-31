@@ -43,7 +43,7 @@
                 z-index:2000;
                 height:72px;
                 width:256px;
-                background-image: url("http://www.mapperty.co/img/mapperty_grey_shadow.png");
+                background-image: url("http://www.mapperty.co/img/mapperty_white_shadow.png");
                 background-repeat: no-repeat;
                 background-position: left top;
             }
