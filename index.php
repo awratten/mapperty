@@ -133,6 +133,8 @@
             m_cluster.on('click', function(e){
                 map.setView(e.latlng, 17);
             });
+            
+            m_cluster.refreshClusters();
 
             var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
             var kml_MP = new L.KML("/kml/MountPeterEstate.kml", {async: true});
