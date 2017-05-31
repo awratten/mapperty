@@ -15,7 +15,13 @@
             width: 100%;
         }
 
-        #map { height: 800px;}
+        #map {
+            height: 100%;
+            width: 100%;
+            left: 0;
+            position: relative;
+            top: 0;
+        }
     </style>
   </head>
   <body>
