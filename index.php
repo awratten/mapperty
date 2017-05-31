@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <style>
-      #map { height: 800px;}
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #map { height: 800px;}
     </style>
   </head>
   <body>
