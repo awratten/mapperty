@@ -73,8 +73,16 @@
             var defaultMarker = L.AwesomeMarkers.icon({
                 markerColor: 'blue'
             });
-      
-            //L.marker([51.941196,4.512291], {icon: redMarker}).addTo(map);
+
+            var AP_Logo = L.icon({
+                iconUrl: 'http://kenfrosthomes.com.au/app/uploads/AP_Logo2.png',
+                iconSize: [257, 88],
+                iconAnchor: [128, 88],
+                popupAnchor: [-3, -76]
+            });    
+    
+    
+//L.marker([51.941196,4.512291], {icon: redMarker}).addTo(map);
             
 
 //document.getElementById("myButton").addEventListener("click", function(){
@@ -82,7 +90,7 @@
 //});
 
             var m_cluster = L.markerClusterGroup();
-                m_cluster.addLayer(L.marker([-16.9186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
+                m_cluster.addLayer(L.marker([-16.9186,145.7781], {icon: AP_Logo}).addTo(map).bindPopup("I am a green leaf."));
                 m_cluster.addLayer(L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
             map.addLayer(m_cluster);
 
