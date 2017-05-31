@@ -61,7 +61,7 @@
     </head>
     <body>
         <div id='map' class="container-fluid"></div>
-        <div id="logo"></div>
+        <div id="logo" style="display: none"></div>
                 
         <?php #echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>" ?>
         
