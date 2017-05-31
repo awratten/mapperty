@@ -73,31 +73,33 @@
             var defaultMarker = L.AwesomeMarkers.icon({
                 markerColor: 'blue'
             });
+            var Def_IconSize = [128,64];
+            var Def_IconAnchor = [64,32];
 
             var AP_Logo = L.icon({
                 iconUrl: '/img/estate_AinsliePlace_icon.png',
-                iconSize: [64, 32],
-                iconAnchor: [32, 16]
+                iconSize: Def_IconSize,
+                iconAnchor: Def_IconAnchor
             });
             var HMB_Logo = L.icon({
                 iconUrl: '/img/estate_HalfMoonBay_icon.png',
-                iconSize: [64, 32],
-                iconAnchor: [32, 16]
+                iconSize: Def_IconSize,
+                iconAnchor: Def_IconAnchor
             });
             var MP_Logo = L.icon({
                 iconUrl: '/img/estate_MountPeter_icon.png',
-                iconSize: [64, 32],
-                iconAnchor: [32, 16]
+                iconSize: Def_IconSize,
+                iconAnchor: Def_IconAnchor
             });
             var RE_Logo = L.icon({
                 iconUrl: '/img/estate_RainforestEdge_icon.png',
-                iconSize: [64, 32],
-                iconAnchor: [32, 16]
+                iconSize: Def_IconSize,
+                iconAnchor: Def_IconAnchor
             });
             var SA_Logo = L.icon({
                 iconUrl: '/img/estate_SheldonAve_icon.png',
-                iconSize: [64, 32],
-                iconAnchor: [32, 16]
+                iconSize: Def_IconSize,
+                iconAnchor: Def_IconAnchor
             });
 
 //L.marker([51.941196,4.512291], {icon: redMarker}).addTo(map);
