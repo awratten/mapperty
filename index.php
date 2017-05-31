@@ -29,7 +29,7 @@
                 width: 100%;
             }
             .wrapper {
-                   #wrapper { position: relative; }
+                    position: relative;
             }
 
             #map {
