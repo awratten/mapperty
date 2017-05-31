@@ -75,14 +75,16 @@
             });
       
             //L.marker([51.941196,4.512291], {icon: redMarker}).addTo(map);
-            L.marker([-16.9186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf.");
+            
 
 //document.getElementById("myButton").addEventListener("click", function(){
 //    geoSearchController.geosearch('New York');
 //});
 
+            var m_cluster = L.markerClusterGroup();
+                m_cluster.addLayer(L.marker([-16.9186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
 
-
+            map.addLayer(m_cluster);
 
 
 
