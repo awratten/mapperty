@@ -46,8 +46,8 @@
         <script>
 
 //SRC CODE ABOVE HERE
-
-            var map = L.map('map').setView(function(){geoSearchController.geosearch('Cairns');}, 13);
+//16.9186° S, 145.7781° E
+            var map = L.map('map').setView([-16.9186,145.7781] , 13);
 
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
