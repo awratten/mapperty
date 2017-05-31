@@ -41,14 +41,16 @@
                 top:50px;
                 left:100px;
                 z-index:2000;
-                height:40px;
+                height:72px;
+                width:257px;
+                background-image: url("http://www.mapperty.co/img/mapperty_black.png");
             }
             
         </style>
     </head>
     <body>
         <div id='map' class="container-fluid"></div>
-        <img id="logo" scr="http://www.mapperty.co/img/mapperty_black.png">
+        <div id="logo"></div>
                 
         <script src="js/geoSearch_include.js" type="text/javascript"></script>
         
