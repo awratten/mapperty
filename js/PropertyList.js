@@ -47,3 +47,9 @@ var addressPoints = [
 ];
 
 
+var kmlList = [
+  ["/kml/HMB.kml"],  
+  ["/kml/AP.kml"],
+  ["/kml/MountPeterEstate.kml"],
+  ["/kml/SheldonAvenue.kml"]
+];

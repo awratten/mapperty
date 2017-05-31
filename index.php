@@ -104,7 +104,21 @@
 		}
 
 		map.addLayer(markers);
+                
 
+
+                var kmls = L.layerGroup();
+
+                for (var i = 0; i < kmlList.length; i++) {
+                    var a = kmlList[i];
+                    var kml = L.KML( a[0] , {async: true});
+                    kmls.addLayer(kml);
+                }
+
+                map.addLayer(kmls);
+/
+* 
+        *
             var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
             var kml_MP = new L.KML("/kml/MountPeterEstate.kml", {async: true});
             var kml_AP = new L.KML("/kml/AP.kml", {async: true});
@@ -113,7 +127,7 @@
             map.addLayer(kml_MP);
             map.addLayer(kml_AP);
             map.addLayer(kml_HMB);
-
+*/
     };
         </script>
 
