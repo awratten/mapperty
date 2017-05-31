@@ -48,16 +48,14 @@
     </head>
     <body>
 
-        <img id="logo" scr="/img/mapperty_grey.png">
+        
         <div class="container-fluid">
 
         </div>
 
-        <div id='map' class="container-fluid">
-
-
-        </div>
-
+        <div id='map' class="container-fluid"></div>
+        
+        <img id="logo" scr="/img/mapperty_grey.png">
 
         <script src="js/geoSearch_include.js" type="text/javascript"></script>
         
