@@ -63,7 +63,7 @@
         <div id='map' class="container-fluid"></div>
         <div id="logo"></div>
                 
-        <script src="js/geoSearch_include.js" type="text/javascript"></script>
+        <?php #echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>" ?>
         
         <script>
 
