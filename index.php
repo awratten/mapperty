@@ -125,8 +125,8 @@
             });
 
             // Dirty hack; otherwise the cluster won't appear on the map.
-            map.zoomIn(0);
-            map.zoomOut(0);
+            map.zoomIn(1);
+            map.zoomOut(1);
 
         </script>
 
