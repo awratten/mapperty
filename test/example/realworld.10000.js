@@ -13,7 +13,7 @@ var SA_Logo = L.icon({
 });
 
 var addressPoints = [
-[-37.8839, 175.3745188667, "571", SA_Logo],
+[-37.8839, 175.3745188667, "<a href='http://kenfrosthomes.com.au/ainslie-place-north-point/' target='_blank'><button class='btn'>Visit Website</button></a>", SA_Logo],
 [-37.8869090667, 175.3657417333, "486", SA_Logo],
 [-37.8894207167, 175.4015351167, "807", SA_Logo],
 [-37.8927369333, 175.4087452333, "899", SA_Logo],
