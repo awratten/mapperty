@@ -108,11 +108,11 @@
 //});
 
             var m_cluster = L.markerClusterGroup();
-                m_cluster.addLayer(L.marker([-16.83142, 145.69413], {icon: defaultMarker}).addTo(map).bindPopup("<img src=/img/kf_ap_icon.png'>")); //Ainslie Place
-                m_cluster.addLayer(L.marker([-17.04103, 145.73976], {icon: defaultMarker}).addTo(map).bindPopup("<img src=/img/kf_mp_icon.png'>")); //Mount Peter
-                m_cluster.addLayer(L.marker([-16.7963, 145.7083], {icon: defaultMarker}).addTo(map).bindPopup("<img src=/img/kf_hmb_icon.png'>")); //Half Moon Bay
-                m_cluster.addLayer(L.marker([-16.98674, 145.73359], {icon: defaultMarker}).addTo(map).bindPopup("<img src=/img/kf_re_icon.png'>")); //Rainforest Edge
-                m_cluster.addLayer(L.marker([-16.98912, 145.74466], {icon: defaultMarker}).addTo(map).bindPopup("<img src=/img/kf_sa_icon.png'>")); //Sheldon Avenue
+                m_cluster.addLayer(L.marker([-16.83142, 145.69413], {icon: defaultMarker}).addTo(map).bindPopup("<img src='/img/kf_ap_icon.png'>")); //Ainslie Place
+                m_cluster.addLayer(L.marker([-17.04103, 145.73976], {icon: defaultMarker}).addTo(map).bindPopup("<img src='/img/kf_mp_icon.png'>")); //Mount Peter
+                m_cluster.addLayer(L.marker([-16.7963, 145.7083], {icon: defaultMarker}).addTo(map).bindPopup("<img src='/img/kf_hmb_icon.png'>")); //Half Moon Bay
+                m_cluster.addLayer(L.marker([-16.98674, 145.73359], {icon: defaultMarker}).addTo(map).bindPopup("<img src='/img/kf_re_icon.png'>")); //Rainforest Edge
+                m_cluster.addLayer(L.marker([-16.98912, 145.74466], {icon: defaultMarker}).addTo(map).bindPopup("<img src='/img/kf_sa_icon.png'>")); //Sheldon Avenue
                 //m_cluster.addLayer(L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
             map.addLayer(m_cluster);
 
