@@ -39,9 +39,9 @@
             #logo{
                 position:fixed;
                 top:5px;
-                left:100px;
+                bottom:5px;
                 z-index:2000;
-                height:72px;
+                height:85px;
                 width:256px;
                 background-image: url("http://www.mapperty.co/img/mapperty_white_shadow.png");
                 background-repeat: no-repeat;
