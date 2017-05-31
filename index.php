@@ -116,9 +116,9 @@
                 //m_cluster.addLayer(L.marker([-16.8186,145.7781], {icon: defaultMarker}).addTo(map).bindPopup("I am a green leaf."));
             map.addLayer(m_cluster);
 
-            m_cluster.on("loaded", function(e) { 
-            	map.fitBounds(e.target.getBounds());
-            });
+            //m_cluster.on("loaded", function(e) { 
+            //	map.fitBounds(e.target.getBounds());
+            //});
 
             m_cluster.on('click', function(e){
                 map.setView(e.latlng, 17);
