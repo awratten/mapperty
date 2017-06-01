@@ -64,10 +64,7 @@
         <?php if (filter_input(INPUT_GET, 'logo', FILTER_SANITIZE_STRING) == 'true') { echo "<div id='logo'></div>";}?>
         <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') { echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>"; }?>
 
-        <?php
-        filter_input(INPUT_GET, 'logo', FILTER_SANITIZE_STRING);
-        ?>
-        
+
         <script>
     window.onload = function() {
 
@@ -82,7 +79,7 @@
             
 
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                attribution: '<a href="http://mapperty.co">Mapperty</a> | Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
                 maxZoom: 18,
                 id: 'mapbox.light',
                 accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
