@@ -111,6 +111,11 @@
             //    map.fitBounds(e.getBounds());
             //});
             
+            markers.on('click', function(e){
+                 map.setView(e.latlng, 15);
+            });
+            
+            
             //load kmlList from PropertyList.js
             
             for ( var i = 0; i < kmlList.length; i++) {
