@@ -99,7 +99,7 @@
             
             for ( var i = 0; i < kmlList.length; i++) {
                 var kml = kmlList[i];
-                L.KML( kml , {async: true}).addTo(map);
+                new L.KML( kml , {async: true}).addTo(map);
             }
 /*
             var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
