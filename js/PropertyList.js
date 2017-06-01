@@ -60,4 +60,5 @@ var kmlList = [
   ["/kml/AP.kml"],
   ["/kml/MountPeterEstate.kml"],
   ["/kml/SheldonAvenue.kml"]
+  ["/kml/RainforestEdge.kml"]
 ];
