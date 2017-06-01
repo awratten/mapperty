@@ -12,22 +12,21 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
-        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
-        <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+        <?php #<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">?>
+        <?php #<link rel="stylesheet" href="css/leaflet.awesome-markers.css">?>
 
-        <script src="js/leaflet.awesome-markers.js"></script>
+        <?php #<script src="js/leaflet.awesome-markers.js"></script> ?>
         
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet.geosearch/0.1/css/l.geosearch.css" />
         <script src="https://cdn.jsdelivr.net/leaflet.geosearch/0.1/js/l.geosearch.provider.google.js"></script>
         
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.0.5/dist/MarkerCluster.Default.css"/>
-        <script src="https://unpkg.com/leaflet.markercluster@1.0.5/dist/leaflet.markercluster.js"></script>
-        
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.0.5/dist/MarkerCluster.css"/>
+        <script src="https://unpkg.com/leaflet.markercluster@1.0.5/dist/leaflet.markercluster.js"></script>
         <script src="http://leaflet.github.io/Leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
         
         <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet-plugins/3.0.0/layer/vector/KML.js'></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier-Leaflet/0.2.6/oms.min.js"></script>
+
         
         <script src="js/PropertyList.js" type="text/javascript"></script>
 
@@ -70,13 +69,12 @@
 
             var map = L.map('map').setView([-16.92412, 145.73986] , 12);
 
-            <?php if ($_GET['search'] == 'true') {
+            <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
                 echo "var geoSearchController = new L.Control.GeoSearch({";
                 echo "provider: new L.GeoSearch.Provider.Google()";
                 echo "}).addTo(map);";
             }
             ?>
-            
 
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                 attribution: '<a href="http://mapperty.co">Mapperty</a> | Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -85,14 +83,8 @@
                 accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
             }).addTo(map);
 
-
-        // Creates a red marker with the coffee icon
-            var defaultMarker = L.AwesomeMarkers.icon({
-                markerColor: 'blue'
-            });
-
             var markers = L.markerClusterGroup({ chunkedLoading: true });
-		
+
             for (var i = 0; i < addressPoints.length; i++) {
 		var a = addressPoints[i];
 		var title = a[2];
@@ -103,7 +95,6 @@
             }
 
             map.addLayer(markers);
-
 
             var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
             var kml_MP = new L.KML("/kml/MountPeterEstate.kml", {async: true});
