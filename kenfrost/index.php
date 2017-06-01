@@ -56,7 +56,7 @@
                 background-position: left bottom;
             }
             
-            .leaflet-marker-icon {
+            .leaflet-marker-icon.estate {
                 
                     border-radius: 16px;
 

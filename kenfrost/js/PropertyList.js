@@ -7,38 +7,52 @@ var Start_Zoom = 12;
 var Def_IconSize = [128, 64];
 var Def_IconAnchor = [64, 64];
 var Def_PopupAnchor = [0, -64];
+var Def_Class = "estate";
 
 var AP_Logo = L.icon({
     iconUrl: './img/estate_AinsliePlace_icon.png',
     iconSize: Def_IconSize,
     iconAnchor: Def_IconAnchor,
-    popupAnchor: Def_PopupAnchor
-
+    popupAnchor: Def_PopupAnchor,
+    className: Def_Class
 });
 var HMB_Logo = L.icon({
     iconUrl: './img/estate_HalfMoonBay_icon.png',
     iconSize: Def_IconSize,
     iconAnchor: Def_IconAnchor,
-    popupAnchor: Def_PopupAnchor
+    popupAnchor: Def_PopupAnchor,
+    className: Def_Class
 });
 var MP_Logo = L.icon({
     iconUrl: './img/estate_MountPeter_icon.png',
     iconSize: Def_IconSize,
     iconAnchor: Def_IconAnchor,
-    popupAnchor: Def_PopupAnchor
+    popupAnchor: Def_PopupAnchor,
+    className: Def_Class
 });
 var RE_Logo = L.icon({
     iconUrl: './img/estate_RainforestEdge_icon.png',
     iconSize: Def_IconSize,
     iconAnchor: Def_IconAnchor,
-    popupAnchor: Def_PopupAnchor
+    popupAnchor: Def_PopupAnchor,
+    className: Def_Class
 });
 var SA_Logo = L.icon({
     iconUrl: './img/estate_SheldonAve_icon.png',
     iconSize: Def_IconSize,
     iconAnchor: Def_IconAnchor,
-    popupAnchor: Def_PopupAnchor
+    popupAnchor: Def_PopupAnchor,
+    className: Def_Class
 });
+
+var SM_Logo = L.icon({
+    iconUrl: './img/estate_SmithfieldVillage_icon.png',
+    iconSize: Def_IconSize,
+    iconAnchor: Def_IconAnchor,
+    popupAnchor: Def_PopupAnchor,
+    className: Def_Class
+});
+
 
 var KF_Logo = L.icon({
     iconUrl: './img/KF_Logo.png',
@@ -47,12 +61,6 @@ var KF_Logo = L.icon({
     popupAnchor: [0, -9]
 });
 
-var SM_Logo = L.icon({
-    iconUrl: './img/estate_SmithfieldVillage_icon.png',
-    iconSize: Def_IconSize,
-    iconAnchor: Def_IconAnchor,
-    popupAnchor: Def_PopupAnchor
-});
 
 var addressPoints = [
     [-16.92412, 145.73986, "<strong>Kenfrost Homes Office</strong><br>75-77 Alfred Street<br>Manunda QLD 4870", KF_Logo],
