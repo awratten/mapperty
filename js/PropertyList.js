@@ -45,7 +45,6 @@ var KF_Logo = L.icon({
 });
 
 
-
 var addressPoints = [
     [-16.92412, 145.73986, "<strong>Kenfrost Homes Office</strong><br>75-77 Alfred Street<br>Manunda QLD 4870", KF_Logo],
     [-16.83142, 145.69413, "<a href='http://kenfrosthomes.com.au/ainslie-place-north-point/' target='_blank'><button class='btn'>Visit Website</button></a>", AP_Logo],

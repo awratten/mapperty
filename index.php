@@ -83,8 +83,9 @@
                 accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
             }).addTo(map);
 
+            //Load Markers from PropertyList.js
             var markers = L.markerClusterGroup({ chunkedLoading: true });
-
+            
             for (var i = 0; i < addressPoints.length; i++) {
 		var a = addressPoints[i];
 		var title = a[2];
@@ -96,21 +97,11 @@
 
             map.addLayer(markers);
             
+            //load kmlList from PropertyList.js
             
             for ( var i = 0; i < kmlList.length; i++) {
-                var kml = kmlList[i];
-                new L.KML( kml , {async: true}).addTo(map);
+                new L.KML( kmlList[i] , {async: true}).addTo(map);
             }
-/*
-            var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
-            var kml_MP = new L.KML("/kml/MountPeterEstate.kml", {async: true});
-            var kml_AP = new L.KML("/kml/AP.kml", {async: true});
-            var kml_HMB = new L.KML("/kml/HMB.kml", {async: true});
-            map.addLayer(kml_SA);
-            map.addLayer(kml_MP);
-            map.addLayer(kml_AP);
-            map.addLayer(kml_HMB);
-*/
     };
         </script>
 
