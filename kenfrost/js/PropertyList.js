@@ -9,46 +9,46 @@ var Def_IconAnchor = [64, 64];
 var Def_PopupAnchor = [0, -64];
 
 var AP_Logo = L.icon({
-    iconUrl: '/img/estate_AinsliePlace_icon.png',
+    iconUrl: '../img/estate_AinsliePlace_icon.png',
     iconSize: Def_IconSize,
     iconAnchor: Def_IconAnchor,
     popupAnchor: Def_PopupAnchor
 
 });
 var HMB_Logo = L.icon({
-    iconUrl: '/img/estate_HalfMoonBay_icon.png',
+    iconUrl: '../img/estate_HalfMoonBay_icon.png',
     iconSize: Def_IconSize,
     iconAnchor: Def_IconAnchor,
     popupAnchor: Def_PopupAnchor
 });
 var MP_Logo = L.icon({
-    iconUrl: '/img/estate_MountPeter_icon.png',
+    iconUrl: '../img/estate_MountPeter_icon.png',
     iconSize: Def_IconSize,
     iconAnchor: Def_IconAnchor,
     popupAnchor: Def_PopupAnchor
 });
 var RE_Logo = L.icon({
-    iconUrl: '/img/estate_RainforestEdge_icon.png',
+    iconUrl: '../img/estate_RainforestEdge_icon.png',
     iconSize: Def_IconSize,
     iconAnchor: Def_IconAnchor,
     popupAnchor: Def_PopupAnchor
 });
 var SA_Logo = L.icon({
-    iconUrl: '/img/estate_SheldonAve_icon.png',
+    iconUrl: '../img/estate_SheldonAve_icon.png',
     iconSize: Def_IconSize,
     iconAnchor: Def_IconAnchor,
     popupAnchor: Def_PopupAnchor
 });
 
 var KF_Logo = L.icon({
-    iconUrl: '/img/KF_Logo.png',
+    iconUrl: '../img/KF_Logo.png',
     iconSize: [16, 19],
     iconAnchor: [8, 9],
     popupAnchor: [0, -9]
 });
 
 var SM_Logo = L.icon({
-    iconUrl: '/img/estate_SmithfieldVillage_icon.png',
+    iconUrl: '../img/estate_SmithfieldVillage_icon.png',
     iconSize: Def_IconSize,
     iconAnchor: Def_IconAnchor,
     popupAnchor: Def_PopupAnchor
@@ -66,9 +66,9 @@ var addressPoints = [
 
 
 var kmlList = [
-  ["/kml/HMB.kml"],  
-  ["/kml/AP.kml"],
-  ["/kml/MountPeterEstate.kml"],
-  ["/kml/SheldonAvenue.kml"],
-  ["/kml/RainforestEdge.kml"]
+  ["../kml/HMB.kml"],  
+  ["../kml/AP.kml"],
+  ["../kml/MountPeterEstate.kml"],
+  ["../kml/SheldonAvenue.kml"],
+  ["../kml/RainforestEdge.kml"]
 ];
