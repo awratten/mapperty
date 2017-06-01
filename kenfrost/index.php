@@ -47,13 +47,19 @@
             #logo{
                 position:fixed;
                 left:5px;
-                bottom:5px;
+                bottom:0px;
                 z-index:2000;
                 height:85px;
                 width:256px;
                 background-image: url("http://www.mapperty.co/img/mapperty_white_beta.png");
                 background-repeat: no-repeat;
                 background-position: left bottom;
+            }
+            
+            .leaflet-marker-icon {
+                
+                    border-radius: 16px;
+
             }
             
         </style>
