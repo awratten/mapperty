@@ -62,13 +62,20 @@
     <body>
         <div id='map' class="container-fluid"></div>
         <div id="logo" style="display: none"></div>
-                
-        <?php #echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>" ?>
+
+        
+        <?php
+        if ($_GET['search'] == 'true') {
+            echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>";
+        }
+        ?>
+
         
         <script>
 
 //SRC CODE ABOVE HERE
 //16.9186° S, 145.7781° E
+
     window.onload = function() {
 
             var map = L.map('map').setView([-16.98720, 145.74003] , 10);
@@ -80,41 +87,26 @@
                 accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
             }).addTo(map);
 
-//            var geoSearchController = new L.Control.GeoSearch({
-//                provider: new L.GeoSearch.Provider.Google()
-//           }).addTo(map);
-            
-              // Creates a red marker with the coffee icon
+
+        // Creates a red marker with the coffee icon
             var defaultMarker = L.AwesomeMarkers.icon({
                 markerColor: 'blue'
             });
 
-		var markers = L.markerClusterGroup({ chunkedLoading: true });
+            var markers = L.markerClusterGroup({ chunkedLoading: true });
 		
-		for (var i = 0; i < addressPoints.length; i++) {
-			var a = addressPoints[i];
-			var title = a[2];
-                        var icon = a[3];
-			var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
-			marker.bindPopup(title);
-			markers.addLayer(marker);
-		}
+            for (var i = 0; i < addressPoints.length; i++) {
+		var a = addressPoints[i];
+		var title = a[2];
+                var icon = a[3];
+		var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
+		marker.bindPopup(title);
+		markers.addLayer(marker);
+            }
 
-		map.addLayer(markers);
-                
-
+            map.addLayer(markers);
 
 
-
-                for (var i = 0; i < kmlList.length; i++) {
-                    var a = kmlList[i];
-                    var kml = L.KML( a[0] , {async: true});
-                    kmls.addLayer(kml);
-                }
-
-                //map.addLayer(kmls);
-
-/* 
             var kml_SA = new L.KML("/kml/SheldonAvenue.kml", {async: true});
             var kml_MP = new L.KML("/kml/MountPeterEstate.kml", {async: true});
             var kml_AP = new L.KML("/kml/AP.kml", {async: true});
@@ -123,7 +115,7 @@
             map.addLayer(kml_MP);
             map.addLayer(kml_AP);
             map.addLayer(kml_HMB);
-*/
+
     };
         </script>
 

@@ -10,6 +10,8 @@
  * https://github.com/smeijer/L.GeoSearch
  */
 
+
+
 L.GeoSearch = {};
 L.GeoSearch.Provider = {};
 
@@ -320,3 +322,7 @@ L.GeoSearch.Provider.Google = L.Class.extend({
         });
     },
 });
+
+var geoSearchController = new L.Control.GeoSearch({
+    provider: new L.GeoSearch.Provider.Google()
+}).addTo(map);
