@@ -83,6 +83,10 @@
                 accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
             }).addTo(map);
 
+            var defaultMarker = L.AwesomeMarkers.icon({
+                markerColor: 'blue'
+            });
+
             var markers = L.markerClusterGroup({ chunkedLoading: true });
 
             for (var i = 0; i < addressPoints.length; i++) {
