@@ -107,8 +107,8 @@
 
             map.addLayer(markers);
             
-            markers.on('click', function() {
-                map.fitBounds(markers.getBounds());
+            markers.on('click', function(e) {
+                map.fitBounds(e.getBounds());
             });
             
             //load kmlList from PropertyList.js
