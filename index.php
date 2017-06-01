@@ -8,8 +8,25 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Mapperty</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
     </head>
+    
     <body>
+                <div class="container-fluid">
+
+    <img src="img/mapperty_black.svg">
+    
+    </div>
         <?php
         // put your code here
         ?>
