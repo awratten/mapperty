@@ -61,17 +61,11 @@
     </head>
     <body>
         <div id='map' class="container-fluid"></div>
-        <div id="logo" style="display: none"></div>
-
-        
+        <?php if ($_GET['logo'] == 'true') { echo "<div id='logo'></div>";}?>
         <?php if ($_GET['search'] == 'true') { echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>"; }?>
 
         
         <script>
-
-//SRC CODE ABOVE HERE
-//16.9186° S, 145.7781° E
-
     window.onload = function() {
 
             var map = L.map('map').setView([-16.98720, 145.74003] , 10);
