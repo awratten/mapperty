@@ -61,9 +61,12 @@
     </head>
     <body>
         <div id='map' class="container-fluid"></div>
-        <?php if ($_GET['logo'] == 'true') { echo "<div id='logo'></div>";}?>
-        <?php if ($_GET['search'] == 'true') { echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>"; }?>
+        <?php if (filter_input(INPUT_GET, 'logo', FILTER_SANITIZE_STRING) == 'true') { echo "<div id='logo'></div>";}?>
+        <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') { echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>"; }?>
 
+        <?php
+        filter_input(INPUT_GET, 'logo', FILTER_SANITIZE_STRING);
+        ?>
         
         <script>
     window.onload = function() {
