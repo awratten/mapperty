@@ -22,10 +22,12 @@ and open the template in the editor.
     </head>
     
     <body>
-                <div class="container-fluid">
-
-    <img src="img/mapperty_black.svg">
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+            <img src="img/mapperty_black.svg">
+            </div>
+        </div>
     </div>
         <?php
         // put your code here
