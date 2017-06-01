@@ -3302,6 +3302,7 @@ Land Area: 599m<sup>2</sup>
 		</Folder>
 		<Placemark>
 			<name>Mount Peter Estate</name>
+			<visibility>0</visibility>
 			<open>1</open>
 			<styleUrl>#msn_ylw-pushpin4</styleUrl>
 			<Polygon>
