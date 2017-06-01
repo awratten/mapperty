@@ -68,7 +68,7 @@ var addressPoints = [
 var kmlList = [
   ["/kml/HMB.kml"],  
   ["/kml/AP.kml"],
-  ["/kml/MountPeter_lots.kml"],
+  ["/kml/Stage 1 - Mount Peter.kml"],
   ["/kml/SheldonAvenue.kml"],
   ["/kml/RainforestEdge.kml"]
 ];
