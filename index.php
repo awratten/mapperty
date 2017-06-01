@@ -112,7 +112,7 @@
             //});
             
             markers.on('click', function(e){
-                 map.setView(e.latlng, 15);
+                 map.setView(e.latlng, 16);
             });
             
             
