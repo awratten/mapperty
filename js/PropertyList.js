@@ -1,6 +1,9 @@
 // Kenfrost Homes - List of Estates with Logos and Office locations
 // 1/06/2017
 
+var Start_LatLong = [-16.92412, 145.73986];
+var Start_Zoom = 12;
+
 var Def_IconSize = [128, 64];
 var Def_IconAnchor = [64, 64];
 var Def_PopupAnchor = [0, -64];

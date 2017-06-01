@@ -77,7 +77,7 @@
         <script>
     window.onload = function() {
 
-            var map = L.map('map').setView([-16.92412, 145.73986] , 12);
+            var map = L.map('map').setView( Start_LatLong , Start_Zoom);
 
             <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
                 echo "var geoSearchController = new L.Control.GeoSearch({";
