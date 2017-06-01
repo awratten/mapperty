@@ -44,9 +44,7 @@ var KF_Logo = L.icon({
     popupAnchor: [0, -9]
 });
 
-var defaultMarker = L.AwesomeMarkers.icon({
-    markerColor: 'blue'
-});
+
 
 var addressPoints = [
     [-16.92412, 145.73986, "<strong>Kenfrost Homes Office</strong><br>75-77 Alfred Street<br>Manunda QLD 4870", KF_Logo],
