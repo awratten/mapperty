@@ -1,5 +1,5 @@
-//An extract of address points from the LINZ bulk extract: http://www.linz.govt.nz/survey-titles/landonline-data/landonline-bde
-//Should be this data set: http://data.linz.govt.nz/#/layer/779-nz-street-address-electoral/
+// Kenfrost Homes - List of Estates with Logos and Office locations
+// 1/06/2017
 
 var Def_IconSize = [128, 64];
 var Def_IconAnchor = [64, 64];
