@@ -53,7 +53,7 @@
                 width:256px;
                 background-image: url("http://www.mapperty.co/img/mapperty_white_beta.png");
                 background-repeat: no-repeat;
-                background-position: left top;
+                background-position: left bottom;
             }
             
         </style>
