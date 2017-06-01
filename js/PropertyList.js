@@ -44,6 +44,12 @@ var KF_Logo = L.icon({
     popupAnchor: [0, -9]
 });
 
+var SM_Logo = L.icon({
+    iconUrl: '/img/estate_SmithfieldVillage_icon.png',
+    iconSize: Def_IconSize,
+    iconAnchor: Def_IconAnchor,
+    popupAnchor: Def_PopupAnchor
+});
 
 var addressPoints = [
     [-16.92412, 145.73986, "<strong>Kenfrost Homes Office</strong><br>75-77 Alfred Street<br>Manunda QLD 4870", KF_Logo],
@@ -51,7 +57,8 @@ var addressPoints = [
     [-17.04103, 145.73976, "<a href='http://mtpeterestate.com.au' target='_blank'><button class='btn'>Visit Website</button></a>", MP_Logo],
     [-16.7963, 145.7083, "<a href='http://kenfrosthomes.com.au/half-moon-bay/' target='_blank'><button class='btn'>Visit Website</button></a>", HMB_Logo],
     [-16.98674, 145.73359, "<a href='http://rainforest-edge.com.au' target='_blank'><button class='btn'>Visit Website</button></a>", RE_Logo],
-    [-16.98908, 145.74497, "<a href='http://sheldonavenue.com.au' target='_blank'><button class='btn'>Visit Website</button></a>", SA_Logo]
+    [-16.98908, 145.74497, "<a href='http://sheldonavenue.com.au' target='_blank'><button class='btn'>Visit Website</button></a>", SA_Logo],
+    [-16.8088, 145.6966, "<a href='http://smithfieldvillage.com.au' target='_blank'><button class='btn'>Visit Website</button></a>", SM_Logo]
 ];
 
 
