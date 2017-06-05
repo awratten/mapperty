@@ -20,11 +20,11 @@ and open the template in the editor.
             }
         </style>
     </head>
-    
+
     <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 text-center">
             <img src="img/mapperty_black.svg">
             </div>
         </div>
