@@ -194,9 +194,10 @@ L.Control.GeoSearch = L.Control.extend({
         if (this.options.showMarker === true) {
             if (typeof this._positionMarker === 'undefined') {
                 this._positionMarker = L.marker(
-                    [location.Y, location.X], {title : location.Y + '<br>' + location.X },
+                    [location.Y, location.X], {title : location.Y + ' ' + location.X },
                     {draggable: this.options.draggable}
                 ).addTo(this._map);
+                this._positionMarker().bindPopup( location.Y + ' ' + location.X );
             }
             else {
                 this._positionMarker.setLatLng([location.Y, location.X]);
