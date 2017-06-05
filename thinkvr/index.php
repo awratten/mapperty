@@ -120,7 +120,7 @@
                 animateZoom: true,                                  // optional: true|false  - default true
                 autoClose: false,                                   // optional: true|false  - default false
                 searchLabel: 'Enter address'                        // optional: string      - default 'Enter address'
-                });
+                }).addTo(map);
                 
 
                 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
