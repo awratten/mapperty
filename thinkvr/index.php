@@ -101,10 +101,27 @@
                 var map = L.map('map').setView(Start_LatLong, Start_Zoom);
 
         <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
-            echo "var geoSearchController = new L.Control.GeoSearch({";
-            echo "provider: new L.GeoSearch.Provider.Google()";
-            echo "}).addTo(map);";
+            #echo "var geoSearchController = new L.Control.GeoSearch({";
+            #echo "provider: new L.GeoSearch.Provider.Google()";
+            #echo "}).addTo(map);";
         } ?>
+                
+                var geoSearchController = new L.Control.GeoSearch({
+                provider: new L.GeoSearch.Provider.Google(),                               // required
+                showMarker: true,                                   // optional: true|false  - default true
+                showPopup: true,                                   // optional: true|false  - default false
+                marker: {                                           // optional: L.Marker    - default L.Icon.Default
+                icon: new L.Icon.Default(),
+                draggable: false
+                },
+                popupFormat: ({ query, result }) => result.label,   // optional: function    - default returns result label
+                maxMarkers: 1,                                      // optional: number      - default 1
+                retainZoomLevel: false,                             // optional: true|false  - default false
+                animateZoom: true,                                  // optional: true|false  - default true
+                autoClose: false,                                   // optional: true|false  - default false
+                searchLabel: 'Enter address'                        // optional: string      - default 'Enter address'
+                });
+                
 
                 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                     attribution: '<a href="http://mapperty.co">Mapperty</a> | Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
