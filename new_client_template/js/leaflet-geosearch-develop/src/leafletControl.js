@@ -10,7 +10,7 @@ const defaultOptions = () => ({
   style: 'button',
   showMarker: true,
   showPopup: false,
-  popupFormat: ({ result }) => '${result.label}',
+  popupFormat: ({ result }) => `${result.label}`,
   marker: {
     icon: new L.Icon.Default(),
     draggable: false,
@@ -46,7 +46,7 @@ const Control = {
 
     const { style, classNames, searchLabel, autoComplete, autoCompleteDelay } = this.options;
     if (style !== 'button') {
-      this.options.classNames.container += ' ${options.style}';
+      this.options.classNames.container += ` ${options.style}`;
     }
 
     this.searchElement = new GeoSearchElement({
