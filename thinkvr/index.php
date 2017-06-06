@@ -120,7 +120,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <iframe name='VRFrame' style="width:100%;  height:100vh; display:block;"></iframe>
+                        <iframe name='VRFrame' style="width:100%;  height:80vh; display:block;"></iframe>
                     </div>
 
                 </div>
