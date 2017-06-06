@@ -24,8 +24,7 @@ var addressPoints = [
     [-16.914489,145.75140250000004, "<a href='https://www.thinkvirtualreality.com.au/tour/39-anderson-street-manunda-qld-4870/fullscreen/' target='VRFrame'><button class='btn' data-toggle='modal' data-target='#VRModal'>View Virtual Tour</button></a>", Icon_Logo],
     [-16.8987692,145.73216649999995, "<a href='https://www.thinkvirtualreality.com.au/tour/47-49-heavey-cres-whitfield/fullscreen/' target='VRFrame'><button class='btn' data-toggle='modal' data-target='#VRModal'>View Virtual Tour</button></a>", Icon_Logo],
     [-16.9524038,145.7498428, "<a href='https://www.thinkvirtualreality.com.au/tour/18-spotto-close-woree-qld-4868/fullscreen/' target='VRFrame'><button class='btn' data-toggle='modal' data-target='#VRModal'>View Virtual Tour</button></a>", Icon_Logo],
-    [-16.9407748,145.74167220000004, "<a href='https://www.thinkvirtualreality.com.au/tour/suite-4-466-mulgrave-road-earlville-cairns-corner-thomson-street/fullscreen/' target='VRFrame'><button class='btn' data-toggle='modal' data-target='#VRModal'>View Virtual Tour</button></a>", Icon_Logo],
-
+    [-16.9407748,145.74167220000004, "<a href='https://www.thinkvirtualreality.com.au/tour/suite-4-466-mulgrave-road-earlville-cairns-corner-thomson-street/fullscreen/' target='VRFrame'><button class='btn' data-toggle='modal' data-target='#VRModal'>View Virtual Tour</button></a>", Icon_Logo]
 ];
 
 
