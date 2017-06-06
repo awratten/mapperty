@@ -130,7 +130,7 @@
         <?php #Main javascript to load leaflet components and add propery markers from PropertyList.js ?>
         <script> 
             window.onload = function () {
-                var map = L.map('map').setView(Start_LatLong, Start_Zoom);
+                var map = L.map('map').setView(Start_LatLong, 16);
 
         <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
             echo "var geoSearchController = new L.Control.GeoSearch({";
