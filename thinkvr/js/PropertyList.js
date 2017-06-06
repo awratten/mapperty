@@ -5,7 +5,7 @@ var Start_LatLong = [-16.92412, 145.73986];
 var Start_Zoom = 12;
 
 var Def_IconSize = [32, 32];
-var Def_IconAnchor = [32, 32];
+var Def_IconAnchor = [Def_IconSize[0], Def_IconSize[1]];
 var Def_PopupAnchor = [((Def_IconSize[0])/2)*(-1), Def_IconSize[1]*(-1)];
 var Def_Class = "estate";
 
