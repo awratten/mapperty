@@ -197,7 +197,7 @@ L.Control.GeoSearch = L.Control.extend({
                     [location.Y, location.X], {title : location.Y + ' ' + location.X },
                     {draggable: this.options.draggable}
                 ).addTo(this._map);
-                console.log(location.Y + ' ' + location.X);
+                console.log(location.Y + ',' + location.X);
             }
             else {
                 this._positionMarker.setLatLng([location.Y, location.X]);
