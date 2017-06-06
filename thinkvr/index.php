@@ -114,7 +114,7 @@
                 <div class="modal-content">
                     
                     <div class="modal-body">
-                        <iframe id="VRFrame" src=""></iframe>
+                        <iframe id="VRFrame" name='VRFrame' src=""></iframe>
                     </div>
                     
                 </div>
