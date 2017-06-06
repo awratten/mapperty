@@ -127,7 +127,6 @@
             </div>
         </div>
 
-
         <?php #Main javascript to load leaflet components and add propery markers from PropertyList.js ?>
         <script> 
             window.onload = function () {
