@@ -6,7 +6,7 @@ var Start_Zoom = 12;
 
 var Def_IconSize = [32, 32];
 var Def_IconAnchor = [32, 32];
-var Def_PopupAnchor = [0, 0];
+var Def_PopupAnchor = [-16, -32];
 var Def_Class = "estate";
 
 var Icon_Logo = L.icon({
