@@ -109,6 +109,27 @@
             echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>";
         } ?>
 
+        <div class="modal fade" id="VRModal" tabindex="-1" role="dialog" aria-labelledby="VRModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="VRModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <?php #Main javascript to load leaflet components and add propery markers from PropertyList.js ?>
         <script> 
             window.onload = function () {
