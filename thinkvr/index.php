@@ -66,8 +66,8 @@
             
             #logo_client {
                 position:fixed;
-                left:20px;
-                top:0px;
+                left:70px;
+                top:15px;
                 z-index:2000;
                 height:78px;
                 width:400px;
@@ -100,8 +100,9 @@
         </script>
 
         <div id='map' class="container-fluid"></div>
-        <div id='logo_client'></div>
+        
         <?php if (filter_input(INPUT_GET, 'logo', FILTER_SANITIZE_STRING) === 'true') {
+            echo "<div id='logo_client'></div>";
             echo "<div id='logo'></div>";
         } ?>
         <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) === 'true') {
