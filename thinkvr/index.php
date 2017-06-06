@@ -103,21 +103,10 @@
                 right: 0;
                 bottom: 0;
                 left: 0;
-                border: 2px solid #3c7dcf;
-                border-radius: 0;
-                box-shadow: none;
             }
 
 
 
-            .modal-body {
-                position: absolute;
-                top: 50px;
-                bottom: 60px;
-                width: 100%;
-                font-weight: 300;
-                overflow: auto;
-            }
 
         </style>
     </head>
