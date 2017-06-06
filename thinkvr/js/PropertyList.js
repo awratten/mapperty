@@ -6,7 +6,7 @@ var Start_Zoom = 12;
 
 var Def_IconSize = [32, 32];
 var Def_IconAnchor = [32, 32];
-var Def_PopupAnchor = [0, -32];
+var Def_PopupAnchor = [0, 0];
 var Def_Class = "estate";
 
 var Icon_Logo = L.icon({
@@ -19,7 +19,7 @@ var Icon_Logo = L.icon({
 
 
 var addressPoints = [
-    [-17.0082434, 145.73571570000001, "<a href='#/' target='_blank'><button class='btn'>Visit Website</button></a>", Icon_Logo]
+    [-16.9255144,145.77569340000002, "<a href='https://www.thinkvirtualreality.com.au/tour/citi-central-offices-3d-vr-tour/fullscreen/' target='_blank'><button class='btn'>Visit Website</button></a>", Icon_Logo],
     
 
 ];
