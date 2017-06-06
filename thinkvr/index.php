@@ -108,23 +108,7 @@
                 box-shadow: none;
             }
 
-            .modal-header {
-                position: absolute;
-                top: 0;
-                right: 0;
-                left: 0;
-                height: 50px;
-                padding: 10px;
-                background: #6598d9;
-                border: 0;
-            }
 
-            .modal-title {
-                font-weight: 300;
-                font-size: 2em;
-                color: #fff;
-                line-height: 30px;
-            }
 
             .modal-body {
                 position: absolute;
@@ -135,25 +119,6 @@
                 overflow: auto;
             }
 
-            .modal-footer {
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                height: 60px;
-                padding: 10px;
-                background: #f1f3f5;
-            }
-
-
-            .btn-modal {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                margin-top: -20px;
-                margin-left: -100px;
-                width: 200px;
-            }
         </style>
     </head>
     <body>
