@@ -112,11 +112,16 @@
         <div class="modal fade" id="VRModal" tabindex="-1" role="dialog" aria-labelledby="VRModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    
-                    <div class="modal-body">
-                        <iframe id="VRFrame" name='VRFrame' src=""></iframe>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    
+                    <div class="modal-body">
+                        <iframe name='VRFrame' style="width:100%; height:100%"></iframe>
+                    </div>
+
                 </div>
             </div>
         </div>
