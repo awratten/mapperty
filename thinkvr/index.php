@@ -80,34 +80,6 @@
                 border-radius: 16px;
             }
 
-            .modal {
-                position: fixed;
-                top: 0;
-                right: auto;
-                bottom: auto;
-                left: auto;
-                overflow: hidden;
-            }
-
-            .modal-dialog {
-                position: fixed;
-                margin: 0;
-                width: 100%;
-                height: 100%;
-                padding: 0;
-            }
-
-            .modal-content {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-            }
-
-
-
-
         </style>
     </head>
     <body>
@@ -148,7 +120,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <iframe name='VRFrame' style="width:100%; height:100%"></iframe>
+                        <iframe name='VRFrame' style="width:100%; height:100%; display:block;"></iframe>
                     </div>
 
                 </div>
