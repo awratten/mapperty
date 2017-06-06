@@ -16,9 +16,6 @@ var Icon_Logo = L.icon({
     popupAnchor: Def_PopupAnchor,
     className: Def_Class
 });
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
 
 var addressPoints = [
     [-16.9255144,145.77569340000002, "<a href='https://www.thinkvirtualreality.com.au/tour/citi-central-offices-3d-vr-tour/fullscreen/' target='_blank'><button class='btn' data-toggle='modal' data-target='#VRModal'>View Virtual Tour</button></a>", Icon_Logo],
