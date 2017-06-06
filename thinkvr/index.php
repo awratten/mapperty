@@ -79,6 +79,12 @@
             .leaflet-marker-icon.estate {
                 border-radius: 16px;
             }
+            
+            .modal .modal-body {
+                max-height: 520px;
+                max-width: 900px;
+                overflow-y: auto;
+            }
         </style>
     </head>
     <body>
