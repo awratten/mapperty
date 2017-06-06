@@ -63,7 +63,19 @@
                 background-repeat: no-repeat;
                 background-position: left bottom;
             }
-
+            
+            #logo_client {
+                position:fixed;
+                left:20px;
+                top:0px;
+                z-index:2000;
+                height:78px;
+                width:400px;
+                background-image: url("./img/ThinkVR_Logo.png");
+                background-repeat: no-repeat;
+                background-position: left bottom;
+            }
+            
             .leaflet-marker-icon.estate {
                 border-radius: 16px;
             }
@@ -88,6 +100,7 @@
         </script>
 
         <div id='map' class="container-fluid"></div>
+        <div id='logo_client'></div>
         <?php if (filter_input(INPUT_GET, 'logo', FILTER_SANITIZE_STRING) === 'true') {
             echo "<div id='logo'></div>";
         } ?>
