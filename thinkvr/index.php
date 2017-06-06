@@ -82,7 +82,7 @@
 
             .modal {
                 position: fixed;
-                top: auto;
+                top: 0;
                 right: auto;
                 bottom: auto;
                 left: auto;
