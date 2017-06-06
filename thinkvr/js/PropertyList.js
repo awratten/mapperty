@@ -2,7 +2,7 @@
 // 1/06/2017
 
 var Start_LatLong = [-16.92412, 145.73986];
-var Start_Zoom = 14;
+var Start_Zoom = 18;
 
 var Def_IconSize = [32, 32];
 var Def_IconAnchor = [Def_IconSize[0], Def_IconSize[1]];
