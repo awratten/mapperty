@@ -29,7 +29,8 @@ var Icon_Logo = L.icon({
  ["./kml/Placeholder.kml"]
  ];
  */
-var featureGroup = L.featureGroup();
+
+
 
 var Stage1 = L.polygon([
     [-17.04210460046319, 145.7405432814109],
@@ -72,5 +73,10 @@ var Stage1 = L.polygon([
     [-17.04225267253366, 145.7401364954835],
     [-17.04210460046319, 145.7405432814109]
 ], {className: 'StageStyle'}).bindPopup("<strong>Stage 1</strong>");
-featureGroup.addLayer(Stage1);
 
+
+var StageList = [
+    [Stage1]
+    //[Stage2],
+    //[Stage3]
+];

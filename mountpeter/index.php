@@ -67,6 +67,15 @@
             .leaflet-marker-icon.estate {
                 border-radius: 16px;
             }
+            .StageStyle { 
+                stroke: #fff;
+                fill: #cfcfcf;
+                stroke-width: 1;  
+            }
+            .StageStyle:hover { 
+                stroke-width: 2;
+            }
+
         </style>
     </head>
     <body>
@@ -99,7 +108,8 @@
         <script> 
             window.onload = function () {
                 var map = L.map('map').setView(Start_LatLong, 14);
-
+                var featureGroup = L.featureGroup();
+                
         <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
             echo "var geoSearchController = new L.Control.GeoSearch({";
             echo "provider: new L.GeoSearch.Provider.Google()";
@@ -113,38 +123,10 @@
                     accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
                 }).addTo(map);
 
-                //Load Markers from PropertyList.js
-                /*
-                var markers = L.markerClusterGroup({chunkedLoading: true});
-                for (var i = 0; i < addressPoints.length; i++) {
-                    var a = addressPoints[i];
-                    var title = a[2];
-                    var icon = a[3];
-                    var marker = L.marker(L.latLng(a[0], a[1]), {icon: icon}, {title: title});
-                    marker.bindPopup(title);
-                    markers.addLayer(marker);
-                }
-                map.addLayer(markers);
-                */
-               
-                //markers.on('click', function(e) {
-                //    map.fitBounds(e.getBounds());
-                //});
-                
-                /*
-                markers.on('click', function (e) {
-                    map.setView(e.latlng, 16);
-                    //e.bindPopup(e.latlng);
-                });
-                */
-
-                //load kmlList from PropertyList.js
-                /*
-                for (var i = 0; i < kmlList.length; i++) {
-                        new L.KML(kmlList[i], {async: true}).addTo(map);
+                for (var i = 0; i < StageList.length; i++) {
+                        featureGroup.addLayer(StageList[i]);
                     }
                 };
-                */
                
                featureGroup.addTo(map);
         </script>
