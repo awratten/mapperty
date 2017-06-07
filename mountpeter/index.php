@@ -122,8 +122,10 @@
                     id: 'mapbox.light',
                     accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
                 }).addTo(map);
-                
-               var Stage1 = L.polygon([
+               
+    //var polygon = L.polygon(latlngs, {color: 'red'}).addTo(map);
+    
+                var Stage1 = L.polygon([
                     [-17.04210460046319, 145.7405432814109],
                     [-17.04202782650531, 145.7407450527677],
                     [-17.04232793901254, 145.7408939775661],
@@ -163,10 +165,8 @@
                     [-17.04232093132374, 145.7401630416431],
                     [-17.04225267253366, 145.7401364954835],
                     [-17.04210460046319, 145.7405432814109]
-                ], {className: 'StageStyle'}).bindPopup("<strong>Stage 1</strong>");
-
-               Stage1.addTo(map);
-               
+                ], {color: 'red'}).addTo(map);
+              
 
         </script>
 
