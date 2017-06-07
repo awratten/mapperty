@@ -124,7 +124,9 @@
                 }).addTo(map);
                
                 var Stage1_polygon = L.polygon(StageList[0], {color: 'red'}).addTo(map);
-                // zoom the map to the polygon
+                var Stage2_polygon = L.polygon(StageList[1], {color: 'red'}).addTo(map);
+                var Stage3_polygon = L.polygon(StageList[2], {color: 'red'}).addTo(map);
+                
                 map.fitBounds(Stage1_polygon.getBounds());
 
 
