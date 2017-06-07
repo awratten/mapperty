@@ -98,7 +98,7 @@
         <?php #Main javascript to load leaflet components and add propery markers from PropertyList.js ?>
         <script> 
             window.onload = function () {
-                var map = L.map('map').setView(Start_LatLong, Start_Zoom);
+                var map = L.map('map').setView(Start_LatLong, 14);
 
         <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
             echo "var geoSearchController = new L.Control.GeoSearch({";
@@ -137,10 +137,7 @@
                     //e.bindPopup(e.latlng);
                 });
                 */
-               
-                var Stage1 = L.polygon(Stage1Poly,{ className: 'StageStyle'}).bindPopup("<strong>Stage 1</strong>");
-                map.addLayer(Stage1);
-            
+
                 //load kmlList from PropertyList.js
                 /*
                 for (var i = 0; i < kmlList.length; i++) {
@@ -148,6 +145,8 @@
                     }
                 };
                 */
+               
+               featureGroup.addTo(map);
         </script>
 
         <?php #jQuery first, then Tether, then Bootstrap JS. ?>
