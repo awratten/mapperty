@@ -123,11 +123,9 @@
                     accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
                 }).addTo(map);
                
-    //var polygon = L.polygon(latlngs, {color: 'red'}).addTo(map);
-
-var Stage1_polygon = L.polygon(Stage1, {color: 'red'}).addTo(map);
-// zoom the map to the polygon
-map.fitBounds(Stage1_polygon.getBounds());
+                var Stage1_polygon = L.polygon(StageList[0], {color: 'red'}).addTo(map);
+                // zoom the map to the polygon
+                map.fitBounds(Stage1_polygon.getBounds());
 
 
         </script>
