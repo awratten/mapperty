@@ -77,7 +77,7 @@ var Stage1 = L.polygon([
     [-17.04210460046319, 145.7405432814109]
 ], {className: 'StageStyle'}).bindPopup("<strong>Stage 1</strong>");
 
-Stage1.addTo(map);
+
 
 var StageList = [
     [Stage1]

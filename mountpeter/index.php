@@ -123,7 +123,7 @@
                     accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
                 }).addTo(map);
                
-               StageList[0].addTo(map);
+               Stage1.addTo(map);
                
 
         </script>
