@@ -107,13 +107,14 @@
         } ?>
 
                 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                    attribution: '<a href="http://mapperty.co">Mapperty</a> | Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                    attribution: '<a href="http://mapperty.co">Mapperty</a> | <a href="http://openstreetmap.org">OpenStreetMap</a> | <a href="http://mapbox.com">Mapbox</a>',
                     maxZoom: 18,
                     id: 'mapbox.light',
                     accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
                 }).addTo(map);
 
                 //Load Markers from PropertyList.js
+                /*
                 var markers = L.markerClusterGroup({chunkedLoading: true});
                 for (var i = 0; i < addressPoints.length; i++) {
                     var a = addressPoints[i];
@@ -124,21 +125,29 @@
                     markers.addLayer(marker);
                 }
                 map.addLayer(markers);
-
+                */
+               
                 //markers.on('click', function(e) {
                 //    map.fitBounds(e.getBounds());
                 //});
-
+                
+                /*
                 markers.on('click', function (e) {
                     map.setView(e.latlng, 16);
                     //e.bindPopup(e.latlng);
                 });
-
+                */
+               
+                var Stage1 = L.polygon(Stage1Poly,{ className: 'StageStyle'}).bindPopup("<strong>Stage 1</strong>");
+                map.addLayer(Stage1);
+            
                 //load kmlList from PropertyList.js
+                /*
                 for (var i = 0; i < kmlList.length; i++) {
-                    new L.KML(kmlList[i], {async: true}).addTo(map);
-                }
-            };
+                        new L.KML(kmlList[i], {async: true}).addTo(map);
+                    }
+                };
+                */
         </script>
 
         <?php #jQuery first, then Tether, then Bootstrap JS. ?>
