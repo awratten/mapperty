@@ -124,11 +124,10 @@
                 }).addTo(map);
                
     //var polygon = L.polygon(latlngs, {color: 'red'}).addTo(map);
-    
-var latlngs = [[37, -109.05],[41, -109.03],[41, -102.05],[37, -102.04]];
-var polygon = L.polygon(latlngs, {color: 'red'}).addTo(map);
+
+var Stage1_polygon = L.polygon(Stage1, {color: 'red'}).addTo(map);
 // zoom the map to the polygon
-map.fitBounds(polygon.getBounds());
+map.fitBounds(Stage1_polygon.getBounds());
 
 
         </script>
