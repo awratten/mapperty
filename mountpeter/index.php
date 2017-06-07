@@ -108,7 +108,7 @@
         <script> 
             window.onload = function () {
                 var map = L.map('map').setView(Start_LatLong, 14);
-                var featureGroup = L.featureGroup();
+
                 
         <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
             echo "var geoSearchController = new L.Control.GeoSearch({";
@@ -122,13 +122,10 @@
                     id: 'mapbox.light',
                     accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
                 }).addTo(map);
-
-                for (var i = 0; i < StageList.length; i++) {
-                        featureGroup.addLayer(StageList[i]);
-                    }
-                };
                
-               featureGroup.addTo(map);
+               StageList[0].addTo(map);
+               
+
         </script>
 
         <?php #jQuery first, then Tether, then Bootstrap JS. ?>
