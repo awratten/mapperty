@@ -96,7 +96,7 @@
             
             .ParkStyle { 
                 stroke: #fff;
-                fill: #cfcfcf;
+                fill: #cbe6a3;
                 stroke-width: 1;  
             }
             
