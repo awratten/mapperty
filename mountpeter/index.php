@@ -84,6 +84,28 @@
             .LotStyle:hover { 
                 stroke-width: 2;
             }
+            
+            .DisplayStyle { 
+                stroke: #fff;
+                fill: #cfcfcf;
+                stroke-width: 1;  
+            }
+            .DisplayStyle:hover { 
+                stroke-width: 2;
+            }
+            
+            .ParkStyle { 
+                stroke: #fff;
+                fill: #cfcfcf;
+                stroke-width: 1;  
+            }
+            
+            .CarStyle { 
+                stroke: #fff;
+                fill: #cfcfcf;
+                stroke-width: 1;  
+            }
+
 
 
         </style>

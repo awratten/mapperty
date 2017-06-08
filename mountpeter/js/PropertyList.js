@@ -348,7 +348,7 @@ var L123 = L.polygon([
     [-17.04325221551944, 145.7401863909348],
     [-17.04333535972393, 145.7399577481705],
     [-17.04348105679335, 145.7400148272253]
-], {className: 'LotStyle'}).bindPopup('Lot 123 (Display)');
+], {className: 'DisplayStyle'}).bindPopup('Lot 123 (Display)');
 LotStage1.addLayer(L123);
 
 
@@ -358,7 +358,7 @@ var L124 = L.polygon([
     [-17.04351199354464, 145.7403283928809],
     [-17.04338526772471, 145.7402787109909],
     [-17.04348113873402, 145.7400150149605]
-], {className: 'LotStyle'}).bindPopup('Lot 124 (Display)');
+], {className: 'DisplayStyle'}).bindPopup('Lot 124 (Display)');
 LotStage1.addLayer(L124);
 
 
@@ -368,7 +368,7 @@ var L125 = L.polygon([
     [-17.04351198782112, 145.7403282534623],
     [-17.04360820433791, 145.7400649621297],
     [-17.04371783269743, 145.7401079583173]
-], {className: 'LotStyle'}).bindPopup('Lot 125 (Display)');
+], {className: 'DisplayStyle'}).bindPopup('Lot 125 (Display)');
 LotStage1.addLayer(L125);
 
 
@@ -379,7 +379,7 @@ var L126 = L.polygon([
     [-17.04362191875774, 145.7403716081471],
     [-17.04371792542803, 145.7401079554388],
     [-17.04386140502665, 145.7401645928698]
-], {className: 'LotStyle'}).bindPopup('Lot 126 (Display)');
+], {className: 'DisplayStyle'}).bindPopup('Lot 126 (Display)');
 LotStage1.addLayer(L126);
 
 
@@ -422,6 +422,7 @@ var L130 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('Lot 130 Homevale Entrance');
 LotStage1.addLayer(L130);
 
+
 var L131 = L.polygon([
     [-17.04398771016849, 145.7402308113726],
     [-17.04403534983639, 145.7400991874517],
@@ -438,7 +439,7 @@ var L132_CarPark = L.polygon([
     [-17.04424071027864, 145.7403308115149],
     [-17.04419307037523, 145.7404624354877],
     [-17.0439397417763, 145.7403624351792]
-], {className: 'LotStyle'}).bindPopup('Car Park');
+], {className: 'CarStyle'}).bindPopup('Car Park');
 LotStage1.addLayer(L132_CarPark);
 
 
@@ -478,7 +479,7 @@ var L136 = L.polygon([
     [-17.04403617011425, 145.7408932302795],
     [-17.04399142269005, 145.7410157365464],
     [-17.04373788011666, 145.7409161608915]
-], {className: 'LotStyle'}).bindPopup('Lot 136 Homevale Ent. (Display)');
+], {className: 'DisplayStyle'}).bindPopup('Lot 136 Homevale Ent. (Display)');
 LotStage1.addLayer(L136);
 
 
@@ -488,7 +489,7 @@ var L137 = L.polygon([
     [-17.04369293558401, 145.7410392713175],
     [-17.04373781239059, 145.7409158979403],
     [-17.04399140327451, 145.7410162998654]
-], {className: 'LotStyle'}).bindPopup('Lot 137 Homevale Entrance (Display)');
+], {className: 'DisplayStyle'}).bindPopup('Lot 137 Homevale Entrance (Display)');
 LotStage1.addLayer(L137);
 
 
@@ -528,7 +529,7 @@ var CarPark = L.polygon([
     [-17.04364049035744, 145.7411841171605],
     [-17.04369311818859, 145.7410391804318],
     [-17.04394672839542, 145.7411388546272]
-], {className: 'LotStyle'}).bindPopup('Car Park');
+], {className: 'CarStyle'}).bindPopup('Car Park');
 LotStage1.addLayer(CarPark);
 
 var InfoCentre = L.polygon([
