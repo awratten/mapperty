@@ -136,3 +136,13 @@ var Stages = L.layerGroup([Stage1, Stage2, Stage3]);
 var LotStage1 = L.layerGroup();
 
 //LotStage1.addLayer( marker );
+
+var L101 = L.polygon([
+[-17.04234637826514,145.7403295298242],
+[-17.04224391616437,145.7406109360917],
+[-17.04210506230904,145.7405430522335],
+[-17.04220290009643,145.740272855363],
+[-17.04234637826514,145.7403295298242]
+]).bindPopup('Lot 101 Bulleringa Loop');
+LotStage1.addLayer( L101 );
+
