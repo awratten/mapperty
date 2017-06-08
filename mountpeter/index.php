@@ -171,12 +171,14 @@
                         map.removeLayer(Stages);
                         map.addLayer(LotStage1);
                         map.addLayer(LotStage2);
+                        map.addLayer(LotStage3);
                     }
                     if (map.getZoom() < 18)
                     {
                         map.addLayer(Stages);
                         map.removeLayer(LotStage1);
                         map.removeLayer(LotStage2);
+                        map.removeLayer(LotStage3);
                     }   
                 });
                 
