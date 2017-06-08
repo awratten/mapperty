@@ -70,7 +70,7 @@ var Stage1 = L.polygon([
     [-17.04232093132374, 145.7401630416431],
     [-17.04225267253366, 145.7401364954835],
     [-17.04210460046319, 145.7405432814109]
-], {className: 'StageStyle'});
+], {className: 'StageStyle'}).bindPopup('Stage 1');
 
 var Stage2 = L.polygon([
     [-17.04210460046319, 145.7405432814109],
@@ -100,8 +100,7 @@ var Stage2 = L.polygon([
     [-17.04232093132374, 145.7401630416431],
     [-17.04225267253366, 145.7401364954835],
     [-17.04210460046319, 145.7405432814109]
-], {className: 'StageStyle'});
-
+], {className: 'StageStyle'}).bindPopup('Stage 2');
 
 var Stage3 = L.polygon([
     [-17.04433970078141, 145.7400581816467],
@@ -130,6 +129,6 @@ var Stage3 = L.polygon([
     [-17.04411717633556, 145.7398732006556],
     [-17.04408655984629, 145.7399583173613],
     [-17.04433970078141, 145.7400581816467]
-], {className: 'StageStyle'});
+], {className: 'StageStyle'}).bindPopup('Stage 3');
 
 var Stages = L.layerGroup([Stage1, Stage2, Stage3]);
