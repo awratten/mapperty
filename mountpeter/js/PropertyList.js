@@ -137,6 +137,7 @@ var LotStage1 = L.layerGroup();
 
 //LotStage1.addLayer( marker );
 
+//Stage 1 Lots /////////////////////////////////////////////////////////////////
 
 var L101 = L.polygon([
     [-17.04234637826514, 145.7403295298242],
@@ -591,6 +592,8 @@ var Stage1_Border = L.polyline([
 ], {color: 'red'}).bindPopup('Stage 1');
 LotStage1.addLayer(Stage1_Border);
 
+
+//Stage 2 Lots /////////////////////////////////////////////////////////////////
 
 var LotStage2 = L.layerGroup();
 
