@@ -133,14 +133,17 @@
                 
                 map.addLayer(Stages);
                 
+                
                 //hide layer based on zoom
                 map.on('zoomend', function () {
                     if (map.getZoom() > 17) {
                         map.removeLayer(Stages);
+                        map.addLayer(LotStage1);
                     }
                     if (map.getZoom() < 18)
                     {
                         map.addLayer(Stages);
+                        map.removeLayer(LotStage1);
                     }   
                 });
         </script>
