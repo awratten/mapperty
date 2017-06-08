@@ -134,7 +134,7 @@
                     if (map.getZoom() > 17 && map.hasLayer(Stage1_polygon)) {
                         map.removeLayer(Stage1_polygon);
                     }
-                    if (map.getZoom() < 17 && map.hasLayer(Stage1_polygon) === false)
+                    if (map.getZoom() < 18 && map.hasLayer(Stage1_polygon) === false)
                     {
                         map.addLayer(Stage1_polygon);
                     }   
