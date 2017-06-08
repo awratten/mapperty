@@ -128,7 +128,17 @@
                 var Stage3_polygon = L.polygon(StageList[2], {className: 'StageStyle'}).addTo(map);
                 
                 // map.fitBounds(Stage1_polygon.getBounds());
-
+                
+                //hide layer based on zoom
+                map.on('zoomend', function () {
+                    if (map.getZoom() > 17 && map.hasLayer(Stage1_polygon)) {
+                        map.removeLayer(Stage1_polygon);
+                    }
+                    if (map.getZoom() < 17 && map.hasLayer(Stage1_polygon) === false)
+                    {
+                        map.addLayer(Stage1_polygon);
+                    }   
+                });
         </script>
 
         <?php #jQuery first, then Tether, then Bootstrap JS. ?>
