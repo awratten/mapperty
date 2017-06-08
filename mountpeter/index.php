@@ -133,10 +133,14 @@
                 map.on('zoomend', function () {
                     if (map.getZoom() > 17 && map.hasLayer(Stage1_polygon)) {
                         map.removeLayer(Stage1_polygon);
+                        map.removeLayer(Stage2_polygon);
+                        map.removeLayer(Stage3_polygon);
                     }
                     if (map.getZoom() < 18 && map.hasLayer(Stage1_polygon) === false)
                     {
                         map.addLayer(Stage1_polygon);
+                        map.addLayer(Stage2_polygon);
+                        map.addLayer(Stage3_polygon);
                     }   
                 });
         </script>
