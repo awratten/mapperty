@@ -165,12 +165,6 @@
                 
                 map.addLayer(Stages);
                 
-                Stages.on('click', function (e) {
-                    //map.setView(e.latlng, 18);
-                    map.fitBounds(e.getBounds());
-                    //e.bindPopup(e.latlng);
-                });
-                
                 //hide layer based on zoom
                 map.on('zoomend', function () {
                     if (map.getZoom() > 17) {
@@ -183,6 +177,7 @@
                         map.removeLayer(LotStage1);
                     }   
                 });
+                
         </script>
 
         <?php #jQuery first, then Tether, then Bootstrap JS. ?>
