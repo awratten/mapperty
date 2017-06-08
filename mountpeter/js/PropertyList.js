@@ -30,6 +30,8 @@ var Icon_Logo = L.icon({
  ];
  */
 
+var Stages = L.layerGroup();
+
 var Stage1 = L.polygon([
     [-17.04210460046319, 145.7405432814109],
     [-17.04202782650531, 145.7407450527677],
@@ -131,7 +133,7 @@ var Stage3 = L.polygon([
     [-17.04433970078141, 145.7400581816467]
 ], {className: 'StageStyle'}).addLayer(Stages).bindPopup('Stage 3');
 
-var Stages = L.layerGroup();
+
 
 var LotStage1 = L.layerGroup();
 
