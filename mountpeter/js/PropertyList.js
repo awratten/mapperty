@@ -589,7 +589,7 @@ var Stage1_Border = L.polyline([
     [-17.04232093132374, 145.7401630416431],
     [-17.04225267253366, 145.7401364954835],
     [-17.04210460046319, 145.7405432814109]
-], {color: 'red'}).bindPopup('Stage 1');
+], {color: 'red'});
 LotStage1.addLayer(Stage1_Border);
 
 
