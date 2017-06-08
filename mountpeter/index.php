@@ -123,11 +123,15 @@
                     accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
                 }).addTo(map);
                
+
+                /*
                 var Stage1_polygon = L.polygon(StageList[0], {className: 'StageStyle'}).addTo(map);
                 var Stage2_polygon = L.polygon(StageList[1], {className: 'StageStyle'}).addTo(map);
                 var Stage3_polygon = L.polygon(StageList[2], {className: 'StageStyle'}).addTo(map);
-                
+                */
                 // map.fitBounds(Stage1_polygon.getBounds());
+                
+                map.addLayer(Stages);
                 
                 //hide layer based on zoom
                 map.on('zoomend', function () {
