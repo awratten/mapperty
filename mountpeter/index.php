@@ -127,7 +127,7 @@
                 var Stage2_polygon = L.polygon(StageList[1], {className: 'StageStyle'}).addTo(map);
                 var Stage3_polygon = L.polygon(StageList[2], {className: 'StageStyle'}).addTo(map);
                 
-                map.fitBounds(Stage1_polygon.getBounds());
+                // map.fitBounds(Stage1_polygon.getBounds());
 
         </script>
 
