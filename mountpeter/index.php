@@ -166,7 +166,8 @@
                 map.addLayer(Stages);
                 
                 Stages.on('click', function (e) {
-                    map.setView(e.latlng, 18);
+                    //map.setView(e.latlng, 18);
+                    map.fitBounds(e.getBounds());
                     //e.bindPopup(e.latlng);
                 });
                 
