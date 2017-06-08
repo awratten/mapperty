@@ -143,7 +143,7 @@ var L101 = L.polygon([
     [-17.04210506230904, 145.7405430522335],
     [-17.04220290009643, 145.740272855363],
     [-17.04234637826514, 145.7403295298242]
-]).bindPopup('Lot 101 Bulleringa Loop');
+], {className: 'LotStyle'}).bindPopup('Lot 101 Bulleringa Loop');
 LotStage1.addLayer(L101);
 
 var L102 = L.polygon([
@@ -152,7 +152,7 @@ var L102 = L.polygon([
     [-17.04224399194547, 145.7406112572559],
     [-17.04234635035691, 145.7403295768615],
     [-17.04247362272434, 145.7403788555922]
-]).bindPopup('Lot 102 Bulleringa Loop');
+], {className: 'LotStyle'}).bindPopup('Lot 102 Bulleringa Loop');
 LotStage1.addLayer(L102);
 
 var L103 = L.polygon([
@@ -161,7 +161,7 @@ var L103 = L.polygon([
     [-17.04236702280388, 145.7406723866063],
     [-17.04247357898039, 145.7403788848985],
     [-17.0425920929727, 145.7404261828037]
-]).bindPopup('Lot 103 Bulleringa Loop');
+], {className: 'LotStyle'}).bindPopup('Lot 103 Bulleringa Loop');
 LotStage1.addLayer(L103);
 
 var L104 = L.polygon([
@@ -170,7 +170,7 @@ var L104 = L.polygon([
     [-17.04248101209783, 145.7407311284898],
     [-17.04259208893678, 145.7404261432249],
     [-17.04271030310246, 145.7404721021273]
-]).bindPopup('Lot 104 Bulleringa Loop');
+], {className: 'LotStyle'}).bindPopup('Lot 104 Bulleringa Loop');
 LotStage1.addLayer(L104);
 
 var L105 = L.polygon([
@@ -179,7 +179,7 @@ var L105 = L.polygon([
     [-17.04259500134834, 145.7407902316413],
     [-17.04271027590104, 145.7404720740786],
     [-17.04283714390092, 145.7405225968581]
-]).bindPopup('Lot 105 Bulleringa Loop');
+], {className: 'LotStyle'}).bindPopup('Lot 105 Bulleringa Loop');
 LotStage1.addLayer(L105);
 
 var L106 = L.polygon([
@@ -188,7 +188,7 @@ var L106 = L.polygon([
     [-17.04271706350589, 145.7408520366895],
     [-17.04283718162646, 145.7405227332839],
     [-17.04296376020508, 145.7405721211752]
-]).bindPopup('Lot 106 Bulleringa Loop');
+], {className: 'LotStyle'}).bindPopup('Lot 106 Bulleringa Loop');
 LotStage1.addLayer(L106);
 
 var L107 = L.polygon([
@@ -197,7 +197,7 @@ var L107 = L.polygon([
     [-17.04273187238666, 145.7395518137656],
     [-17.04277495428417, 145.7394339631446],
     [-17.0430286167906, 145.7395327368086]
-]).bindPopup('Lot 107 Bulleringa Loop');
+], {className: 'LotStyle'}).bindPopup('Lot 107 Bulleringa Loop');
 LotStage1.addLayer(L107);
 
 var L108 = L.polygon([
@@ -206,5 +206,5 @@ var L108 = L.polygon([
     [-17.04268072311264, 145.7396923286507],
     [-17.04273183241441, 145.7395517020204],
     [-17.04298528710298, 145.7396514702811]
-]).bindPopup('Lot 108 Bulleringa Loop');
+], {className: 'LotStyle'}).bindPopup('Lot 108 Bulleringa Loop');
 LotStage1.addLayer(L108);

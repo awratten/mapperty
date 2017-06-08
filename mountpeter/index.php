@@ -75,6 +75,16 @@
             .StageStyle:hover { 
                 stroke-width: 2;
             }
+            
+            .LotStyle { 
+                stroke: #fff;
+                fill: #cfcfcf;
+                stroke-width: 1;  
+            }
+            .LotStyle:hover { 
+                stroke-width: 2;
+            }
+
 
         </style>
     </head>
