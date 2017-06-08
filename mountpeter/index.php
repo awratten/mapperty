@@ -136,15 +136,11 @@
                 //hide layer based on zoom
                 map.on('zoomend', function () {
                     if (map.getZoom() > 17) {
-                        map.removeLayer(Stage1_polygon);
-                        map.removeLayer(Stage2_polygon);
-                        map.removeLayer(Stage3_polygon);
+                        map.removeLayer(Stages);
                     }
                     if (map.getZoom() < 18)
                     {
-                        map.addLayer(Stage1_polygon);
-                        map.addLayer(Stage2_polygon);
-                        map.addLayer(Stage3_polygon);
+                        map.addLayer(Stages);
                     }   
                 });
         </script>
