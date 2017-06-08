@@ -143,6 +143,10 @@
                 
                 map.addLayer(Stages);
                 
+                Stages.on('click', function (e) {
+                    map.setView(e.latlng, 18);
+                    //e.bindPopup(e.latlng);
+                });
                 
                 //hide layer based on zoom
                 map.on('zoomend', function () {
