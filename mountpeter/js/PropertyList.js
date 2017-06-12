@@ -1223,9 +1223,6 @@ LotStage2.addLayer(Stage2_Border);
 var LotStage3 = L.layerGroup();
 
 
-
-
-
 var L301 = L.polygon([
 [-17.04337612938355,145.7394335994742],
 [-17.0433312121478,145.7395562834471],
