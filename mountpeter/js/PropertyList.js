@@ -1603,4 +1603,5 @@ var Stage3_Border = L.polyline([
 LotStage3.addLayer(Stage3_Border);
 
 
-
+var C_L334 = L.polygon([-17.04440377800294, 145.7398823900024], {radius: 5});
+LotStage3.addLayer(C_L334);
