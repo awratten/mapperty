@@ -87,11 +87,11 @@
 
             .DisplayStyle { 
                 stroke: #fff;
-                fill: #cfcfcf;
+                fill: #fff;
                 stroke-width: 1;  
             }
             .DisplayStyle:hover { 
-                stroke-width: 2;
+                stroke-width: 3;
             }
 
             .ParkStyle { 
