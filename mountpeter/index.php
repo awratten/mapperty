@@ -185,7 +185,7 @@
                         map.addLayer(LotStage2);
                         map.addLayer(LotStage3);
                         map.addLayer(LotStage_Circles);
-                        map.addLayer(Estate_Border);
+
                     }
                     if (map.getZoom() < 18)
                     {
@@ -194,7 +194,7 @@
                         map.removeLayer(LotStage2);
                         map.removeLayer(LotStage3);
                         map.removeLayer(LotStage_Circles);
-                        map.addLayer(Estate_Border);
+
                     }   
                 });
                 
