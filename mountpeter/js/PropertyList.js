@@ -1602,3 +1602,11 @@ var Stage3_Border = L.polyline([
 ], {color: 'red'});
 LotStage3.addLayer(Stage3_Border);
 
+
+
+var circle = L.circle([-17.04433970078141, 145.7400581816467], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map);
