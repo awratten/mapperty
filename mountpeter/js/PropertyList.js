@@ -4,7 +4,7 @@
 var Start_LatLong = [-17.04210460046319, 145.7405432814109];
 var Start_Zoom = 12;
 
-var Def_IconSize = [128, 64];
+var Def_IconSize = [140, 50];
 var Def_IconAnchor = [64, 64];
 var Def_PopupAnchor = [0, -64];
 var Def_Class = "estate";
@@ -18,13 +18,18 @@ var Icon_Logo = L.icon({
 });
 
 var Stage1_icon = L.icon({
-    iconUrl: './img/stage1.png'
+    iconUrl: './img/stage1.png',
+    iconSize: Def_IconSize
 });
+
 var Stage2_icon = L.icon({
-    iconUrl: './img/stage2.png'
+    iconUrl: './img/stage2.png',
+    iconSize: Def_IconSize
 });
+
 var Stage3_icon = L.icon({
-    iconUrl: './img/stage3.png'
+    iconUrl: './img/stage3.png',
+    iconSize: Def_IconSize
 });
 
 var C_Radius = 0.5;
@@ -167,8 +172,9 @@ var Stage1 = L.polygon([
     [-17.04225267253366, 145.7401364954835],
     [-17.04210460046319, 145.7405432814109]
 ], {className: 'StageStyle'}).bindPopup('Stage 1');
-Stage_Markers.addLayer( new L.marker( Stage1.getBounds().getCenter(),{}));
+Stage_Markers.addLayer( new L.marker( Stage1.getBounds().getCenter(),{icon: Stage1_icon}));
 
+		//var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
 
 
 var Stage2 = L.polygon([
