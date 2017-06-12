@@ -1222,6 +1222,13 @@ LotStage2.addLayer(Stage2_Border);
 
 var LotStage3 = L.layerGroup();
 
+var LotStage3_Circles = L.layerGroup();
+
+
+
+
+var C_Radius = 2;
+
 var L301 = L.polygon([
 [-17.04337612938355,145.7394335994742],
 [-17.0433312121478,145.7395562834471],
@@ -1230,7 +1237,7 @@ var L301 = L.polygon([
 [-17.04337612938355,145.7394335994742]
 ], {className: 'LotStyle'}).bindPopup('Lot 301 Bulleringa Loop');
 LotStage3.addLayer(L301);
-
+LotStage3_Circles.addLayer( new L.circle( L301.getBounds().getCenter() , {radius: C_Radius}));
 
 var L302 = L.polygon([
 [-17.04342083101932,145.7393106897175],
@@ -1570,6 +1577,7 @@ var L334 = L.polygon([
 [-17.04440377800294,145.7398823900024]
 ], {className: 'LotStyle'}).bindPopup('Lot 334 Homevale Entrance');
 LotStage3.addLayer(L334);
+LotStage3_Circles.addLayer( new L.circle( L334.getBounds().getCenter() , {radius: 5}));
 
 
 var Stage3_Border = L.polyline([
@@ -1613,13 +1621,5 @@ var circle = L.circle([51.508, -0.11], {
 
 
 
-
-var LotStage3_Circles = L.layerGroup();
-//var Circle = L.circle([-17.04433970078141, 145.7400581816467], {radius: 5});
-//var L334 = L.circle( L334.getBounds().getCenter() , {radius: 5});
-//LotStage3_Circles.addLayer(Circle);
-
-
-LotStage3_Circles.addLayer( new L.circle( L334.getBounds().getCenter() , {radius: 5}));
 
 
