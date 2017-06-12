@@ -1768,4 +1768,3 @@ var Estate_Border = L.polyline([
 [-17.04205979946414,145.7380164575471],
 [-17.04386385450891,145.7385106313772]
 ], {color: '#005587'});
-LotStage3.addLayer(Estate_Border);

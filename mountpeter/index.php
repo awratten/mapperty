@@ -175,6 +175,7 @@
                 // map.fitBounds(Stage1_polygon.getBounds());
                 
                 map.addLayer(Stages);
+                map.addLayer(Estate_Border);
                 
                 //hide layer based on zoom
                 map.on('zoomend', function () {
@@ -184,6 +185,7 @@
                         map.addLayer(LotStage2);
                         map.addLayer(LotStage3);
                         map.addLayer(LotStage_Circles);
+                        
                     }
                     if (map.getZoom() < 18)
                     {
