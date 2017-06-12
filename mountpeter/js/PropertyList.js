@@ -17,6 +17,16 @@ var Icon_Logo = L.icon({
     //className: Def_Class
 });
 
+var Stage1_icon = L.icon({
+    iconUrl: './img/stage1.png'
+});
+var Stage2_icon = L.icon({
+    iconUrl: './img/stage2.png'
+});
+var Stage3_icon = L.icon({
+    iconUrl: './img/stage3.png'
+});
+
 var C_Radius = 0.5;
 
 /*
@@ -157,7 +167,7 @@ var Stage1 = L.polygon([
     [-17.04225267253366, 145.7401364954835],
     [-17.04210460046319, 145.7405432814109]
 ], {className: 'StageStyle'}).bindPopup('Stage 1');
-Stage_Markers.addLayer( new L.marker( Stage1.getBounds().getCenter()));
+Stage_Markers.addLayer( new L.marker( Stage1.getBounds().getCenter(),{}));
 
 
 
