@@ -170,7 +170,7 @@
                     fillColor: '#f03',
                     fillOpacity: 0.5,
                     radius: 500
-                }).addTo(mymap);
+                }).addTo(map);
                 
                 //hide layer based on zoom
                 map.on('zoomend', function () {
