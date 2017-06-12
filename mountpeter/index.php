@@ -102,7 +102,7 @@
 
             .CarStyle { 
                 stroke: #fff;
-                fill: #cfcfcf;
+                fill: #d5d5d5;
                 stroke-width: 1;  
             }
 
