@@ -172,7 +172,7 @@
                         map.addLayer(LotStage1);
                         map.addLayer(LotStage2);
                         map.addLayer(LotStage3);
-                        map.addLayer(Circle);
+                        map.addLayer(LotStage3_Circles);
                     }
                     if (map.getZoom() < 18)
                     {
@@ -180,7 +180,7 @@
                         map.removeLayer(LotStage1);
                         map.removeLayer(LotStage2);
                         map.removeLayer(LotStage3);
-                        map.removeLayer(Circle);
+                        map.removeLayer(LotStage3_Circles);
                     }   
                 });
                 
