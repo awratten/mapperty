@@ -1620,6 +1620,6 @@ var LotStage3_Circles = L.layerGroup();
 //LotStage3_Circles.addLayer(Circle);
 
 
-LotStage3_Circles.addLayer(L.circle( L334.getBounds().getCenter() , {radius: 5}););
+LotStage3_Circles.addLayer( new L.circle( L334.getBounds().getCenter() , {radius: 5}););
 
 
