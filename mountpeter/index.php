@@ -51,7 +51,7 @@
                 position: relative;
                 top: 0;
             }
-            
+
             #logo{
                 position:fixed;
                 left:5px;
@@ -75,7 +75,7 @@
             .StageStyle:hover { 
                 stroke-width: 3;
             }
-            
+
             .LotStyle { 
                 stroke: #fff;
                 fill: #cfcfcf;
@@ -84,7 +84,7 @@
             .LotStyle:hover { 
                 stroke-width: 3;
             }
-            
+
             .DisplayStyle { 
                 stroke: #fff;
                 fill: #cfcfcf;
@@ -93,25 +93,25 @@
             .DisplayStyle:hover { 
                 stroke-width: 2;
             }
-            
+
             .ParkStyle { 
                 stroke: #fff;
                 fill: #cbe6a3;
                 stroke-width: 1;  
             }
-            
+
             .CarStyle { 
                 stroke: #fff;
                 fill: #cfcfcf;
                 stroke-width: 1;  
             }
-            
+
             .LotCircle {
                 stroke: #0b8c7c;
                 fill: #a9bf78;
                 stroke-width: 4;  
             }
-            
+
             .LotCircle_SOLD {
                 stroke: #cd2027;
                 fill: #cd2027;
@@ -140,73 +140,77 @@
         </script>
 
         <div id='map' class="container-fluid"></div>
-        <?php if (filter_input(INPUT_GET, 'logo', FILTER_SANITIZE_STRING) === 'true') {
+        <?php
+        if (filter_input(INPUT_GET, 'logo', FILTER_SANITIZE_STRING) === 'true') {
             echo "<div id='logo'></div>";
-        } ?>
-        <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) === 'true') {
+        }
+        ?>
+        <?php
+        if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) === 'true') {
             echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>";
-        } ?>
+        }
+        ?>
 
-        <?php #Main javascript to load leaflet components and add propery markers from PropertyList.js ?>
-        <script> 
+<?php #Main javascript to load leaflet components and add propery markers from PropertyList.js  ?>
+        <script>
 
-                var map = L.map('map').setView(Start_LatLong, 16);
+            var map = L.map('map').setView(Start_LatLong, 16);
+<?php
+if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
+    echo "var geoSearchController = new L.Control.GeoSearch({";
+    echo "provider: new L.GeoSearch.Provider.Google()";
+    echo "}).addTo(map);";
+}
+?>
 
-                
-        <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
-            echo "var geoSearchController = new L.Control.GeoSearch({";
-            echo "provider: new L.GeoSearch.Provider.Google()";
-            echo "}).addTo(map);";
-        } ?>
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                attribution: '<a href="http://mapperty.co">Mapperty</a> | <a href="http://openstreetmap.org">OpenStreetMap</a> | <a href="http://mapbox.com">Mapbox</a>',
+                maxZoom: 19,
+                id: 'mapbox.light',
+                accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
+            }).addTo(map);
 
-                L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                    attribution: '<a href="http://mapperty.co">Mapperty</a> | <a href="http://openstreetmap.org">OpenStreetMap</a> | <a href="http://mapbox.com">Mapbox</a>',
-                    maxZoom: 19,
-                    id: 'mapbox.light',
-                    accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
-                }).addTo(map);
-               
 
-                /*
-                var Stage1_polygon = L.polygon(StageList[0], {className: 'StageStyle'}).addTo(map);
-                var Stage2_polygon = L.polygon(StageList[1], {className: 'StageStyle'}).addTo(map);
-                var Stage3_polygon = L.polygon(StageList[2], {className: 'StageStyle'}).addTo(map);
-                */
-                // map.fitBounds(Stage1_polygon.getBounds());
-                
-                map.addLayer(Stages);
-                //map.addLayer(Stage_Markers);
-                map.addLayer(Estate_Border);
-                
-                map.setView(Estate_Border.getBounds().getCenter());
-                
-                
-                //hide layer based on zoom
-                map.on('zoomend', function () {
-                    if (map.getZoom() > 17) {
-                        map.removeLayer(Stages);
-                        //map.removeLayer(Stage_Markers);
-                        map.addLayer(LotStage1);
-                        map.addLayer(LotStage2);
-                        map.addLayer(LotStage3);
-                        map.addLayer(LotStage_Circles);
-                    }
-                    if (map.getZoom() < 18)
-                    {
-                        map.addLayer(Stages);
-                        //map.addLayer(Stage_Markers);
-                        map.removeLayer(LotStage1);
-                        map.removeLayer(LotStage2);
-                        map.removeLayer(LotStage3);
-                        map.removeLayer(LotStage_Circles);
+            /*
+             var Stage1_polygon = L.polygon(StageList[0], {className: 'StageStyle'}).addTo(map);
+             var Stage2_polygon = L.polygon(StageList[1], {className: 'StageStyle'}).addTo(map);
+             var Stage3_polygon = L.polygon(StageList[2], {className: 'StageStyle'}).addTo(map);
+             */
+            // map.fitBounds(Stage1_polygon.getBounds());
 
-                    }   
-                });
-                
-                
+            map.addLayer(Stages);
+            //map.addLayer(Stage_Markers);
+            map.addLayer(Estate_Border);
+
+            map.setView(Estate_Border.getBounds().getCenter());
+
+
+            //hide layer based on zoom
+            map.on('zoomend', function () {
+                if (map.getZoom() > 17) {
+                    map.removeLayer(Stages);
+                    //map.removeLayer(Stage_Markers);
+                    map.addLayer(LotStage1);
+                    map.addLayer(LotStage2);
+                    map.addLayer(LotStage3);
+                    map.addLayer(LotStage_Circles);
+                }
+                if (map.getZoom() < 18)
+                {
+                    map.addLayer(Stages);
+                    //map.addLayer(Stage_Markers);
+                    map.removeLayer(LotStage1);
+                    map.removeLayer(LotStage2);
+                    map.removeLayer(LotStage3);
+                    map.removeLayer(LotStage_Circles);
+
+                }
+            });
+
+
         </script>
 
-        <?php #jQuery first, then Tether, then Bootstrap JS. ?>
+<?php #jQuery first, then Tether, then Bootstrap JS.  ?>
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
