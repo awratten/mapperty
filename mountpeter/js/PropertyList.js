@@ -1248,7 +1248,7 @@ var L302 = L.polygon([
 [-17.04342083101932,145.7393106897175]
 ], {className: 'LotStyle'}).bindPopup('Lot 302 Bulleringa Loop');
 LotStage3.addLayer(L302);
-
+LotStage3_Circles.addLayer( new L.circle( L302.getBounds().getCenter() , { className: 'LotCircle_SOLD' , radius: C_Radius}));
 
 var L303 = L.polygon([
 [-17.04314840819921,145.7392031820759],
