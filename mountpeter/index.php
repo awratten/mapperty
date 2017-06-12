@@ -175,8 +175,24 @@
                 // map.fitBounds(Stage1_polygon.getBounds());
                 
                 map.addLayer(Stages);
-                map.addLayer(Stage_Markers);
+                //map.addLayer(Stage_Markers);
                 map.addLayer(Estate_Border);
+                
+                
+                map.on('zoomend', function () {
+                    if (map.getZoom() = 17) {
+                        map.addLayer(Stage_Markers);
+                    }
+                    if (map.getZoom() < 17)
+                    {
+                        map.removeLayer(Stage_Markers);
+                    }
+                    if (map.getZoom() > 17)
+                    {
+                        map.removeLayer(Stage_Markers);
+                    }
+                });
+                
                 
                 //hide layer based on zoom
                 map.on('zoomend', function () {
