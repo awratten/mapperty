@@ -1570,8 +1570,9 @@ var L334 = L.polygon([
 [-17.04440377800294,145.7398823900024]
 ], {className: 'LotStyle'}).bindPopup('Lot 334 Homevale Entrance');
 LotStage3.addLayer(L334);
-L.circle(L334.getCenter(), {radius: 200}).addTo(map);
 
+var circle = L.circle(L334.getCenter(), {radius: 200});
+LotStage3.addLayer(circle);
 
 
 var Stage3_Border = L.polyline([
