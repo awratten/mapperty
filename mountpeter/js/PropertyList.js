@@ -1239,6 +1239,7 @@ var L301 = L.polygon([
 LotStage3.addLayer(L301);
 LotStage3_Circles.addLayer( new L.circle( L301.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L302 = L.polygon([
 [-17.04342083101932,145.7393106897175],
 [-17.04337614005395,145.7394337117602],

@@ -108,7 +108,13 @@
             
             .LotCircle {
                 stroke: #fff;
-                fill: #cbe6a3;
+                fill: #a9bf78;
+                stroke-width: 1;  
+            }
+            
+            .LotCircle_SOLD {
+                stroke: #fff;
+                fill: #a51e24;
                 stroke-width: 1;  
             }
 
