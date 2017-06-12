@@ -150,7 +150,7 @@
         <?php #Main javascript to load leaflet components and add propery markers from PropertyList.js ?>
         <script> 
 
-                var map = L.map('map').setView(Start_LatLong, 14);
+                var map = L.map('map').setView(Start_LatLong, 16);
 
                 
         <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
