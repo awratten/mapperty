@@ -240,6 +240,15 @@ var LotStage1 = L.layerGroup();
 
 //LotStage1.addLayer( marker );
 
+//Display Village //////////////////////////////////////////////////////////////
+
+var imageUrl = 'http://mtpeterestate.com.au/app/uploads/2017/06/MP_Display.png',
+    imageBounds = [[-17.04325927401808, 145.7411967302513], [-17.04404625430469, 145.7399683290048]];
+//L.imageOverlay(imageUrl, imageBounds).addTo(map);
+var Display_Overlay = L.imageOverlay(imageUrl, imageBounds);
+
+LotStage1.addLayer(Display_Overlay);
+
 //Stage 1 Lots /////////////////////////////////////////////////////////////////
 
 var L101 = L.polygon([
