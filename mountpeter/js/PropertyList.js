@@ -1293,6 +1293,7 @@ var L302 = L.polygon([
 LotStage3.addLayer(L302);
 //LotStage_Circles.addLayer( new L.circle( L302.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L303 = L.polygon([
 [-17.04314840819921,145.7392031820759],
 [-17.0431929261038,145.7390805326391],
@@ -1303,6 +1304,7 @@ var L303 = L.polygon([
 LotStage3.addLayer(L303);
 //LotStage_Circles.addLayer( new L.circle( L303.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L304 = L.polygon([
 [-17.04351096511235,145.739064476124],
 [-17.04346575995879,145.7391875901642],
@@ -1312,6 +1314,7 @@ var L304 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 304 Bulleringa Loop</strong>');
 LotStage3.addLayer(L304);
 //LotStage_Circles.addLayer( new L.circle( L304.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L305 = L.polygon([
 [-17.04354048964963,145.738878928406],
@@ -1324,6 +1327,7 @@ var L305 = L.polygon([
 LotStage3.addLayer(L305);
 //LotStage_Circles.addLayer( new L.circle( L305.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L306 = L.polygon([
 [-17.04354768972835,145.7384245219827],
 [-17.04347264963421,145.7387198430012],
@@ -1333,6 +1337,7 @@ var L306 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 306 Bulleringa Loop</strong>');
 LotStage3.addLayer(L306);
 //LotStage_Circles.addLayer( new L.circle( L306.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L307 = L.polygon([
 [-17.04372563799459,145.7384732185838],
@@ -1345,6 +1350,7 @@ var L307 = L.polygon([
 LotStage3.addLayer(L307);
 //LotStage_Circles.addLayer( new L.circle( L307.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L308 = L.polygon([
 [-17.04414497570242,145.7385884444562],
 [-17.04408575376629,145.7387514315569],
@@ -1354,6 +1360,7 @@ var L308 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 308 Bulleringa Loop</strong>');
 LotStage3.addLayer(L308);
 //LotStage_Circles.addLayer( new L.circle( L308.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L309 = L.polygon([
 [-17.04408577532762,145.7387513695029],
@@ -1376,6 +1383,7 @@ var L310 = L.polygon([
 LotStage3.addLayer(L310);
 //LotStage_Circles.addLayer( new L.circle( L310.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L311 = L.polygon([
 [-17.04397399439865,145.7390587920561],
 [-17.04392254432508,145.7391992533547],
@@ -1385,6 +1393,7 @@ var L311 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 311 Bulleringa Loop</strong>');
 LotStage3.addLayer(L311);
 //LotStage_Circles.addLayer( new L.circle( L311.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L312 = L.polygon([
 [-17.04392251138212,145.7391993066129],
@@ -1396,6 +1405,7 @@ var L312 = L.polygon([
 LotStage3.addLayer(L312);
 //LotStage_Circles.addLayer( new L.circle( L312.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L313 = L.polygon([
 [-17.04387167144375,145.7393400868742],
 [-17.04381715921387,145.7394898388507],
@@ -1406,6 +1416,7 @@ var L313 = L.polygon([
 LotStage3.addLayer(L313);
 //LotStage_Circles.addLayer( new L.circle( L313.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L314 = L.polygon([
 [-17.04381705272146,145.739489398689],
 [-17.04376597504533,145.7396300405262],
@@ -1415,6 +1426,7 @@ var L314 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 314 Bulleringa Loop</strong>');
 LotStage3.addLayer(L314);
 //LotStage_Circles.addLayer( new L.circle( L314.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L315 = L.polygon([
 [-17.04403704852037,145.7396811888218],
@@ -1427,6 +1439,7 @@ var L315 = L.polygon([
 LotStage3.addLayer(L315);
 LotStage_Circles.addLayer( new L.circle( L315.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L316 = L.polygon([
 [-17.04408722862611,145.7395451663992],
 [-17.04403731362319,145.739681564768],
@@ -1436,6 +1449,7 @@ var L316 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 316 Homevale Entrance</strong>'); //KF
 LotStage3.addLayer(L316);
 LotStage_Circles.addLayer( new L.circle( L316.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L317 = L.polygon([
 [-17.04413171322699,145.7394221464043],
@@ -1447,6 +1461,7 @@ var L317 = L.polygon([
 LotStage3.addLayer(L317);
 LotStage_Circles.addLayer( new L.circle( L317.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L318 = L.polygon([
 [-17.04387824932684,145.7393223612946],
 [-17.04392251077852,145.7391993721216],
@@ -1456,6 +1471,7 @@ var L318 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 318 Homevale Entrance</strong>'); ///KF
 LotStage3.addLayer(L318);
 LotStage_Circles.addLayer( new L.circle( L318.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L319 = L.polygon([
 [-17.04392257282686,145.7391993721219],
@@ -1467,6 +1483,7 @@ var L319 = L.polygon([
 LotStage3.addLayer(L319);
 //LotStage_Circles.addLayer( new L.circle( L319.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L320 = L.polygon([
 [-17.04428195063104,145.7390094885265],
 [-17.04422421796849,145.7391672024262],
@@ -1476,6 +1493,7 @@ var L320 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 320 Homevale Entrance</strong>');
 LotStage3.addLayer(L320);
 //LotStage_Circles.addLayer( new L.circle( L320.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L321 = L.polygon([
 [-17.04402819391192,145.7389096301354],
@@ -1487,6 +1505,7 @@ var L321 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 321 Homevale Entrance</strong>');
 LotStage3.addLayer(L321);
 //LotStage_Circles.addLayer( new L.circle( L321.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L322 = L.polygon([
 [-17.04433942865205,145.7386413917648],
@@ -1502,6 +1521,7 @@ var L322 = L.polygon([
 LotStage3.addLayer(L322);
 LotStage_Circles.addLayer( new L.circle( L322.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L323 = L.polygon([
 [-17.04448565729948,145.7386992344486],
 [-17.04462106881423,145.7387525209398],
@@ -1511,6 +1531,7 @@ var L323 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 323 Homevale Entrance</strong>');
 LotStage3.addLayer(L323);
 //LotStage_Circles.addLayer( new L.circle( L323.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L324 = L.polygon([
 [-17.04462107524083,145.7387526252579],
@@ -1522,6 +1543,7 @@ var L324 = L.polygon([
 LotStage3.addLayer(L324);
 //LotStage_Circles.addLayer( new L.circle( L324.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L325 = L.polygon([
 [-17.04485324372556,145.7388436360206],
 [-17.04475753111934,145.7391074049979],
@@ -1531,6 +1553,7 @@ var L325 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 325 Homevale Entrance</strong>');
 LotStage3.addLayer(L325);
 LotStage_Circles.addLayer( new L.circle( L325.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L326 = L.polygon([
 [-17.0449761539552,145.7388920240453],
@@ -1542,6 +1565,7 @@ var L326 = L.polygon([
 LotStage3.addLayer(L326);
 //LotStage_Circles.addLayer( new L.circle( L326.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L327 = L.polygon([
 [-17.04497616462771,145.7388920240159],
 [-17.04511123697465,145.7389453311606],
@@ -1551,6 +1575,7 @@ var L327 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 327 Homevale Entrance</strong>');
 LotStage3.addLayer(L327);
 //LotStage_Circles.addLayer( new L.circle( L327.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L328 = L.polygon([
 [-17.04494961290029,145.7393386987351],
@@ -1562,6 +1587,7 @@ var L328 = L.polygon([
 LotStage3.addLayer(L328);
 //LotStage_Circles.addLayer( new L.circle( L328.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L329 = L.polygon([
 [-17.04471839612251,145.7395490040048],
 [-17.04459156644601,145.7394992072271],
@@ -1572,6 +1598,7 @@ var L329 = L.polygon([
 LotStage3.addLayer(L329);
 //LotStage_Circles.addLayer( new L.circle( L329.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L330 = L.polygon([
 [-17.04459145045,145.7394990181224],
 [-17.04444788161887,145.7394425299043],
@@ -1581,6 +1608,7 @@ var L330 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 330 Homevale Entrance</strong>');
 LotStage3.addLayer(L330);
 //LotStage_Circles.addLayer( new L.circle( L330.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L331 = L.polygon([
 [-17.04444789115497,145.7394425050446],
@@ -1593,6 +1621,7 @@ var L331 = L.polygon([
 LotStage3.addLayer(L331);
 //LotStage_Circles.addLayer( new L.circle( L331.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L332 = L.polygon([
 [-17.04444794445791,145.7394425157173],
 [-17.0443519007845,145.7397061188276],
@@ -1604,6 +1633,7 @@ var L332 = L.polygon([
 LotStage3.addLayer(L332);
 //LotStage_Circles.addLayer( new L.circle( L332.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
+
 var L333 = L.polygon([
 [-17.04459152889754,145.7394991094146],
 [-17.04449559849209,145.739762549927],
@@ -1613,6 +1643,7 @@ var L333 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<strong>Lot 333 Porcupine Way</strong>');
 LotStage3.addLayer(L333);
 //LotStage_Circles.addLayer( new L.circle( L333.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+
 
 var L334 = L.polygon([
 [-17.04440377800294,145.7398823900024],
