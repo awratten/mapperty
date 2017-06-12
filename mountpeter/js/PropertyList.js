@@ -17,6 +17,8 @@ var Icon_Logo = L.icon({
     //className: Def_Class
 });
 
+var C_Radius = 2;
+
 /*
  var addressPoints = [
  [-16.83142, 145.69413, "<a href='#/' target='_blank'><button class='btn'>Visit Website</button></a>", Icon_Logo]
@@ -1223,12 +1225,6 @@ LotStage2.addLayer(Stage2_Border);
 
 var LotStage3 = L.layerGroup();
 
-
-
-
-
-
-var C_Radius = 2;
 
 var L301 = L.polygon([
 [-17.04337612938355,145.7394335994742],
