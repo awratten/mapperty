@@ -176,39 +176,25 @@
                 
                 map.addLayer(Stages);
                 //map.addLayer(Stage_Markers);
-                map.addLayer(Estate_Border);
+                //map.addLayer(Estate_Border);
                 
-                
-                map.on('zoomend', function () {
-                    if (map.getZoom() = 17) {
-                        map.addLayer(Stage_Markers);
-                    }
-                    if (map.getZoom() < 17)
-                    {
-                        map.removeLayer(Stage_Markers);
-                    }
-                    if (map.getZoom() > 17)
-                    {
-                        map.removeLayer(Stage_Markers);
-                    }
-                });
+
                 
                 
                 //hide layer based on zoom
                 map.on('zoomend', function () {
                     if (map.getZoom() > 17) {
                         map.removeLayer(Stages);
-                        map.removeLayer(Stage_Markers);
+                        //map.removeLayer(Stage_Markers);
                         map.addLayer(LotStage1);
                         map.addLayer(LotStage2);
                         map.addLayer(LotStage3);
                         map.addLayer(LotStage_Circles);
-
                     }
                     if (map.getZoom() < 18)
                     {
                         map.addLayer(Stages);
-                        map.addLayer(Stage_Markers);
+                        //map.addLayer(Stage_Markers);
                         map.removeLayer(LotStage1);
                         map.removeLayer(LotStage2);
                         map.removeLayer(LotStage3);
