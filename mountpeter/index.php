@@ -181,6 +181,7 @@
                 map.on('zoomend', function () {
                     if (map.getZoom() > 17) {
                         map.removeLayer(Stages);
+                        map.removeLayer(Stage_Markers);
                         map.addLayer(LotStage1);
                         map.addLayer(LotStage2);
                         map.addLayer(LotStage3);
@@ -190,6 +191,7 @@
                     if (map.getZoom() < 18)
                     {
                         map.addLayer(Stages);
+                        map.addLayer(Stage_Markers);
                         map.removeLayer(LotStage1);
                         map.removeLayer(LotStage2);
                         map.removeLayer(LotStage3);

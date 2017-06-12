@@ -32,6 +32,8 @@ var C_Radius = 0.5;
  ];
  */
 
+var Stage_Markers = L.layerGroup();
+
 var Estate_Border = L.polyline([
 [-17.04386385450891,145.7385106313772],
 [-17.04414657921998,145.7385883846923],
@@ -155,6 +157,9 @@ var Stage1 = L.polygon([
     [-17.04225267253366, 145.7401364954835],
     [-17.04210460046319, 145.7405432814109]
 ], {className: 'StageStyle'}).bindPopup('Stage 1');
+Stage_Markers.addLayer( new L.marker( Stage1.getBounds().getCenter()));
+
+
 
 var Stage2 = L.polygon([
     [-17.04210460046319, 145.7405432814109],
