@@ -209,6 +209,7 @@ var L107 = L.polygon([
     [-17.0430286167906, 145.7395327368086]
 ], {className: 'LotStyle'}).bindPopup('Lot 107 Annan Bend');
 LotStage1.addLayer(L107);
+LotStage_Circles.addLayer( new L.circle( L107.getBounds().getCenter() , { className: 'LotCircle_SOLD' , radius: C_Radius}));
 
 var L108 = L.polygon([
     [-17.04298528710298, 145.7396514702811],
@@ -227,6 +228,7 @@ var L109 = L.polygon([
     [-17.04293420674973, 145.7397919649612]
 ], {className: 'LotStyle'}).bindPopup('Lot 109 Annan Bend');
 LotStage1.addLayer(L109);
+LotStage_Circles.addLayer( new L.circle( L109.getBounds().getCenter() , { className: 'LotCircle_SOLD' , radius: C_Radius}));
 
 var L110 = L.polygon([
     [-17.0428895591715, 145.7399151062629],
@@ -245,6 +247,7 @@ var L111 = L.polygon([
     [-17.0428382543555, 145.7400559689761]
 ], {className: 'LotStyle'}).bindPopup('Lot 111 Annan Bend');
 LotStage1.addLayer(L111);
+LotStage_Circles.addLayer( new L.circle( L111.getBounds().getCenter() , { className: 'LotCircle_SOLD' , radius: C_Radius}));
 
 var L112 = L.polygon([
     [-17.04279349656123, 145.740178808341],
@@ -255,6 +258,7 @@ var L112 = L.polygon([
     [-17.04279349656123, 145.740178808341]
 ], {className: 'LotStyle'}).bindPopup('Lot 112 Annan Bend');
 LotStage1.addLayer(L112);
+LotStage_Circles.addLayer( new L.circle( L112.getBounds().getCenter() , { className: 'LotCircle_SOLD' , radius: C_Radius}));
 
 var L113 = L.polygon([
     [-17.04306609198562, 145.7402859564975],
@@ -313,6 +317,8 @@ var L118 = L.polygon([
     [-17.04297890848859, 145.7396690646113]
 ], {className: 'LotStyle'}).bindPopup('Lot 118 Bulleringa Loop');
 LotStage1.addLayer(L118);
+LotStage_Circles.addLayer( new L.circle( L118.getBounds().getCenter() , { className: 'LotCircle_SOLD' , radius: C_Radius}));
+
 
 var L119 = L.polygon([
     [-17.04301898490251, 145.7395592248034],
@@ -401,6 +407,7 @@ var L127 = L.polygon([
     [-17.04390634463569, 145.7400418135243]
 ], {className: 'LotStyle'}).bindPopup('Lot 127 Homevale Entrance');
 LotStage1.addLayer(L127);
+LotStage_Circles.addLayer( new L.circle( L127.getBounds().getCenter() , { className: 'LotCircle_SOLD' , radius: C_Radius}));
 
 
 var L128 = L.polygon([
@@ -411,7 +418,7 @@ var L128 = L.polygon([
     [-17.04394651326553, 145.7399317957084]
 ], {className: 'LotStyle'}).bindPopup('Lot 128 Homevale Entrance');
 LotStage1.addLayer(L128);
-
+LotStage_Circles.addLayer( new L.circle( L128.getBounds().getCenter() , { className: 'LotCircle_SOLD' , radius: C_Radius}));
 
 var L129 = L.polygon([
     [-17.04398610576695, 145.7398217780805],
@@ -421,7 +428,7 @@ var L129 = L.polygon([
     [-17.04398610576695, 145.7398217780805]
 ], {className: 'LotStyle'}).bindPopup('Lot 129 Homevale Entrance');
 LotStage1.addLayer(L129);
-
+LotStage_Circles.addLayer( new L.circle( L129.getBounds().getCenter() , { className: 'LotCircle_SOLD' , radius: C_Radius}));
 
 var L130 = L.polygon([
     [-17.04403550520423, 145.7400988437586],
