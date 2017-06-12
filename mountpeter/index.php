@@ -105,7 +105,10 @@
                 fill: #cfcfcf;
                 stroke-width: 1;  
             }
-
+            
+            .LotCircle {
+                fill: #cbe6a3;
+            }
 
 
         </style>
