@@ -73,7 +73,7 @@
                 stroke-width: 1;  
             }
             .StageStyle:hover { 
-                stroke-width: 2;
+                stroke-width: 3;
             }
             
             .LotStyle { 
@@ -82,7 +82,7 @@
                 stroke-width: 1;  
             }
             .LotStyle:hover { 
-                stroke-width: 2;
+                stroke-width: 3;
             }
             
             .DisplayStyle { 
