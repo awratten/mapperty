@@ -1611,9 +1611,15 @@ var circle = L.circle([51.508, -0.11], {
 }).addTo(mymap);
 */
 
+
+
+
 var LotStage3_Circles = L.layerGroup();
 //var Circle = L.circle([-17.04433970078141, 145.7400581816467], {radius: 5});
-var Circle = L.circle( L334.getBounds().getCenter() , {radius: 5});
-LotStage3_Circles.addLayer(Circle);
+//var L334 = L.circle( L334.getBounds().getCenter() , {radius: 5});
+//LotStage3_Circles.addLayer(Circle);
 
-//L334.getBounds().getCenter()
+
+LotStage3_Circles.addLayer(L.circle( L334.getBounds().getCenter() , {radius: 5}););
+
+
