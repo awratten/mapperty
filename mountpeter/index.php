@@ -117,8 +117,6 @@
                 fill: #cd2027;
                 stroke-width: 4;  
             }
-
-
         </style>
     </head>
     <body>
