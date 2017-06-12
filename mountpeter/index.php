@@ -175,6 +175,7 @@
                 // map.fitBounds(Stage1_polygon.getBounds());
                 
                 map.addLayer(Stages);
+                map.addLayer(Stage_Markers);
                 map.addLayer(Estate_Border);
                 
                 //hide layer based on zoom
