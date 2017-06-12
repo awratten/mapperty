@@ -17,7 +17,7 @@ var Icon_Logo = L.icon({
     //className: Def_Class
 });
 
-var C_Radius = 1;
+var C_Radius = 0.5;
 
 /*
  var addressPoints = [
