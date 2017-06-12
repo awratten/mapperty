@@ -68,7 +68,7 @@
                 border-radius: 16px;
             }
             .StageStyle { 
-                stroke: #fff;
+                stroke: #005587;
                 fill: #cfcfcf;
                 stroke-width: 1;  
             }
