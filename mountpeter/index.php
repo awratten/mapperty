@@ -178,7 +178,7 @@
                 //map.addLayer(Stage_Markers);
                 map.addLayer(Estate_Border);
                 
-
+                map.setView(Estate_Border.getBounds().getCenter());
                 
                 
                 //hide layer based on zoom
