@@ -1269,8 +1269,8 @@ var L305 = L.polygon([
 [-17.04323801226944,145.7389574363858],
 [-17.04329144987194,145.7388112492452],
 [-17.04354048964963,145.738878928406]
-L305], {className: 'LotStyle'}).bindPopup('Lot 305 Bulleringa Loop');
-LotStage3.addLayer();
+], {className: 'LotStyle'}).bindPopup('Lot 305 Bulleringa Loop');
+LotStage3.addLayer(L305);
 
 
 var L306 = L.polygon([
