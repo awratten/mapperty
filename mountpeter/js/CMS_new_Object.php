@@ -29,4 +29,3 @@ and open the template in the editor.
 
     </body>
 </html>
-<a href="CMS_new_Object.php"></a>

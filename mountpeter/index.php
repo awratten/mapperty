@@ -113,9 +113,9 @@
             }
             
             .LotCircle_SOLD {
-                stroke: red;
-                fill: #a51e24;
-                stroke-width: 2;  
+                stroke: #cd2027;
+                fill: #cd2027;
+                stroke-width: 3;  
             }
 
 
