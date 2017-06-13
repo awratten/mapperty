@@ -149,14 +149,7 @@
         }
         ?>
         
-        <?php
-        if (isset($_GET['s'])) {
-            $test = $_GET['s'];
-        } else {
-            $test = '';
-        }
-        echo $test;
-        ?> 
+
 
 <?php #Main javascript to load leaflet components and add propery markers from PropertyList.js  ?>
         <script>
@@ -191,7 +184,12 @@ if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
 
             map.setView(Estate_Border.getBounds().getCenter());
             
-  
+            <?php
+            if (isset($_GET['s'])) {
+                $s = $_GET['s'];
+                echo "map.setView(L$s.getBounds().getCenter());";
+            }             
+            ?> 
 
             //hide layer based on zoom
             map.on('zoomend', function () {
