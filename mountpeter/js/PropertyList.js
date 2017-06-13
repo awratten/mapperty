@@ -485,7 +485,7 @@ var L123 = L.polygon([
     [-17.04325221551944, 145.7401863909348],
     [-17.04333535972393, 145.7399577481705],
     [-17.04348105679335, 145.7400148272253]
-], {className: 'DisplayStyle'}).bindPopup('<strong>Lot 123 (Display)</strong>');
+], {className: 'DisplayStyle'}).bindPopup('<strong>Lot 123 Mamu Link (Display)</strong>');
 LotStage1.addLayer(L123);
 
 
@@ -495,7 +495,7 @@ var L124 = L.polygon([
     [-17.04351199354464, 145.7403283928809],
     [-17.04338526772471, 145.7402787109909],
     [-17.04348113873402, 145.7400150149605]
-], {className: 'DisplayStyle'}).bindPopup('<strong>Lot 124 (Display)</strong>');
+], {className: 'DisplayStyle'}).bindPopup('<strong>Lot 124 Mamu Link (Display)</strong>');
 LotStage1.addLayer(L124);
 
 
