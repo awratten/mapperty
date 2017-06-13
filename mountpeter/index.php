@@ -185,9 +185,8 @@ if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
             map.setView(Estate_Border.getBounds().getCenter());
             
             <?php
-            if (isset($_GET['s'])) {
-                $s = $_GET['s'];
-                echo "map.setView(L$s.getBounds().getCenter());";
+            if (isset(filter_input(INPUT_GET, 's', FILTER_SANITIZE_STRING))) {
+                $s = filter_input(INPUT_GET, 's', FILTER_SANITIZE_STRING);
             }             
             ?> 
 
