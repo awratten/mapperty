@@ -148,6 +148,15 @@
             echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>";
         }
         ?>
+        
+        <?php
+        if (isset($_GET['s'])) {
+            $test = $_GET['s'];
+        } else {
+            $test = '';
+        }
+        echo $test;
+        ?> 
 
 <?php #Main javascript to load leaflet components and add propery markers from PropertyList.js  ?>
         <script>
@@ -181,7 +190,8 @@ if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
             map.addLayer(Estate_Border);
 
             map.setView(Estate_Border.getBounds().getCenter());
-
+            
+  
 
             //hide layer based on zoom
             map.on('zoomend', function () {
