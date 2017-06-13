@@ -184,11 +184,6 @@ if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
 
             map.setView(Estate_Border.getBounds().getCenter());
             
-            <?php
-            if (isset(filter_input(INPUT_GET, 's', FILTER_SANITIZE_STRING))) {
-                $s = filter_input(INPUT_GET, 's', FILTER_SANITIZE_STRING);
-            }             
-            ?> 
 
             //hide layer based on zoom
             map.on('zoomend', function () {
