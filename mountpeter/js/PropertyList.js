@@ -1114,9 +1114,9 @@ var L256 = L.polygon([
     [-17.04249890117185, 145.7397813286899],
     [-17.04220242361849, 145.7396658196048],
     [-17.04224437804323, 145.7395485860176]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 256 Annan Bend</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=256" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 256 Annan Bend</strong></center>');
 LotStage2.addLayer(L256);
-LotStage_Circles.addLayer(new L.circle(L256.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L256.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
 
 var L239 = L.polygon([
