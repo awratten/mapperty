@@ -572,14 +572,14 @@ var L131 = L.polygon([
 LotStage1.addLayer(L131);
 
 
-var L132_CarPark = L.polygon([
+var L132 = L.polygon([
     [-17.0439397417763, 145.7403624351792],
     [-17.04398738151496, 145.7402308112495],
     [-17.04424071027864, 145.7403308115149],
     [-17.04419307037523, 145.7404624354877],
     [-17.0439397417763, 145.7403624351792]
-], {className: 'CarStyle'}).bindPopup('Car Park');
-LotStage1.addLayer(L132_CarPark);
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 132 Homevale Entrance</strong></center>');
+LotStage1.addLayer(L132);
 
 
 var L133 = L.polygon([
