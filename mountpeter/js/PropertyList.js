@@ -580,6 +580,7 @@ var L132 = L.polygon([
     [-17.0439397417763, 145.7403624351792]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 132 Homevale Entrance</strong></center>');
 LotStage1.addLayer(L132);
+LotStage_Circles.addLayer(new L.circle(L132.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L133 = L.polygon([
