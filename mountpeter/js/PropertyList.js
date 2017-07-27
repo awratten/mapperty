@@ -283,6 +283,7 @@ var L103 = L.polygon([
 LotStage1.addLayer(L103);
 LotStage_Circles.addLayer(new L.circle(L103.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
+
 var L104 = L.polygon([
     [-17.04271030310246, 145.7404721021273],
     [-17.04259500143691, 145.7407902317397],
@@ -292,6 +293,7 @@ var L104 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 104 Bulleringa Loop</strong></center>');
 LotStage1.addLayer(L104);
 LotStage_Circles.addLayer(new L.circle(L104.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
+
 
 var L105 = L.polygon([
     [-17.04283714390092, 145.7405225968581],
@@ -303,6 +305,7 @@ var L105 = L.polygon([
 LotStage1.addLayer(L105);
 LotStage_Circles.addLayer(new L.circle(L105.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
+
 var L106 = L.polygon([
     [-17.04296376020508, 145.7405721211752],
     [-17.04283880276533, 145.740915530605],
@@ -312,6 +315,7 @@ var L106 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 106 Bulleringa Loop</strong></center>');
 LotStage1.addLayer(L106);
 LotStage_Circles.addLayer(new L.circle(L106.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
+
 
 var L107 = L.polygon([
     [-17.0430286167906, 145.7395327368086],
@@ -323,6 +327,7 @@ var L107 = L.polygon([
 LotStage1.addLayer(L107);
 LotStage_Circles.addLayer(new L.circle(L107.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
+
 var L108 = L.polygon([
     [-17.04298528710298, 145.7396514702811],
     [-17.04293421077012, 145.739791878901],
@@ -331,6 +336,8 @@ var L108 = L.polygon([
     [-17.04298528710298, 145.7396514702811]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 108 Annan Bend</strong></center>');
 LotStage1.addLayer(L108);
+//LotStage_Circles.addLayer(new L.circle(L108.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+
 
 var L109 = L.polygon([
     [-17.04293420674973, 145.7397919649612],
@@ -342,6 +349,7 @@ var L109 = L.polygon([
 LotStage1.addLayer(L109);
 LotStage_Circles.addLayer(new L.circle(L109.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
+
 var L110 = L.polygon([
     [-17.0428895591715, 145.7399151062629],
     [-17.04283832264821, 145.7400560098888],
@@ -350,6 +358,8 @@ var L110 = L.polygon([
     [-17.0428895591715, 145.7399151062629]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 110 Annan Bend</strong></center>');
 LotStage1.addLayer(L110);
+//LotStage_Circles.addLayer(new L.circle(L110.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+
 
 var L111 = L.polygon([
     [-17.0428382543555, 145.7400559689761],
@@ -393,7 +403,6 @@ var L114 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 114 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=114" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage1.addLayer(L114);
 LotStage_Circles.addLayer(new L.circle(L114.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
-
 
 
 var L115 = L.polygon([
@@ -450,6 +459,7 @@ var L119 = L.polygon([
 LotStage1.addLayer(L119);
 LotStage_Circles.addLayer(new L.circle(L119.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
+
 var L120 = L.polygon([
     [-17.04376597504557, 145.7396302103769],
     [-17.04371216510227, 145.739779059557],
@@ -468,6 +478,8 @@ var L121 = L.polygon([
     [-17.04371214103294, 145.7397789365353]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 121 Bulleringa Loop</strong></center>');
 LotStage1.addLayer(L121);
+//LotStage_Circles.addLayer(new L.circle(L121.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+
 
 var L122 = L.polygon([
     [-17.04366096984188, 145.7399200945817],
@@ -488,7 +500,7 @@ var L123 = L.polygon([
     [-17.04348105679335, 145.7400148272253]
 ], {className: 'DisplayStyle'}).bindPopup('<center><strong>Lot 123 Mamu Link (Display)</strong></center>');
 LotStage1.addLayer(L123);
-
+//LotStage_Circles.addLayer(new L.circle(L123.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 var L124 = L.polygon([
     [-17.04348113873402, 145.7400150149605],
@@ -498,7 +510,7 @@ var L124 = L.polygon([
     [-17.04348113873402, 145.7400150149605]
 ], {className: 'DisplayStyle'}).bindPopup('<center><strong>Lot 124 Mamu Link (Display)</strong></center>');
 LotStage1.addLayer(L124);
-
+//LotStage_Circles.addLayer(new L.circle(L124.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 var L125 = L.polygon([
     [-17.04371783269743, 145.7401079583173],
@@ -508,7 +520,7 @@ var L125 = L.polygon([
     [-17.04371783269743, 145.7401079583173]
 ], {className: 'DisplayStyle'}).bindPopup('<center><strong>Lot 125 Mamu Link (Display)</strong></center>');
 LotStage1.addLayer(L125);
-
+//LotStage_Circles.addLayer(new L.circle(L125.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 var L126 = L.polygon([
     [-17.04386140502665, 145.7401645928698],
@@ -519,7 +531,7 @@ var L126 = L.polygon([
     [-17.04386140502665, 145.7401645928698]
 ], {className: 'DisplayStyle'}).bindPopup('<center><strong>Lot 126 Mamu Link (Display)</strong></center>');
 LotStage1.addLayer(L126);
-
+//LotStage_Circles.addLayer(new L.circle(L126.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 var L127 = L.polygon([
     [-17.04390634463569, 145.7400418135243],
@@ -553,13 +565,14 @@ var L129 = L.polygon([
 LotStage1.addLayer(L129);
 LotStage_Circles.addLayer(new L.circle(L129.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
+
 var L130 = L.polygon([
     [-17.04403550520423, 145.7400988437586],
     [-17.04408643028238, 145.7399586280903],
     [-17.04433943056174, 145.740057940684],
     [-17.04428883390645, 145.7401985000864],
     [-17.04403550520423, 145.7400988437586]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 130 Homevale Entrance</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 130 Homevale Entrance</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=130" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage1.addLayer(L130);
 LotStage_Circles.addLayer(new L.circle(L130.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
@@ -572,6 +585,7 @@ var L131 = L.polygon([
     [-17.04398771016849, 145.7402308113726]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 131 Homevale Entrance</strong></center>');
 LotStage1.addLayer(L131);
+//LotStage_Circles.addLayer(new L.circle(L131.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L132 = L.polygon([
@@ -580,7 +594,7 @@ var L132 = L.polygon([
     [-17.04424071027864, 145.7403308115149],
     [-17.04419307037523, 145.7404624354877],
     [-17.0439397417763, 145.7403624351792]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 132 Homevale Entrance</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 132 Homevale Entrance</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=132" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage1.addLayer(L132);
 LotStage_Circles.addLayer(new L.circle(L132.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
@@ -593,6 +607,7 @@ var L133 = L.polygon([
     [-17.04419307039642, 145.7404624355674]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 133 Homevale Entrance</strong></center>');
 LotStage1.addLayer(L133);
+//LotStage_Circles.addLayer(new L.circle(L133.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L134 = L.polygon([
@@ -623,6 +638,7 @@ var L136 = L.polygon([
     [-17.04373788011666, 145.7409161608915]
 ], {className: 'DisplayStyle'}).bindPopup('<center><strong>Lot 136 Homevale Ent. (Display)</strong></center>');
 LotStage1.addLayer(L136);
+//LotStage_Circles.addLayer(new L.circle(L136.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L137 = L.polygon([
@@ -634,6 +650,7 @@ var L137 = L.polygon([
 ], {className: 'DisplayStyle'}).bindPopup('<center><strong>Lot 137 Homevale Entrance (Display)</strong></center>');
 LotStage1.addLayer(L137);
 //LotStage_Circles.addLayer( new L.circle( L137.getBounds().getCenter() , { className: 'LotCircle_SOLD' , radius: C_Radius}));
+
 
 var Park_main = L.polygon([
     [-17.04299172574408, 145.7405830444646],
@@ -814,6 +831,7 @@ var L206 = L.polygon([
     [-17.04166283094263, 145.7397852415041]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 206 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L206);
+//LotStage_Circles.addLayer(new L.circle(L206.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L207 = L.polygon([
@@ -868,6 +886,7 @@ var L211 = L.polygon([
     [-17.04181273701187, 145.7391607029942]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 211 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L211);
+//LotStage_Circles.addLayer(new L.circle(L211.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L212 = L.polygon([
@@ -889,6 +908,7 @@ var L213 = L.polygon([
     [-17.04187075107713, 145.7389192506028]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 213 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L213);
+//LotStage_Circles.addLayer(new L.circle(L213.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L214 = L.polygon([
@@ -899,6 +919,7 @@ var L214 = L.polygon([
     [-17.04190552691742, 145.7387733972068]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 214 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L214);
+//LotStage_Circles.addLayer(new L.circle(L214.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L215 = L.polygon([
@@ -909,6 +930,7 @@ var L215 = L.polygon([
     [-17.0416161969382, 145.7386975781516]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 215 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L215);
+//LotStage_Circles.addLayer(new L.circle(L215.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L216 = L.polygon([
@@ -920,6 +942,7 @@ var L216 = L.polygon([
     [-17.04197240829843, 145.7385343828015]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 216 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L216);
+//LotStage_Circles.addLayer(new L.circle(L216.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L217 = L.polygon([
@@ -931,18 +954,8 @@ var L217 = L.polygon([
     [-17.04168350006127, 145.738418990133]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 217 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L217);
+//LotStage_Circles.addLayer(new L.circle(L217.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
-
-var L252 = L.polygon([
-    [-17.04211285254205, 145.7399125561717],
-    [-17.04205886473094, 145.7400612998424],
-    [-17.04180195980511, 145.7399598289577],
-    [-17.04177664980336, 145.7399090955083],
-    [-17.0417957637974, 145.7398293160371],
-    [-17.04211285254205, 145.7399125561717]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 252 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=252" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
-LotStage2.addLayer(L252);
-LotStage_Circles.addLayer(new L.circle(L252.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 var L240 = L.polygon([
     [-17.04280438042663, 145.7389687404852],
@@ -1022,6 +1035,8 @@ var L246 = L.polygon([
     [-17.04234994741284, 145.7392858333601]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 246 Annan Bend</strong></center>');
 LotStage2.addLayer(L246);
+//LotStage_Circles.addLayer(new L.circle(L246.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+
 
 var L247 = L.polygon([
     [-17.04222753059313, 145.7392527210361],
@@ -1031,6 +1046,8 @@ var L247 = L.polygon([
     [-17.04222753059313, 145.7392527210361]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 247 Annan Bend</strong></center>');
 LotStage2.addLayer(L247);
+//LotStage_Circles.addLayer(new L.circle(L247.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+
 
 var L248 = L.polygon([
     [-17.04188732745551, 145.7394500968369],
@@ -1041,7 +1058,7 @@ var L248 = L.polygon([
     [-17.04188732745551, 145.7394500968369]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 248 Annan Bend</strong></center>');
 LotStage2.addLayer(L248);
-
+//LotStage_Circles.addLayer(new L.circle(L248.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L249 = L.polygon([
@@ -1054,6 +1071,7 @@ var L249 = L.polygon([
     [-17.04185715837692, 145.7395753734185]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 249 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L249);
+//LotStage_Circles.addLayer(new L.circle(L249.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L250 = L.polygon([
@@ -1064,7 +1082,7 @@ var L250 = L.polygon([
     [-17.04182671861163, 145.7397016482642]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 250 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L250);
-
+//LotStage_Circles.addLayer(new L.circle(L250.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L251 = L.polygon([
@@ -1075,7 +1093,19 @@ var L251 = L.polygon([
     [-17.04179578570212, 145.7398293934238]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 251 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L251);
+//LotStage_Circles.addLayer(new L.circle(L251.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
+
+var L252 = L.polygon([
+    [-17.04211285254205, 145.7399125561717],
+    [-17.04205886473094, 145.7400612998424],
+    [-17.04180195980511, 145.7399598289577],
+    [-17.04177664980336, 145.7399090955083],
+    [-17.0417957637974, 145.7398293160371],
+    [-17.04211285254205, 145.7399125561717]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 252 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=252" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
+LotStage2.addLayer(L252);
+LotStage_Circles.addLayer(new L.circle(L252.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L253 = L.polygon([
@@ -1123,89 +1153,97 @@ LotStage2.addLayer(L256);
 LotStage_Circles.addLayer(new L.circle(L256.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
 
-var L239 = L.polygon([
-    [-17.04262046385754, 145.7389182472918],
-    [-17.04255153626023, 145.7391907385066],
-    [-17.04241173267676, 145.7391524515634],
-    [-17.04248072189795, 145.7388801140377],
-    [-17.04262046385754, 145.7389182472918]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 239 Annan Bend</strong></center>');
-LotStage2.addLayer(L239);
+var L218 = L.polygon([
+    [-17.04228088298516, 145.7380766769583],
+    [-17.04220517062587, 145.7383720019105],
+    [-17.0420471988008, 145.7383288345644],
+    [-17.04215222837926, 145.7380415478501],
+    [-17.04228088298516, 145.7380766769583]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 218 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L218);
+LotStage_Circles.addLayer(new L.circle(L218.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
-var L238 = L.polygon([
-    [-17.04234130021278, 145.7388415912756],
-    [-17.04248065601341, 145.7388801829489],
-    [-17.04241188316566, 145.739151975193],
-    [-17.04227247133716, 145.7391140427297],
-    [-17.04234130021278, 145.7388415912756]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 238 Annan Bend</strong></center>');
-LotStage2.addLayer(L238);
+var L219 = L.polygon([
+    [-17.04241551479168, 145.7381141877563],
+    [-17.04234094092875, 145.7384092151848],
+    [-17.04220573981946, 145.7383720018997],
+    [-17.04228088288378, 145.7380769746288],
+    [-17.04241551479168, 145.7381141877563]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 219 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L219);
 
 
-var L237 = L.polygon([
-    [-17.04234134486323, 145.7388415535145],
-    [-17.04227280411085, 145.7391143907132],
-    [-17.04213206139078, 145.7390757622881],
-    [-17.04220100935482, 145.7388036851901],
-    [-17.04234134486323, 145.7388415535145]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 237 Annan Bend</strong></center>');
-LotStage2.addLayer(L237);
+var L220 = L.polygon([
+    [-17.04255127750943, 145.7381511612919],
+    [-17.04247636382232, 145.7384463548305],
+    [-17.04234142281394, 145.7384100038211],
+    [-17.0424159579038, 145.738113853598],
+    [-17.04255127750943, 145.7381511612919]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 220 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L220);
 
 
-var L236 = L.polygon([
-    [-17.04205287208114, 145.7387625569884],
-    [-17.04220087758495, 145.7388036162799],
-    [-17.04213239414948, 145.7390757622712],
-    [-17.0420222621525, 145.7390458339825],
-    [-17.04199531133925, 145.7389995492724],
-    [-17.04205287208114, 145.7387625569884]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 236 Annan Bend</strong></center>');
-LotStage2.addLayer(L236);
+var L221 = L.polygon([
+    [-17.04269109899816, 145.7381893812501],
+    [-17.04261640322113, 145.7384850088673],
+    [-17.04247631168231, 145.7384466609856],
+    [-17.04255128101374, 145.7381516059012],
+    [-17.04269109899816, 145.7381893812501]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 221 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L221);
 
 
-var L235 = L.polygon([
-    [-17.04205253937158, 145.7387622090648],
-    [-17.04206551547195, 145.7387086161004],
-    [-17.04209645849741, 145.7386049101982],
-    [-17.04212407432259, 145.7385286966946],
-    [-17.04217231934513, 145.7385043360113],
-    [-17.04227047335816, 145.7385311320197],
-    [-17.0422009348308, 145.7388036212522],
-    [-17.04205253937158, 145.7387622090648]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 235 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L235);
+var L222 = L.polygon([
+    [-17.04284870198397, 145.738232593996],
+    [-17.04277373251789, 145.7385279356797],
+    [-17.04261612954086, 145.7384847226804],
+    [-17.04269109893248, 145.7381899535799],
+    [-17.04284870198397, 145.738232593996]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 222 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L222);
 
 
-var L234 = L.polygon([
-    [-17.04241021797557, 145.7385690640418],
-    [-17.04234134483802, 145.7388415534764],
-    [-17.04220094347044, 145.7388036851903],
-    [-17.0422704732727, 145.7385307839592],
-    [-17.04241021797557, 145.7385690640418]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 234 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L234);
-LotStage_Circles.addLayer(new L.circle(L234.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+var L223 = L.polygon([
+    [-17.04298824630275, 145.7382715141916],
+    [-17.04291382400901, 145.7385662837067],
+    [-17.04277345887222, 145.73852764951],
+    [-17.04284870193262, 145.7382325939843],
+    [-17.04298824630275, 145.7382715141916]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 223 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L223);
+LotStage_Circles.addLayer(new L.circle(L223.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
-var L233 = L.polygon([
-    [-17.0425329935796, 145.7386024721527],
-    [-17.04246345498073, 145.7388753097392],
-    [-17.04234130021278, 145.7388415912756],
-    [-17.04241055060545, 145.7385694119993],
-    [-17.0425329935796, 145.7386024721527]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 233 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L233);
+var L224 = L.polygon([
+    [-17.04313244206861, 145.7383107205771],
+    [-17.04305747248453, 145.7386057764728],
+    [-17.0429138239607, 145.7385662836867],
+    [-17.04298851984198, 145.7382709417721],
+    [-17.04313244206861, 145.7383107205771]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 224 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L224);
 
 
-var L232 = L.polygon([
-    [-17.04253266078201, 145.7386024720669],
-    [-17.04265510374915, 145.7386365762833],
-    [-17.04258521479778, 145.7389085738988],
-    [-17.04246345494374, 145.738875309744],
-    [-17.04253266078201, 145.7386024720669]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 232 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L232);
+var L225 = L.polygon([
+    [-17.04326760846834, 145.7383484962283],
+    [-17.0431931860929, 145.7386432661382],
+    [-17.04305774602802, 145.7386057765468],
+    [-17.04313289023585, 145.7383106857352],
+    [-17.04326760846834, 145.7383484962283]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 225 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L225);
+
+
+
+var L226 = L.polygon([
+    [-17.04340781099491, 145.7383859721574],
+    [-17.04333246792204, 145.7386812575703],
+    [-17.04319314268026, 145.7386429787022],
+    [-17.04326786156093, 145.7383479668274],
+    [-17.04340781099491, 145.7383859721574]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 226 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L226);
 
 
 var L227 = L.polygon([
@@ -1261,99 +1299,89 @@ LotStage2.addLayer(L231);
 LotStage_Circles.addLayer(new L.circle(L231.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
+var L232 = L.polygon([
+    [-17.04253266078201, 145.7386024720669],
+    [-17.04265510374915, 145.7386365762833],
+    [-17.04258521479778, 145.7389085738988],
+    [-17.04246345494374, 145.738875309744],
+    [-17.04253266078201, 145.7386024720669]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 232 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L232);
 
 
-
-var L226 = L.polygon([
-    [-17.04340781099491, 145.7383859721574],
-    [-17.04333246792204, 145.7386812575703],
-    [-17.04319314268026, 145.7386429787022],
-    [-17.04326786156093, 145.7383479668274],
-    [-17.04340781099491, 145.7383859721574]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 226 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L226);
-
-
-var L225 = L.polygon([
-    [-17.04326760846834, 145.7383484962283],
-    [-17.0431931860929, 145.7386432661382],
-    [-17.04305774602802, 145.7386057765468],
-    [-17.04313289023585, 145.7383106857352],
-    [-17.04326760846834, 145.7383484962283]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 225 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L225);
+var L233 = L.polygon([
+    [-17.0425329935796, 145.7386024721527],
+    [-17.04246345498073, 145.7388753097392],
+    [-17.04234130021278, 145.7388415912756],
+    [-17.04241055060545, 145.7385694119993],
+    [-17.0425329935796, 145.7386024721527]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 233 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L233);
 
 
-var L224 = L.polygon([
-    [-17.04313244206861, 145.7383107205771],
-    [-17.04305747248453, 145.7386057764728],
-    [-17.0429138239607, 145.7385662836867],
-    [-17.04298851984198, 145.7382709417721],
-    [-17.04313244206861, 145.7383107205771]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 224 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L224);
+var L234 = L.polygon([
+    [-17.04241021797557, 145.7385690640418],
+    [-17.04234134483802, 145.7388415534764],
+    [-17.04220094347044, 145.7388036851903],
+    [-17.0422704732727, 145.7385307839592],
+    [-17.04241021797557, 145.7385690640418]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 234 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L234);
+LotStage_Circles.addLayer(new L.circle(L234.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
-var L223 = L.polygon([
-    [-17.04298824630275, 145.7382715141916],
-    [-17.04291382400901, 145.7385662837067],
-    [-17.04277345887222, 145.73852764951],
-    [-17.04284870193262, 145.7382325939843],
-    [-17.04298824630275, 145.7382715141916]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 223 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L223);
-LotStage_Circles.addLayer(new L.circle(L223.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+var L235 = L.polygon([
+    [-17.04205253937158, 145.7387622090648],
+    [-17.04206551547195, 145.7387086161004],
+    [-17.04209645849741, 145.7386049101982],
+    [-17.04212407432259, 145.7385286966946],
+    [-17.04217231934513, 145.7385043360113],
+    [-17.04227047335816, 145.7385311320197],
+    [-17.0422009348308, 145.7388036212522],
+    [-17.04205253937158, 145.7387622090648]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 235 Bulleringa Loop</strong></center>');
+LotStage2.addLayer(L235);
 
 
-var L222 = L.polygon([
-    [-17.04284870198397, 145.738232593996],
-    [-17.04277373251789, 145.7385279356797],
-    [-17.04261612954086, 145.7384847226804],
-    [-17.04269109893248, 145.7381899535799],
-    [-17.04284870198397, 145.738232593996]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 222 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L222);
+var L236 = L.polygon([
+    [-17.04205287208114, 145.7387625569884],
+    [-17.04220087758495, 145.7388036162799],
+    [-17.04213239414948, 145.7390757622712],
+    [-17.0420222621525, 145.7390458339825],
+    [-17.04199531133925, 145.7389995492724],
+    [-17.04205287208114, 145.7387625569884]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 236 Annan Bend</strong></center>');
+LotStage2.addLayer(L236);
 
 
-var L221 = L.polygon([
-    [-17.04269109899816, 145.7381893812501],
-    [-17.04261640322113, 145.7384850088673],
-    [-17.04247631168231, 145.7384466609856],
-    [-17.04255128101374, 145.7381516059012],
-    [-17.04269109899816, 145.7381893812501]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 221 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L221);
+var L237 = L.polygon([
+    [-17.04234134486323, 145.7388415535145],
+    [-17.04227280411085, 145.7391143907132],
+    [-17.04213206139078, 145.7390757622881],
+    [-17.04220100935482, 145.7388036851901],
+    [-17.04234134486323, 145.7388415535145]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 237 Annan Bend</strong></center>');
+LotStage2.addLayer(L237);
 
 
-var L220 = L.polygon([
-    [-17.04255127750943, 145.7381511612919],
-    [-17.04247636382232, 145.7384463548305],
-    [-17.04234142281394, 145.7384100038211],
-    [-17.0424159579038, 145.738113853598],
-    [-17.04255127750943, 145.7381511612919]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 220 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L220);
+var L238 = L.polygon([
+    [-17.04234130021278, 145.7388415912756],
+    [-17.04248065601341, 145.7388801829489],
+    [-17.04241188316566, 145.739151975193],
+    [-17.04227247133716, 145.7391140427297],
+    [-17.04234130021278, 145.7388415912756]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 238 Annan Bend</strong></center>');
+LotStage2.addLayer(L238);
 
 
-var L219 = L.polygon([
-    [-17.04241551479168, 145.7381141877563],
-    [-17.04234094092875, 145.7384092151848],
-    [-17.04220573981946, 145.7383720018997],
-    [-17.04228088288378, 145.7380769746288],
-    [-17.04241551479168, 145.7381141877563]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 219 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L219);
-
-
-var L218 = L.polygon([
-    [-17.04228088298516, 145.7380766769583],
-    [-17.04220517062587, 145.7383720019105],
-    [-17.0420471988008, 145.7383288345644],
-    [-17.04215222837926, 145.7380415478501],
-    [-17.04228088298516, 145.7380766769583]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 218 Bulleringa Loop</strong></center>');
-LotStage2.addLayer(L218);
-LotStage_Circles.addLayer(new L.circle(L218.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+var L239 = L.polygon([
+    [-17.04262046385754, 145.7389182472918],
+    [-17.04255153626023, 145.7391907385066],
+    [-17.04241173267676, 145.7391524515634],
+    [-17.04248072189795, 145.7388801140377],
+    [-17.04262046385754, 145.7389182472918]
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 239 Annan Bend</strong></center>');
+LotStage2.addLayer(L239);
 
 
 var Stage2_Border = L.polyline([
