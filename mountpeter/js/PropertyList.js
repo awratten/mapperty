@@ -601,7 +601,7 @@ var L134 = L.polygon([
     [-17.0438319332542, 145.7406569558103],
     [-17.04388651836874, 145.740508009676],
     [-17.04414012404059, 145.7406074624375]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 134 Homevale Entrance</strong></center>');
+], {className: 'CarStyle'}).bindPopup('<center><strong>Lot 134 Homevale Entrance</strong></center>');
 LotStage1.addLayer(L134);
 
 
