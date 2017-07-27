@@ -1742,7 +1742,7 @@ var L328 = L.polygon([
 LotStage3.addLayer(L328);
 //LotStage_Circles.addLayer( new L.circle( L328.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
-
+// Courthouse Classics
 var L329 = L.polygon([
     [-17.04471839612251, 145.7395490040048],
     [-17.04459156644601, 145.7394992072271],
@@ -1751,9 +1751,9 @@ var L329 = L.polygon([
     [-17.04471839612251, 145.7395490040048]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 329 Homevale Entrance</strong></center>');
 LotStage3.addLayer(L329);
-//LotStage_Circles.addLayer( new L.circle( L329.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+LotStage_Circles.addLayer( new L.circle( L329.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
-
+// Courthouse Classics
 var L330 = L.polygon([
     [-17.04459145045, 145.7394990181224],
     [-17.04444788161887, 145.7394425299043],
@@ -1762,7 +1762,7 @@ var L330 = L.polygon([
     [-17.04459145045, 145.7394990181224]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 330 Homevale Entrance</strong></center>');
 LotStage3.addLayer(L330);
-//LotStage_Circles.addLayer( new L.circle( L330.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+LotStage_Circles.addLayer( new L.circle( L330.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
 
 var L331 = L.polygon([
