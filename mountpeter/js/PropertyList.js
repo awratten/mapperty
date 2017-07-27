@@ -268,7 +268,7 @@ var L102 = L.polygon([
     [-17.04224399194547, 145.7406112572559],
     [-17.04234635035691, 145.7403295768615],
     [-17.04247362272434, 145.7403788555922]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 102 Bulleringa Loop</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 102 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=102" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage1.addLayer(L102);
 LotStage_Circles.addLayer(new L.circle(L102.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
