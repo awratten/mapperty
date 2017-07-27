@@ -629,9 +629,10 @@ var L135 = L.polygon([
     [-17.04408594404427, 145.740756702186],
     [-17.0440359457219, 145.7408928203267],
     [-17.04378271613257, 145.7407930060016]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 135 Homevale Entrance</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 135 Homevale Entrance</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=135" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage1.addLayer(L135);
 LotStage_Circles.addLayer(new L.circle(L135.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+
 
 var L136 = L.polygon([
     [-17.04373788011666, 145.7409161608915],
@@ -1026,7 +1027,7 @@ var L245 = L.polygon([
     [-17.04228088894265, 145.7395583021818],
     [-17.04234998175628, 145.7392860501608],
     [-17.04247237978949, 145.7393197994499]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 245 Annan Bend</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 245 Annan Bend</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=245" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage2.addLayer(L245);
 LotStage_Circles.addLayer(new L.circle(L245.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
@@ -1163,7 +1164,7 @@ var L218 = L.polygon([
     [-17.0420471988008, 145.7383288345644],
     [-17.04215222837926, 145.7380415478501],
     [-17.04228088298516, 145.7380766769583]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 218 Bulleringa Loop</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 218 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=218" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage2.addLayer(L218);
 LotStage_Circles.addLayer(new L.circle(L218.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
@@ -1214,7 +1215,7 @@ var L223 = L.polygon([
     [-17.04277345887222, 145.73852764951],
     [-17.04284870193262, 145.7382325939843],
     [-17.04298824630275, 145.7382715141916]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 223 Bulleringa Loop</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 223 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=223" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage2.addLayer(L223);
 LotStage_Circles.addLayer(new L.circle(L223.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
@@ -1237,7 +1238,6 @@ var L225 = L.polygon([
     [-17.04326760846834, 145.7383484962283]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 225 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L225);
-
 
 
 var L226 = L.polygon([
@@ -1287,7 +1287,7 @@ var L230 = L.polygon([
     [-17.0427080462471, 145.738942473732],
     [-17.04277728842645, 145.7386698557156],
     [-17.04290836672098, 145.7387055975749]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 230 Bulleringa Loop</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 230 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=230" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage2.addLayer(L230);
 LotStage_Circles.addLayer(new L.circle(L230.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
@@ -1298,7 +1298,7 @@ var L231 = L.polygon([
     [-17.04258528068227, 145.7389085738988],
     [-17.04265510368576, 145.7386369242497],
     [-17.04277688118281, 145.7386696364625]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 231 Bulleringa Loop</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 231 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=231" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage2.addLayer(L231);
 LotStage_Circles.addLayer(new L.circle(L231.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
