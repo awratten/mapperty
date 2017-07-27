@@ -837,7 +837,7 @@ var L206 = L.polygon([
     [-17.04166283094263, 145.7397852415041]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 206 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L206);
-//LotStage_Circles.addLayer(new L.circle(L206.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L206.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
 
 var L207 = L.polygon([
@@ -1249,7 +1249,7 @@ var L226 = L.polygon([
     [-17.04340781099491, 145.7383859721574]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 226 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L226);
-LotStage_Circles.addLayer(new L.circle(L223.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
+//LotStage_Circles.addLayer(new L.circle(L223.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
 
 var L227 = L.polygon([
