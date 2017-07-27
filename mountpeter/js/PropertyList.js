@@ -270,7 +270,7 @@ var L102 = L.polygon([
     [-17.04247362272434, 145.7403788555922]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 102 Bulleringa Loop</strong></center>');
 LotStage1.addLayer(L102);
-LotStage_Circles.addLayer(new L.circle(L102.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L102.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L103 = L.polygon([
@@ -457,7 +457,7 @@ var L119 = L.polygon([
     [-17.04301898490251, 145.7395592248034]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 119 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=119" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage1.addLayer(L119);
-LotStage_Circles.addLayer(new L.circle(L119.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L119.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
 
 var L120 = L.polygon([
@@ -476,9 +476,9 @@ var L121 = L.polygon([
     [-17.04338819972265, 145.7398126793967],
     [-17.04343938287834, 145.7396720243675],
     [-17.04371214103294, 145.7397789365353]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 121 Bulleringa Loop</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 121 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=121" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage1.addLayer(L121);
-//LotStage_Circles.addLayer(new L.circle(L121.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L121.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L122 = L.polygon([
@@ -490,6 +490,7 @@ var L122 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 122 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=122" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage1.addLayer(L122);
 LotStage_Circles.addLayer(new L.circle(L122.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+
 
 var L123 = L.polygon([
     [-17.04348105679335, 145.7400148272253],
@@ -518,9 +519,10 @@ var L125 = L.polygon([
     [-17.04351198782112, 145.7403282534623],
     [-17.04360820433791, 145.7400649621297],
     [-17.04371783269743, 145.7401079583173]
-], {className: 'DisplayStyle'}).bindPopup('<center><strong>Lot 125 Mamu Link (Display)</strong></center>');
+], {className: 'DisplayStyle'}).bindPopup('<center><strong>Lot 125 Mamu Link - Keystart Homes Display</strong></center>');
 LotStage1.addLayer(L125);
 //LotStage_Circles.addLayer(new L.circle(L125.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+
 
 var L126 = L.polygon([
     [-17.04386140502665, 145.7401645928698],
@@ -529,9 +531,10 @@ var L126 = L.polygon([
     [-17.04362191875774, 145.7403716081471],
     [-17.04371792542803, 145.7401079554388],
     [-17.04386140502665, 145.7401645928698]
-], {className: 'DisplayStyle'}).bindPopup('<center><strong>Lot 126 Mamu Link (Display)</strong></center>');
+], {className: 'DisplayStyle'}).bindPopup('<center><strong>Lot 126 Mamu Link - David McCoy Homes Display</strong></center>');
 LotStage1.addLayer(L126);
 //LotStage_Circles.addLayer(new L.circle(L126.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+
 
 var L127 = L.polygon([
     [-17.04390634463569, 145.7400418135243],
@@ -786,6 +789,7 @@ var L202 = L.polygon([
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 202 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L202);
 LotStage_Circles.addLayer(new L.circle(L202.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
+
 
 var L203 = L.polygon([
     [-17.04192840329099, 145.7401651364958],
@@ -1438,9 +1442,9 @@ var L302 = L.polygon([
     [-17.04310358218962, 145.7393257946418],
     [-17.04314831882017, 145.7392031353338],
     [-17.04342083101932, 145.7393106897175]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 302 Bulleringa Loop</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 302 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=302" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage3.addLayer(L302);
-//LotStage_Circles.addLayer( new L.circle( L302.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
+LotStage_Circles.addLayer( new L.circle( L302.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
 
 var L303 = L.polygon([
@@ -1584,9 +1588,9 @@ var L315 = L.polygon([
     [-17.04373246330788, 145.7397223400604],
     [-17.04378350451111, 145.7395819924503],
     [-17.04403704852037, 145.7396811888218]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 315 Homevale Entrance</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=315" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 315 Homevale Entrance</strong></center>');
 LotStage3.addLayer(L315);
-LotStage_Circles.addLayer(new L.circle(L315.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L315.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
 
 var L316 = L.polygon([
@@ -1789,7 +1793,7 @@ var L333 = L.polygon([
     [-17.0443519518691, 145.7397061061903],
     [-17.04444786432773, 145.7394424857513],
     [-17.04459152889754, 145.7394991094146]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 333 Porcupine Way</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 333 Porcupine Way</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=333" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage3.addLayer(L333);
 LotStage_Circles.addLayer( new L.circle( L333.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
@@ -1801,7 +1805,7 @@ var L334 = L.polygon([
     [-17.04413759740198, 145.7398178552146],
     [-17.04418422098722, 145.7397957517161],
     [-17.04440377800294, 145.7398823900024]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 334 Homevale Entrance</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 334 Homevale Entrance</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=334" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage3.addLayer(L334);
 LotStage_Circles.addLayer( new L.circle( L334.getBounds().getCenter() , { className: 'LotCircle' , radius: C_Radius}));
 
