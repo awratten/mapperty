@@ -970,9 +970,9 @@ var L240 = L.polygon([
     [-17.04255114684817, 145.7391911458996],
     [-17.04262052246117, 145.7389184024572],
     [-17.04280438042663, 145.7389687404852]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 240 Annan Bend</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=240" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 240 Annan Bend</strong></center>');
 LotStage2.addLayer(L240);
-LotStage_Circles.addLayer(new L.circle(L240.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L240.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
 
 
 var L241 = L.polygon([
@@ -1077,7 +1077,7 @@ var L249 = L.polygon([
     [-17.04185715837692, 145.7395753734185]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 249 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L249);
-//LotStage_Circles.addLayer(new L.circle(L249.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L249.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L250 = L.polygon([
@@ -1088,7 +1088,7 @@ var L250 = L.polygon([
     [-17.04182671861163, 145.7397016482642]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 250 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L250);
-//LotStage_Circles.addLayer(new L.circle(L250.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L250.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L251 = L.polygon([
@@ -1099,7 +1099,7 @@ var L251 = L.polygon([
     [-17.04179578570212, 145.7398293934238]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 251 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L251);
-//LotStage_Circles.addLayer(new L.circle(L251.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L251.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L252 = L.polygon([
