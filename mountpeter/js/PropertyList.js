@@ -334,9 +334,9 @@ var L108 = L.polygon([
     [-17.04268072311264, 145.7396923286507],
     [-17.04273183241441, 145.7395517020204],
     [-17.04298528710298, 145.7396514702811]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 108 Annan Bend</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 108 Annan Bend</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=108" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage1.addLayer(L108);
-//LotStage_Circles.addLayer(new L.circle(L108.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L108.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L109 = L.polygon([
@@ -356,9 +356,10 @@ var L110 = L.polygon([
     [-17.04258470541759, 145.7399559649641],
     [-17.04263593090166, 145.7398153509087],
     [-17.0428895591715, 145.7399151062629]
-], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 110 Annan Bend</strong></center>');
+], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 110 Annan Bend</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=110" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage1.addLayer(L110);
-//LotStage_Circles.addLayer(new L.circle(L110.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L110.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
+
 
 
 var L111 = L.polygon([
