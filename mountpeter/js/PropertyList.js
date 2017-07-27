@@ -1262,6 +1262,7 @@ var L227 = L.polygon([
 LotStage2.addLayer(L227);
 
 
+//Value Homes ??
 var L228 = L.polygon([
     [-17.04315301734058, 145.7387729608956],
     [-17.0430837283862, 145.7390449601274],
@@ -1270,8 +1271,10 @@ var L228 = L.polygon([
     [-17.04315301734058, 145.7387729608956]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 228 Bulleringa Loop</strong></center>');
 LotStage2.addLayer(L228);
+LotStage_Circles.addLayer(new L.circle(L228.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
+//Value Homes
 var L229 = L.polygon([
     [-17.04303065543969, 145.7387392765872],
     [-17.04296146291016, 145.7390116079826],
