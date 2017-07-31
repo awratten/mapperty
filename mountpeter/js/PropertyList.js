@@ -256,7 +256,6 @@ var L101 = L.polygon([
     [-17.04210506230904, 145.7405430522335],
     [-17.04220290009643, 145.740272855363],
     [-17.04234637826514, 145.7403295298242]
-//], {className: 'LotStyle'}).bindPopup("<center><strong>Lot 101 Bulleringa Loop</strong><br><br><br><br><a href='http://globe.information.qld.gov.au/cgi-bin/SmartMapgen.py?q=101%5CSP282750' target='_blank'>Download Site Plan</a></center>");
 ], {className: 'LotStyle'}).bindPopup("<center><strong>Lot 101 Bulleringa Loop</strong></center>");
 LotStage1.addLayer(L101);
 LotStage_Circles.addLayer(new L.circle(L101.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
@@ -458,7 +457,7 @@ var L119 = L.polygon([
     [-17.04301898490251, 145.7395592248034]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 119 Bulleringa Loop</strong><br><br><a href="https://mtpeterestate.com.au/property/?s=119" target="_blank"><button class="btn btn-success">More Info...</button></a></center>');
 LotStage1.addLayer(L119);
-LotStage_Circles.addLayer(new L.circle(L119.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L119.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L120 = L.polygon([
