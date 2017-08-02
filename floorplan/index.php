@@ -125,7 +125,7 @@
 
                 L.imageOverlay('img/OPAL_colour.png', bounds).addTo(map);
                 
-                L.imageOverlay(url, bounds).addTo(map);
+//                L.imageOverlay(url, bounds).addTo(map);
 //                
 //                var garage_marker = L.marker([-183.375, 186.875]).addTo(map);
 //                var bed4_marker = L.marker([-134.125, 130.875]).addTo(map);
