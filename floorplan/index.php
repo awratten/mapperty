@@ -125,7 +125,7 @@
                 
                 L.imageOverlay(url, bounds).addTo(map);
                 
-                var marker = L.marker([-183.375, 186.875]).addTo(mymap);
+                var marker = L.marker([-183.375, 186.875]).addTo(map);
 
                 
 
