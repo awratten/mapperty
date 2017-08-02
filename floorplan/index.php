@@ -103,7 +103,7 @@
                     iconUrl: './img/marker.svg',
                     iconSize: [12, 12],
                     iconAnchor: [6, 6],
-                    popupAnchor: [0, -6]
+                    popupAnchor: [0, -6],
                     className: 'marker'
                 });
 
