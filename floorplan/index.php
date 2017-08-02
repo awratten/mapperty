@@ -124,6 +124,7 @@
                 // L.imageOverlay('img/OPAL_Floorplan_ZONES.svg', bounds).addTo(map);
 
                 L.imageOverlay('img/OPAL_Floorplan.png', bounds).addTo(map);
+                L.imageOverlay('img/Background.svg', bounds).addTo(map);
                 
 //                L.imageOverlay(url, bounds).addTo(map);
 //                
