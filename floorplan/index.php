@@ -104,6 +104,7 @@
                     iconSize: [12, 12],
                     iconAnchor: [6, 6],
                     popupAnchor: [0, -6]
+                    className: 'marker'
                 });
 
                 var map = L.map('map', {
