@@ -112,7 +112,7 @@
                 }).addAttribution('<a href="http://mapperty.co">Mapperty</a>').addTo(map);
 
                 // dimensions of the image
-                var w = 1024 * 2, h = 1754 * 2, url = 'img/OPAL_Floorplan.svg';
+                var w = 1972 * 2, h = 2787 * 2, url = 'img/OPAL_Floorplan.svg';
 
                 // calculate the edges of the image, in coordinate space
                 var southWest = map.unproject([0, h], map.getMaxZoom() - 1);
@@ -123,7 +123,7 @@
                 // so that it covers the entire map
 //                L.imageOverlay('img/OPAL_Floorplan_ZONES.svg', bounds).addTo(map);
 
-                L.imageOverlay('img/OPAL_colour.png', bounds).addTo(map);
+                L.imageOverlay('img/OPAL_Floorplan.png', bounds).addTo(map);
                 
 //                L.imageOverlay(url, bounds).addTo(map);
 //                
