@@ -122,6 +122,7 @@
                 // add the image overlay, 
                 // so that it covers the entire map
                 L.imageOverlay(url, bounds).addTo(map);
+                L.imageOverlay('img/OPAL_Floorplan_ZONES.svg', bounds).addTo(map);
 
                 // tell leaflet that the map is exactly as big as the image
                 map.setMaxBounds(bounds);
