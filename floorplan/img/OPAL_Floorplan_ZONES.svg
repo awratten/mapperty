@@ -3,12 +3,29 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 281.3 412.1" style="enable-background:new 0 0 281.3 412.1;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#EAD1C1;}
+	.st0{fill:#EFECEA;}
+	.st1{fill:#D4EFFC;}
+	.st2{fill:#CBE8DD;}
+	.st3{fill:#EAD1C1;}
 </style>
 <g>
-	<rect x="183.6" y="181.2" class="st0" width="72.2" height="56.4"/>
-	<rect x="27.7" y="263.3" class="st0" width="70.1" height="60.6"/>
-	<rect x="183.6" y="58.2" class="st0" width="72.3" height="55"/>
-	<polygon class="st0" points="181.8,25 99.7,25 99.7,101.6 99.7,101.6 99.7,133.4 149.3,133.4 149.3,101.8 181.8,101.8 	"/>
+	<rect x="11.5" y="107.5" class="st0" width="84.1" height="72"/>
+	<rect x="101.3" y="311.5" class="st0" width="34.2" height="28.1"/>
+	<rect x="139.4" y="279.2" class="st0" width="116.9" height="120.7"/>
+</g>
+<g>
+	<polygon class="st1" points="256,135 256,113.9 217.5,113.9 217.5,135 202.7,135 202.7,181 267.9,181 267.9,135 	"/>
+	<rect x="181.8" y="25.2" class="st1" width="74.2" height="31.4"/>
+	<rect x="194.7" y="239.1" class="st1" width="65" height="37"/>
+</g>
+<polygon class="st2" points="217.6,134.1 217.6,113.2 182.4,113.2 182.4,101.7 150.6,101.7 150.6,134.7 95.7,134.7 95.7,179.5 
+	27.3,179.5 27.3,261.9 97.8,261.9 97.8,282.7 99.4,282.7 99.4,308 102.5,308 102.5,311.5 121.8,311.5 121.8,308 139.3,308 
+	139.3,277.1 182,277.1 182,276.1 194.6,276.1 194.6,239.3 182,239.3 182,181.2 201.2,181.2 201.2,179.9 255.9,179.9 255.9,179.8 
+	202.6,179.8 202.6,134.1 "/>
+<g>
+	<rect x="183.6" y="181.2" class="st3" width="72.2" height="56.4"/>
+	<rect x="27.7" y="263.3" class="st3" width="70.1" height="60.6"/>
+	<rect x="183.6" y="58.2" class="st3" width="72.3" height="55"/>
+	<polygon class="st3" points="181.8,25 99.7,25 99.7,101.6 99.7,101.6 99.7,133.4 149.3,133.4 149.3,101.8 181.8,101.8 	"/>
 </g>
 </svg>
