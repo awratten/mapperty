@@ -98,6 +98,14 @@
 // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
 // Marker Pin: https://codepen.io/zachdunn/pen/wapEam
 // create the slippy map
+
+                var default_marker = L.icon({
+                    iconUrl: './img/marker.svg',
+                    iconSize: [12, 12],
+                    iconAnchor: [6, 6],
+                    popupAnchor: [0, -6]
+                });
+
                 var map = L.map('map', {
                     minZoom: 1,
                     maxZoom: 4,
@@ -127,8 +135,8 @@
                 L.imageOverlay('img/Background.svg', bounds).addTo(map);
                 
 //                L.imageOverlay(url, bounds).addTo(map);
-//                
-//                var garage_marker = L.marker([-183.375, 186.875]).addTo(map);
+//                var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
+                var garage_marker = L.marker([-183.375, 186.875], { icon: default_marker}).addTo(map);
 //                var bed4_marker = L.marker([-134.125, 130.875]).addTo(map);
 //                var bed3_marker = L.marker([-93.5, 190.125]).addTo(map);
 //                var bed2_marker = L.marker([-50.25, 189.625]).addTo(map);
