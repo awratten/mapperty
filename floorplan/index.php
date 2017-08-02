@@ -51,7 +51,7 @@
                 position: relative;
                 top: 0;
             }
-            
+
             #logo{
                 position:fixed;
                 left:5px;
@@ -90,14 +90,83 @@
         <div id='map' class="container-fluid"></div>
 
         <?php #Main javascript to load leaflet components and add propery markers from PropertyList.js ?>
-        <script> 
+        <script>
             window.onload = function () {
-                var map = L.map('map').setView(Start_LatLong, Start_Zoom);
+//                var map = L.map('map').setView(Start_LatLong, Start_Zoom);
+
+// Using leaflet.js to pan and zoom a big image.
+// See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
+// Marker Pin: https://codepen.io/zachdunn/pen/wapEam
+// create the slippy map
+                var map = L.map('map', {
+                    minZoom: 1,
+                    maxZoom: 4,
+                    center: [0, 0],
+                    zoom: 1,
+                    crs: L.CRS.Simple,
+                    attributionControl: false
+                });
+
+                L.control.attribution({
+                    prefix: false
+                }).addAttribution('HQ @ Business Inc').addTo(map);
+
+// House: https://i.imgur.com/cenqiCf.jpg
+// Palace SVG (1280 x 806): https://dl.dropbox.com/s/yhrpnftsuis15z6/Topkapi_Palace_plan.svg
+// dimensions of the image
+                var w = 1280 * 2,
+                        h = 806 * 2,
+                        url = 'https://dl.dropbox.com/s/yhrpnftsuis15z6/Topkapi_Palace_plan.svg';
+
+// calculate the edges of the image, in coordinate space
+                var southWest = map.unproject([0, h], map.getMaxZoom() - 1);
+                var northEast = map.unproject([w, 0], map.getMaxZoom() - 1);
+                var bounds = new L.LatLngBounds(southWest, northEast);
+
+// add the image overlay, 
+// so that it covers the entire map
+                L.imageOverlay(url, bounds).addTo(map);
+
+// tell leaflet that the map is exactly as big as the image
+                map.setMaxBounds(bounds);
+
+// pixel coords
+                var m = {
+                    x: 1250,
+                    y: 850
+                };
+//Add marker
+                var newMarkerGroup = new L.LayerGroup();
+                map.on('click', addMarker);
+                var addedOne = false,
+                        customPin = L.divIcon({
+                            className: 'location-pin',
+                            html: '<img src="https://static.robinpowered.com/roadshow/robin-avatar.png"><div class="pin"></div><div class="pulse"></div>',
+                            iconSize: [30, 30],
+                            iconAnchor: [18, 30]
+                        });
+                function addMarker(e) {
+// Add marker to map at click location; add popup window
+                    if (addedOne) {
+                        return;
+                    }
+
+                    var newMarker = new L.marker(e.latlng, {
+                        icon: customPin
+                    }).addTo(map);
+                    newMarker.bindPopup("<b>New Room</b><br>Adventures await");
+                    addedOne = true;
+                }
+// Lookup neighbors https://github.com/mapbox/leaflet-knn
+
+                var marker = L.marker(map.unproject([m.x, m.y], map.getMaxZoom()), {
+                    icon: customPin
+                }).addTo(map);
+// Add pop up for click
+                marker.bindPopup("<b>Bedroom</b><br>Free all night");
 
 
 
-
-                
 
 
             };
