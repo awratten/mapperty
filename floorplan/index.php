@@ -123,14 +123,14 @@
                 // so that it covers the entire map
                 L.imageOverlay(url, bounds).addTo(map);
 
-// tell leaflet that the map is exactly as big as the image
+                // tell leaflet that the map is exactly as big as the image
                 map.setMaxBounds(bounds);
 
-// pixel coords
-                var m = {
-                    x: 1250,
-                    y: 850
-                };
+                // pixel coords
+//                var m = {
+//                    x: 1250,
+//                    y: 850
+//                };
                 
                 
 
