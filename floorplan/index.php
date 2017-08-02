@@ -136,27 +136,27 @@
                     y: 850
                 };
 //Add marker
-                var newMarkerGroup = new L.LayerGroup();
-                map.on('click', addMarker);
-                var addedOne = false,
-                        customPin = L.divIcon({
-                            className: 'location-pin',
-                            html: '<img src="https://static.robinpowered.com/roadshow/robin-avatar.png"><div class="pin"></div><div class="pulse"></div>',
-                            iconSize: [30, 30],
-                            iconAnchor: [18, 30]
-                        });
-                function addMarker(e) {
-// Add marker to map at click location; add popup window
-                    if (addedOne) {
-                        return;
-                    }
-
-                    var newMarker = new L.marker(e.latlng, {
-                        icon: customPin
-                    }).addTo(map);
-                    newMarker.bindPopup("<b>New Room</b><br>Adventures await");
-                    addedOne = true;
-                }
+//                var newMarkerGroup = new L.LayerGroup();
+//                map.on('click', addMarker);
+//                var addedOne = false,
+//                        customPin = L.divIcon({
+//                            className: 'location-pin',
+//                            html: '<img src="https://static.robinpowered.com/roadshow/robin-avatar.png"><div class="pin"></div><div class="pulse"></div>',
+//                            iconSize: [30, 30],
+//                            iconAnchor: [18, 30]
+//                        });
+//                function addMarker(e) {
+//// Add marker to map at click location; add popup window
+//                    if (addedOne) {
+//                        return;
+//                    }
+//
+//                    var newMarker = new L.marker(e.latlng, {
+//                        icon: customPin
+//                    }).addTo(map);
+//                    newMarker.bindPopup("<b>New Room</b><br>Adventures await");
+//                    addedOne = true;
+//                }
 // Lookup neighbors https://github.com/mapbox/leaflet-knn
 
                 var marker = L.marker(map.unproject([m.x, m.y], map.getMaxZoom()), {
