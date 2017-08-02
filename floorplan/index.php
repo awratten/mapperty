@@ -126,6 +126,7 @@
                 L.imageOverlay(url, bounds).addTo(map);
                 
 
+
                 // tell leaflet that the map is exactly as big as the image
                 map.setMaxBounds(bounds);
 
@@ -134,10 +135,14 @@
 //                    x: 1250,
 //                    y: 850
 //                };
-                
-                
+
+            map.on('click', function(e) {
+                alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng);
+            });
 
             };
+            
+
         </script>
 
         <?php #jQuery first, then Tether, then Bootstrap JS. ?>
