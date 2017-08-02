@@ -109,22 +109,18 @@
 
                 L.control.attribution({
                     prefix: false
-                }).addAttribution('HQ @ Business Inc').addTo(map);
+                }).addAttribution('<a href="http://mapperty.co">Mapperty</a>').addTo(map);
 
-// House: https://i.imgur.com/cenqiCf.jpg
-// Palace SVG (1280 x 806): https://dl.dropbox.com/s/yhrpnftsuis15z6/Topkapi_Palace_plan.svg
-// dimensions of the image
-                var w = 1280 * 2,
-                        h = 806 * 2,
-                        url = 'img/OPAL_Floorplan.svg';
+                // dimensions of the image
+                var w = 1280 * 2, h = 806 * 2, url = 'img/OPAL_Floorplan.svg';
 
-// calculate the edges of the image, in coordinate space
+                // calculate the edges of the image, in coordinate space
                 var southWest = map.unproject([0, h], map.getMaxZoom() - 1);
                 var northEast = map.unproject([w, 0], map.getMaxZoom() - 1);
                 var bounds = new L.LatLngBounds(southWest, northEast);
 
-// add the image overlay, 
-// so that it covers the entire map
+                // add the image overlay, 
+                // so that it covers the entire map
                 L.imageOverlay(url, bounds).addTo(map);
 
 // tell leaflet that the map is exactly as big as the image
@@ -135,39 +131,8 @@
                     x: 1250,
                     y: 850
                 };
-//Add marker
-//                var newMarkerGroup = new L.LayerGroup();
-//                map.on('click', addMarker);
-//                var addedOne = false,
-//                        customPin = L.divIcon({
-//                            className: 'location-pin',
-//                            html: '<img src="https://static.robinpowered.com/roadshow/robin-avatar.png"><div class="pin"></div><div class="pulse"></div>',
-//                            iconSize: [30, 30],
-//                            iconAnchor: [18, 30]
-//                        });
-//                function addMarker(e) {
-//// Add marker to map at click location; add popup window
-//                    if (addedOne) {
-//                        return;
-//                    }
-//
-//                    var newMarker = new L.marker(e.latlng, {
-//                        icon: customPin
-//                    }).addTo(map);
-//                    newMarker.bindPopup("<b>New Room</b><br>Adventures await");
-//                    addedOne = true;
-//                }
-// Lookup neighbors https://github.com/mapbox/leaflet-knn
-
-                var marker = L.marker(map.unproject([m.x, m.y], map.getMaxZoom()), {
-                    icon: customPin
-                }).addTo(map);
-// Add pop up for click
-                marker.bindPopup("<b>Bedroom</b><br>Free all night");
-
-
-
-
+                
+                
 
             };
         </script>
