@@ -112,7 +112,7 @@
                 }).addAttribution('<a href="http://mapperty.co">Mapperty</a>').addTo(map);
 
                 // dimensions of the image
-                var w = 4096 * 2, h = 7017 * 2, url = 'img/OPAL_Floorplan.svg';
+                var w = 2048 * 2, h = 3508 * 2, url = 'img/OPAL_Floorplan.svg';
 
                 // calculate the edges of the image, in coordinate space
                 var southWest = map.unproject([0, h], map.getMaxZoom() - 1);
