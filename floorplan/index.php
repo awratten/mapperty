@@ -125,6 +125,9 @@
                 
                 L.imageOverlay(url, bounds).addTo(map);
                 
+                var marker = L.marker([-183.375, 186.875]).addTo(mymap);
+
+                
 
 
                 // tell leaflet that the map is exactly as big as the image
