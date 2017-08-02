@@ -125,7 +125,12 @@
                 
                 L.imageOverlay(url, bounds).addTo(map);
                 
-                var marker = L.marker([-183.375, 186.875]).addTo(map);
+                var garage_marker = L.marker([-183.375, 186.875]).addTo(map);
+                var bed4_marker = L.marker([-134.125, 130.875]).addTo(map);
+                var bed3_marker = L.marker([-93.5, 190.125]).addTo(map);
+                var bed2_marker = L.marker([-50.25, 189.625]).addTo(map);
+                var bed1_marker = L.marker([-45.875, 171]).addTo(map);
+                
 
                 
 
