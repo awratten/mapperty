@@ -121,7 +121,9 @@
 
                 // add the image overlay, 
                 // so that it covers the entire map
-                L.imageOverlay('img/OPAL_Floorplan_ZONES.svg', bounds).addTo(map);
+//                L.imageOverlay('img/OPAL_Floorplan_ZONES.svg', bounds).addTo(map);
+
+                L.imageOverlay('img/OPAL_colour.png', bounds).addTo(map);
                 
                 L.imageOverlay(url, bounds).addTo(map);
 //                
