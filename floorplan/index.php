@@ -101,9 +101,9 @@
 
                 var default_marker = L.icon({
                     iconUrl: './img/marker.svg',
-                    iconSize: [12, 12],
-                    iconAnchor: [6, 6],
-                    popupAnchor: [0, -6],
+                    iconSize: [24, 24],
+                    iconAnchor: [12, 12],
+                    popupAnchor: [0, -12],
                     className: 'marker'
                 });
 
