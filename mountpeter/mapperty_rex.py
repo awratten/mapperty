@@ -28,7 +28,7 @@ for prop in soup.find_all('residential'):
 	search_URL = 'https://mtpeterestate.com.au/property/?s=' + address_string.replace(' ', '+')
 
 	print ("var " + uniqueID + " = L.polygon([")
-	print ("")
+	print ("") # Add Geometry Here
 	print ("], {className: 'LotStyle'}).bindPopup('<center><strong>" + address_string + "</strong><br><p>Price: " + priceView + "</p><br><a href='" + search_URL + "' target='_blank'><br><button class='btn btn-success'>More Info...</button></a></center>');")
 	print ("LotStage1.addLayer(" + uniqueID + ");")
 

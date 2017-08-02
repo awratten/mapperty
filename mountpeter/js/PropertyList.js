@@ -1,4 +1,4 @@
-// Kenfrost Homes - List of Estates with Logos and Office locations
+// Mount Peter estate plan
 // 1/06/2017
 
 var Start_LatLong = [-17.04210460046319, 145.7405432814109];
