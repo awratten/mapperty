@@ -983,7 +983,7 @@ var L241 = L.polygon([
     [-17.04319481933515, 145.7390753629393]
 ], {className: 'LotStyle'}).bindPopup('<center><strong>Lot 241 Annan Bend</strong></center>');
 LotStage2.addLayer(L241);
-LotStage_Circles.addLayer(new L.circle(L241.getBounds().getCenter(), {className: 'LotCircle_SOLD', radius: C_Radius}));
+LotStage_Circles.addLayer(new L.circle(L241.getBounds().getCenter(), {className: 'LotCircle', radius: C_Radius}));
 
 
 var L242 = L.polygon([
