@@ -88,56 +88,18 @@
         </script>
 
         <div id='map' class="container-fluid"></div>
-        <?php if (filter_input(INPUT_GET, 'logo', FILTER_SANITIZE_STRING) === 'true') {
-            echo "<div id='logo'></div>";
-        } ?>
-        <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) === 'true') {
-            echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>";
-        } ?>
 
         <?php #Main javascript to load leaflet components and add propery markers from PropertyList.js ?>
         <script> 
             window.onload = function () {
                 var map = L.map('map').setView(Start_LatLong, Start_Zoom);
 
-        <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') {
-            echo "var geoSearchController = new L.Control.GeoSearch({";
-            echo "provider: new L.GeoSearch.Provider.Google()";
-            echo "}).addTo(map);";
-        } ?>
 
-                L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                    attribution: '<a href="http://mapperty.co">Mapperty</a> | Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-                    maxZoom: 18,
-                    id: 'mapbox.light',
-                    accessToken: 'sk.eyJ1IjoiYXdyYXR0ZW4iLCJhIjoiY2ozYmRhanNoMDFoaTJ3cGg5MWx2MWpkeCJ9.-GFKfnIKHDY83-nD8LLi9g'
-                }).addTo(map);
 
-                //Load Markers from PropertyList.js
-                var markers = L.markerClusterGroup({chunkedLoading: true});
-                for (var i = 0; i < addressPoints.length; i++) {
-                    var a = addressPoints[i];
-                    var title = a[2];
-                    var icon = a[3];
-                    var marker = L.marker(L.latLng(a[0], a[1]), {icon: icon}, {title: title});
-                    marker.bindPopup(title);
-                    markers.addLayer(marker);
-                }
-                map.addLayer(markers);
 
-                //markers.on('click', function(e) {
-                //    map.fitBounds(e.getBounds());
-                //});
+                
 
-                markers.on('click', function (e) {
-                    map.setView(e.latlng, 16);
-                    //e.bindPopup(e.latlng);
-                });
 
-                //load kmlList from PropertyList.js
-                for (var i = 0; i < kmlList.length; i++) {
-                    new L.KML(kmlList[i], {async: true}).addTo(map);
-                }
             };
         </script>
 
