@@ -95,6 +95,27 @@
                 echo "}).addTo(map);";
             }
             ?>
+    
+    
+//            var Def_IconSize = [128, 64];
+//            var Def_IconAnchor = [64, 64];
+//            var Def_PopupAnchor = [0, -64];
+//            var Def_Class = "estate";
+//            
+//            var AP_Logo = L.icon({
+//                iconUrl: 'img/estate_AinsliePlace_icon.png',
+//                iconSize: Def_IconSize,
+//                iconAnchor: Def_IconAnchor,
+//                popupAnchor: Def_PopupAnchor,
+//                className: Def_Class
+//            });
+            
+            var default_marker = L.icon({
+                iconUrl: './img/marker.svg',
+                iconSize: [16, 19],
+                iconAnchor: [8, 9],
+                popupAnchor: [0, -9]
+            });
 
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                 attribution: '<a href="http://mapperty.co">Mapperty</a> | Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
