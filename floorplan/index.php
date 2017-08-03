@@ -193,7 +193,7 @@
                     if (map.getZoom() > map.getMinZoom()) {
                         map.addLayer(Marker_Group);
                     }
-                    if (map.getZoom() === map.getMaxZoom()) {
+                    if (map.getZoom() === map.getMinZoom()) {
 //                    map.addLayer(Stages);
                     //map.addLayer(Stage_Markers);
                     map.removeLayer(Marker_Group);
