@@ -219,25 +219,9 @@
 //            });
 
 
-                onEachFeature: function (feature, layer) {
-                       //layer.bindPopup(feature.properties.GPSUserName);
 
-                       layer.on('click', function (e) {
-                           document.getElementById("info").innerHTML = feature.properties.name;
-                           $("#feature_infos").stop();
-                           $("#feature_infos").fadeIn("fast");
-
-                           console.log(feature.properties.name);
-                           $("#feature_infos").fadeOut(5000);
-                           // This is your click handler. 
-                           // Your feature is available here as e.target, and the 
-                           //featureInfo object we added is available as e.target.featureInfo 
-                       });
-                   }
 
             };
-            
-
         </script>
 
         <?php #jQuery first, then Tether, then Bootstrap JS. ?>
