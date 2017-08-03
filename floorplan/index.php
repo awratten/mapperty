@@ -157,35 +157,46 @@
 
                 L.imageOverlay('img/OPAL_Floorplan.png', bounds).addTo(map);
                 L.imageOverlay('img/Background.svg', bounds).addTo(map);
+                
+                Marker_Group = L.layerGroup();
+                
+                var garage_marker = L.marker([-276.5, 164.75], { icon: default_marker });
+                garage_marker.bindPopup("Double Garage", { maxWidth: 1024 });
+                Marker_Group.addLayer(garage_marker);
+                
+                var bed4_marker = L.marker([-227.5, 76.75], { icon: default_marker });
+                bed4_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
+                Marker_Group.addLayer(bed4_marker);
+                
+                var bed3_marker = L.marker([-166, 169.25], { icon: default_marker });
+                bed3_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
+                Marker_Group.addLayer(bed3_marker);
+                
+                var bed2_marker = L.marker([-95.5, 169.25], { icon: default_marker });
+                bed2_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
+                Marker_Group.addLayer(bed2_marker);
+                
+                var bed1_marker = L.marker([-83, 141], { icon: default_marker });
+                bed1_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
+                Marker_Group.addLayer(bed1_marker);
+                
+                var kitchen_marker = L.marker([-179.75, 103.25], { icon: default_marker });
+                
+                var patio_marker = L.marker([-145, 80], { icon: default_marker });
+                
+                
+                
 
 //                L.imageOverlay(url, bounds).addTo(map);
 //                var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
                 map.on('zoomend', function () {
                     if (map.getZoom() > map.getMinZoom()) {
-                        var garage_marker = L.marker([-276.5, 164.75], { icon: default_marker }).addTo(map);
-                        garage_marker.bindPopup("Double Garage", { maxWidth: 1024 });
-                        var bed4_marker = L.marker([-227.5, 76.75], { icon: default_marker }).addTo(map);
-                        bed4_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
-                        var bed3_marker = L.marker([-166, 169.25], { icon: default_marker }).addTo(map);
-                        bed3_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
-                        var bed2_marker = L.marker([-95.5, 169.25], { icon: default_marker }).addTo(map);
-                        bed2_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
-                        var bed1_marker = L.marker([-83, 141], { icon: default_marker }).addTo(map);
-                        bed1_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
-                        var kitchen_marker = L.marker([-179.75, 103.25], { icon: default_marker }).addTo(map);
-                        var patio_marker = L.marker([-145, 80], { icon: default_marker }).addTo(map);
+                        map.addLayer(Marker_Group);
                     }
-                    if (map.getZoom() == map.getMaxZoom()) {
+                    if (map.getZoom() === map.getMaxZoom()) {
 //                    map.addLayer(Stages);
                     //map.addLayer(Stage_Markers);
-                    map.removeLayer(garage_marker);
-                    map.removeLayer(bed4_marker);
-                    map.removeLayer(bed3_marker);
-                    map.removeLayer(bed2_marker);
-                    map.removeLayer(bed1_marker);
-                    map.removeLayer(kitchen_marker);
-                    map.removeLayer(patio_marker);
-
+                    map.removeLayer(Marker_Group);
                     }
                 });
 
