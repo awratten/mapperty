@@ -137,8 +137,8 @@
                 
 //                L.imageOverlay(url, bounds).addTo(map);
 //                var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
-                var garage_marker = L.marker([-276.5, 164.75], { icon: default_marker }).addTo(map);
-                var bed4_marker = L.marker([-227.5, 76.75], { icon: default_marker }).addTo(map);
+                var garage_marker = L.marker([-276.5, 164.75], { icon: default_marker }, {title: "Garage"}).addTo(map);
+                var bed4_marker = L.marker([-227.5, 76.75], { icon: default_marker }, {title: "<img src='img/bed4.jpg'>"}).addTo(map);
                 var bed3_marker = L.marker([-166, 169.25], { icon: default_marker }).addTo(map);
                 var bed2_marker = L.marker([-95.5, 169.25], { icon: default_marker }).addTo(map);
                 var bed1_marker = L.marker([-83, 141], { icon: default_marker }).addTo(map);
