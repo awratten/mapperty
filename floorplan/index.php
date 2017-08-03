@@ -151,8 +151,8 @@
                 // so that it covers the entire map
                 // L.imageOverlay('img/OPAL_Floorplan_ZONES.svg', bounds).addTo(map);
 
-                L.imageOverlay('img/OPAL_Floorplan.png', bounds/2).addTo(map);
-                L.imageOverlay('img/Background.svg', bounds/2).addTo(map);
+                L.imageOverlay('img/OPAL_Floorplan.png', bounds * 2).addTo(map);
+                L.imageOverlay('img/Background.svg', bounds * 2).addTo(map);
                 
 //                L.imageOverlay(url, bounds).addTo(map);
 //                var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
