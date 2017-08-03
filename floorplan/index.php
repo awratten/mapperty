@@ -160,18 +160,23 @@
 
 //                L.imageOverlay(url, bounds).addTo(map);
 //                var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
-                var garage_marker = L.marker([-276.5, 164.75], { icon: default_marker }).addTo(map);
-                garage_marker.bindPopup("Double Garage", { maxWidth: 1024 });
-                var bed4_marker = L.marker([-227.5, 76.75], { icon: default_marker }).addTo(map);
-                bed4_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
-                var bed3_marker = L.marker([-166, 169.25], { icon: default_marker }).addTo(map);
-                bed3_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
-                var bed2_marker = L.marker([-95.5, 169.25], { icon: default_marker }).addTo(map);
-                bed2_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
-                var bed1_marker = L.marker([-83, 141], { icon: default_marker }).addTo(map);
-                bed1_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
-                var kitchen_marker = L.marker([-179.75, 103.25], { icon: default_marker }).addTo(map);
-                var patio_marker = L.marker([-145, 80], { icon: default_marker }).addTo(map);
+                map.on('zoomend', function () {
+                    if (map.getZoom() > map.getMinZoom()) {
+                        var garage_marker = L.marker([-276.5, 164.75], { icon: default_marker }).addTo(map);
+                        garage_marker.bindPopup("Double Garage", { maxWidth: 1024 });
+                        var bed4_marker = L.marker([-227.5, 76.75], { icon: default_marker }).addTo(map);
+                        bed4_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
+                        var bed3_marker = L.marker([-166, 169.25], { icon: default_marker }).addTo(map);
+                        bed3_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
+                        var bed2_marker = L.marker([-95.5, 169.25], { icon: default_marker }).addTo(map);
+                        bed2_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
+                        var bed1_marker = L.marker([-83, 141], { icon: default_marker }).addTo(map);
+                        bed1_marker.bindPopup("<img src='img/bed4.jpg'>", { maxWidth: 1024 });
+                        var kitchen_marker = L.marker([-179.75, 103.25], { icon: default_marker }).addTo(map);
+                        var patio_marker = L.marker([-145, 80], { icon: default_marker }).addTo(map);
+                    }
+                });
+
                  
 
                 // tell leaflet that the map is exactly as big as the image
