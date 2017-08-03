@@ -83,7 +83,23 @@
         <?php if (filter_input(INPUT_GET, 'logo', FILTER_SANITIZE_STRING) == 'true') { echo "<div id='logo'></div>";}?>
         <?php if (filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING) == 'true') { echo "<script src='js/geoSearch_include.js' type='text/javascript'></script>"; }?>
 
+        <div class="modal fade" id="VRModal" tabindex="-1" role="dialog" aria-labelledby="VRModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Virtual Tour</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe name='VRFrame' style="width:100%; height:80vh; display:block;" frameBorder="0"></iframe>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+        
         <script>
     window.onload = function() {
 
@@ -110,12 +126,6 @@
 //                className: Def_Class
 //            });
             
-            var default_marker = L.icon({
-                iconUrl: './img/marker.svg',
-                iconSize: [16, 19],
-                iconAnchor: [8, 9],
-                popupAnchor: [0, -9]
-            });
 
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                 attribution: '<a href="http://mapperty.co">Mapperty</a> | Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',

@@ -88,12 +88,31 @@
         </script>
 
         <div id='map' class="container-fluid"></div>
+        
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="VRModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Virtual Tour</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe name='VRFrame' style="width:100%; height:80vh; display:block;" frameBorder="0"></iframe>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+        
         <?php #Main javascript to load leaflet components and add propery markers from PropertyList.js ?>
         <script>
             window.onload = function () {
 //                var map = L.map('map').setView(Start_LatLong, Start_Zoom);
 
+                $("#Modal").modal({show:false});
+                
 // Using leaflet.js to pan and zoom a big image.
 // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
 // Marker Pin: https://codepen.io/zachdunn/pen/wapEam
@@ -151,7 +170,13 @@
                 var patio_marker = L.marker([-145, 80], { icon: default_marker }).addTo(map);
                  
 
-                
+                for (var i in markers){
+                    var markerID = markers[i].options.title;
+                    markers[i].openPopup();
+                    markers[i].on('click', function() {
+                    $("#Modal").modal("show"); 
+                });
+}
 
 
                 // tell leaflet that the map is exactly as big as the image
