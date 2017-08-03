@@ -204,8 +204,7 @@
 
                 // tell leaflet that the map is exactly as big as the image
                 map.setMaxBounds(bounds);
-                var new_bounds = map.getBounds();
-                map.setMaxBounds(new_bounds);
+
 
                 // pixel coords
 //                var m = {
