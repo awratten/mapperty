@@ -93,6 +93,10 @@
 
         <div id='map' class="container-fluid"></div>
         
+        <div id="feature_infos"> <span id="heading">Clickresult: </span>
+        <span id="info"></span>
+
+        
         <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -189,24 +193,19 @@
 
 //                L.imageOverlay(url, bounds).addTo(map);
 //                var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
-                map.on('zoomend', function () {
-                    if (map.getZoom() > map.getMinZoom() + 1 ) {
-                        map.addLayer(Marker_Group);
-                    }
-                    if (map.getZoom() === map.getMinZoom()) {
+//                map.on('zoomend', function () {
+//                    if (map.getZoom() > map.getMinZoom() + 1 ) {
+//                        map.addLayer(Marker_Group);
+//                    }
+//                    if (map.getZoom() === map.getMinZoom()) {
 //                    map.addLayer(Stages);
-                    //map.addLayer(Stage_Markers);
-                    map.removeLayer(Marker_Group);
-                    }
-                });
-
-                 
+//                    //map.addLayer(Stage_Markers);
+//                    map.removeLayer(Marker_Group);
+//                    }
+//                });
 
                 // tell leaflet that the map is exactly as big as the image
-                var southWest2 = map.unproject([0, h*2], map.getMaxZoom() - 1);
-                var northEast2 = map.unproject([w*2, 0], map.getMaxZoom() - 1);
-                var bounds2 = new L.LatLngBounds(southWest2, northEast2);
-                map.setMaxBounds(bounds2);
+                map.setMaxBounds(bounds);
 
 
                 // pixel coords
@@ -218,6 +217,23 @@
 //            map.on('click', function(e) {
 //                alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng);
 //            });
+
+
+                onEachFeature: function (feature, layer) {
+                       //layer.bindPopup(feature.properties.GPSUserName);
+
+                       layer.on('click', function (e) {
+                           document.getElementById("info").innerHTML = feature.properties.name;
+                           $("#feature_infos").stop();
+                           $("#feature_infos").fadeIn("fast");
+
+                           console.log(feature.properties.name);
+                           $("#feature_infos").fadeOut(5000);
+                           // This is your click handler. 
+                           // Your feature is available here as e.target, and the 
+                           //featureInfo object we added is available as e.target.featureInfo 
+                       });
+                   }
 
             };
             
