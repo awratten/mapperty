@@ -111,7 +111,7 @@
             window.onload = function () {
 //                var map = L.map('map').setView(Start_LatLong, Start_Zoom);
 
-                $("#Modal").modal({show:false});
+
                 
 // Using leaflet.js to pan and zoom a big image.
 // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
@@ -165,19 +165,10 @@
                 var bed2_marker = L.marker([-95.5, 169.25], { icon: default_marker }).addTo(map);
                 bed2_marker.bindPopup("<img src='img/bed4.jpg'>");
                 var bed1_marker = L.marker([-83, 141], { icon: default_marker }).addTo(map);
-                bed1_marker.bindPopup("<img src='img/bed1.jpg'>");
+                bed1_marker.bindPopup("<img src='img/bed4.jpg'>", {maxWidth: 1024});
                 var kitchen_marker = L.marker([-179.75, 103.25], { icon: default_marker }).addTo(map);
                 var patio_marker = L.marker([-145, 80], { icon: default_marker }).addTo(map);
                  
-
-                for (var i in markers){
-                    var markerID = markers[i].options.title;
-                    markers[i].openPopup();
-                    markers[i].on('click', function() {
-                    $("#Modal").modal("show"); 
-                });
-}
-
 
                 // tell leaflet that the map is exactly as big as the image
                 map.setMaxBounds(bounds);
