@@ -203,7 +203,10 @@
                  
 
                 // tell leaflet that the map is exactly as big as the image
-                map.setMaxBounds(bounds);
+                var southWest2 = map.unproject([0, h*2], map.getMaxZoom() - 1);
+                var northEast2 = map.unproject([w*2, 0], map.getMaxZoom() - 1);
+                var bounds2 = new L.LatLngBounds(southWest2, northEast2);
+                map.setMaxBounds(bounds2);
 
 
                 // pixel coords
