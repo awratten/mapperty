@@ -67,6 +67,10 @@
             .leaflet-marker-icon.estate {
                 border-radius: 16px;
             }
+            
+            .leaflet-popup-content { 
+                width:auto !important; 
+            }
         </style>
     </head>
     <body>
