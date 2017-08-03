@@ -190,7 +190,7 @@
 //                L.imageOverlay(url, bounds).addTo(map);
 //                var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
                 map.on('zoomend', function () {
-                    if (map.getZoom() > map.getMinZoom()) {
+                    if (map.getZoom() > map.getMinZoom() + 1 ) {
                         map.addLayer(Marker_Group);
                     }
                     if (map.getZoom() === map.getMinZoom()) {
