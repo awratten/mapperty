@@ -171,7 +171,7 @@
                  
 
                 // tell leaflet that the map is exactly as big as the image
-                map.setMaxBounds(bounds * 2);
+                map.setMaxBounds(new L.LatLngBounds(southWest * 1.5, northEast * 1.5));
 
                 // pixel coords
 //                var m = {
