@@ -143,16 +143,16 @@
                 var w = 986 * 2, h = 1393 * 2, url = 'img/OPAL_Floorplan.svg';
 
                 // calculate the edges of the image, in coordinate space
-                var southWest = map.unproject([0, h], map.getMaxZoom() - 2);
-                var northEast = map.unproject([w, 0], map.getMaxZoom() - 2);
+                var southWest = map.unproject([0, h], map.getMaxZoom() - 1);
+                var northEast = map.unproject([w, 0], map.getMaxZoom() - 1);
                 var bounds = new L.LatLngBounds(southWest, northEast);
 
                 // add the image overlay, 
                 // so that it covers the entire map
                 // L.imageOverlay('img/OPAL_Floorplan_ZONES.svg', bounds).addTo(map);
 
-                L.imageOverlay('img/OPAL_Floorplan.png', bounds).addTo(map);
-                L.imageOverlay('img/Background.svg', bounds).addTo(map);
+                L.imageOverlay('img/OPAL_Floorplan.png', bounds/2).addTo(map);
+                L.imageOverlay('img/Background.svg', bounds/2).addTo(map);
                 
 //                L.imageOverlay(url, bounds).addTo(map);
 //                var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
