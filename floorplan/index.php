@@ -153,7 +153,7 @@
 
                 L.imageOverlay('img/OPAL_Floorplan.png', bounds).addTo(map);
                 L.imageOverlay('img/Background.svg', bounds).addTo(map);
-                L.popup({ maxWidth: 1024 })
+                L.popup({ maxWidth: 1024 });
 //                L.imageOverlay(url, bounds).addTo(map);
 //                var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
                 var garage_marker = L.marker([-276.5, 164.75], { icon: default_marker }).addTo(map);
