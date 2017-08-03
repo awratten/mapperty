@@ -175,6 +175,18 @@
                         var kitchen_marker = L.marker([-179.75, 103.25], { icon: default_marker }).addTo(map);
                         var patio_marker = L.marker([-145, 80], { icon: default_marker }).addTo(map);
                     }
+                    if (map.getZoom() < 18) {
+//                    map.addLayer(Stages);
+                    //map.addLayer(Stage_Markers);
+                    map.removeLayer(garage_marker);
+                    map.removeLayer(bed4_marker);
+                    map.removeLayer(bed3_marker);
+                    map.removeLayer(bed2_marker);
+                    map.removeLayer(bed1_marker);
+                    map.removeLayer(kitchen_marker);
+                    map.removeLayer(patio_marker);
+
+                    }
                 });
 
                  
