@@ -188,8 +188,7 @@
                 
                 var patio_marker = L.marker([-145, 80], { icon: default_marker });
                 
-                
-                
+               
 
 //                L.imageOverlay(url, bounds).addTo(map);
 //                var marker = L.marker(L.latLng(a[0], a[1]), { icon: icon }, { title: title });
@@ -203,6 +202,9 @@
 //                    map.removeLayer(Marker_Group);
 //                    }
 //                });
+
+
+                map.addLayer(Marker_Group);
 
                 // tell leaflet that the map is exactly as big as the image
                 map.setMaxBounds(bounds);
